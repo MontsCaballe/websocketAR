@@ -4,10 +4,11 @@ import tornado.websocket
 import tornado.httpserver
 import httpx
 import asyncio
-# from sllurp import llrp
-# import sys
-# sys.path.append("./libs/reader.py")
-# from libs.reader import Reader, R420
+from sllurp import llrp
+import sys
+sys.path.append('./sllurp/reader.py')
+from sllurp.reader import Reader, R420
+import logging
 
 # url = "https://apirepuve.minayarit.gob.mx/tramites/lecturas-arcos/"
         # payload = {"vin": "3N1CK3CD4LL211137","folio": vin,"arco": 2,"antena": 1}
@@ -156,18 +157,69 @@ async def process_inventory_data(tag):
 async def connect_to_device(device):
     ip = device.get("ip")
     mac_address = device.get("mac_address")
+    # logging.basicConfig(filename='llrp.log', level=logging.DEBUG)
+    reader = R420(ip)
     
-    print(f"Connecting to device at IP: {ip}, MAC address: {mac_address}")
+    # reader.
     
-    # Crear un cliente LLRP de sllurp
-    factory = llrp.LLRPClientFactory(
-        tag_report_callback=process_inventory_data  # Función que procesa cada lectura de etiqueta
+    print(f"Connecting to device at IP: {ip}")
+    
+    # setup access spec
+    epcLen = 12 # total number of bytes
+    epcRawStart = b'\x12\x34\x56\x78' # let the raw EPC URI start with these bytes
+    epcRawUri = epcRawStart+b'\x00'*(epcLen-len(epcRawStart)) # fill up with zeros
+    # note: 1 Word = 2 Bytes
+    # writeSpecParam = {
+    #         'OpSpecID': 0,
+    #         'MB': 3,
+    #         'WordPtr': 2,
+    #         'AccessPassword': 0,
+    #         'WriteDataWordCount': len(epcRawUri)//2,
+    #         'WriteData': epcRawUri,
+    # }
+    # reader.startAccess(writeWords=writeSpecParam, opCount=0) # set opCount to 1 to stop after 1 write operation
+    # Actually adds and enables an access spec.
+    # It is executed with the next inventory round (reader.detectTags())
+
+
+    readSpecParam = {
+            'OpSpecID': 0,
+            'MB':3,
+            'WordPtr': 0,
+            'AccessPassword': 0,
+            'WordCount': 13
+    }
+    reader.startAccess(readWords=readSpecParam)
+    
+
+    print('Before changing:')
+    tags = reader.detectTags(powerDBm=16, antennas=(1,)) # remove antennas argument or set to (0,) to use all antenna ports
+    for tag in tags:
+            resultado_convertido = {k: v.hex() if isinstance(v, bytes) else v for k, v in tag.items()}
+            print(tag)
+             # Leer TID del banco TID, si está disponible en el tag
+            tid = tag['EPC-96'].hex()  # Convertir el EPC (TID) a una cadena hexadecimal para su visualización
+            print(f"TID: {tid}")
         
-    )
-    
-    # Configurar el modo inventario y conectar al dispositivo
-    reactor = asyncio.get_event_loop()
-    reactor.call_soon(factory.connect, [ip])
+            # Obtener los datos de ReadData desde OpSpecResult, que contiene los datos del banco de Usuario
+            user_data = tag['OpSpecResult']['ReadData']
+            print(f"Banco de Usuario - ReadData: {user_data.hex()}")
+            # Procesar ReadData para obtener 'folio' y 'vin' según las posiciones especificadas
+            if len(user_data) >= 13:  # Asegura que haya suficiente data en ReadData
+                # Los primeros 4 bytes para 'folio' (ajusta según la estructura específica del usuario)
+                folio = str(int(user_data[:4].hex(), 16))
+                # Extrae VIN en el formato deseado (ajusta la posición según la estructura de usuario)
+                vin = ConvertHex(user_data[4:34].hex())  # Suponiendo que vin empieza en el quinto byte
+                
+                print(f"Folio: {folio}")
+                print(f"VIN: {vin}")
+            
+
+    # Normal inventory
+    print('After changing:')
+    tags = reader.detectTags(powerDBm=16, antennas=(1,))
+    for tag in tags:
+            print(tag)
 
 async def connect_to_devices():
     # Conectar a todos los dispositivos con datos
@@ -193,7 +245,8 @@ async def update_device_lists():
                 mac_address = device.get("mac_address")
 
                 # Clasificar dispositivos
-                if ip is not None and mac_address is not None:
+                # if ip is not None and mac_address is not None:
+                if ip is not None:
                     new_devices_with_data.append(device)
                 else:
                     # Verificar si el dispositivo ya estaba en la lista de dispositivos sin datos completos
@@ -206,8 +259,8 @@ async def update_device_lists():
             devices_without_data.extend(new_devices_without_data)  # Agregar solo los nuevos dispositivos sin datos
 
             # Imprimir las listas actualizadas
-            print("Updated devices with data:", devices_with_data)
-            print("Updated devices without data:", devices_without_data)
+            # print("Updated devices with data:", devices_with_data)
+            # print("Updated devices without data:", devices_without_data)
 
             # Conectarse a los nuevos dispositivos en devices_with_data
             await connect_to_devices()
@@ -218,6 +271,25 @@ async def update_device_lists():
         except Exception as e:
             print("Error updating device lists:", e)
             await asyncio.sleep(60)  # Esperar antes de intentar de nuevo en caso de error
+
+def convertir_EPC_a_texto(diccionario):
+    diccionario_copia = diccionario.copy()
+    if 'EPC-96' in diccionario_copia:
+        valor_bytes = diccionario_copia['EPC-96']
+        valor_texto = valor_bytes.decode('utf-8')
+        diccionario_copia['EPC-96'] = valor_texto
+        print(f'Valor Bytes: {valor_bytes}')
+        print(f'Valor Texto: {valor_texto}')
+    return diccionario_copia
+
+def ConvertHex(hex_string):
+    try:
+        # Convertimos la cadena hexadecimal a bytes, luego a texto ASCII
+        text = bytes.fromhex(hex_string).decode('ascii')
+    except ValueError:
+        # Si el hex no es un valor ASCII válido, devolvemos una cadena vacía o un valor predeterminado
+        text = ""
+    return text
 
 # Llamada a la función en un contexto asíncrono
 def handle_tag_read(tag):
