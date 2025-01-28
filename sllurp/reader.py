@@ -88,7 +88,7 @@ class Reader(LLRPClient):
 			# nothing to filter
 			return trp
 	
-	def detectTags(self, powerDBm, freqMHz, mode, duration=0.5, session=2, population=1, antennas=(0,), rounds=1):
+	def detectTags(self, powerDBm=30, freqMHz=915, mode=3, duration=1, session=2, population=1, antennas=(1,2,3,4), rounds=1):
 		'''starts the readers inventoring process and return the found tags.
 		
 		:param duration: gives the reader that much time in seconds to find tags
@@ -123,6 +123,10 @@ class Reader(LLRPClient):
 		# wait for tagreport(s)
 		while self.round < rounds:
 			self.readLLRPMessage('RO_ACCESS_REPORT')
+  		# Wait for tag report(s)
+		# while True:  # Bucle infinito para ejecutar el inventario continuamente
+		# 	self.readLLRPMessage('RO_ACCESS_REPORT')
+   
 		
 		# don't need more reports
 		self.removeMsgCallback('RO_ACCESS_REPORT', self.foundTags)
@@ -130,6 +134,8 @@ class Reader(LLRPClient):
 		self.stopPolitely()
 		
 		# return results
+		# rounds += 1
+  	
 		if rounds == 1:
 			return self.detectedTags[0]
 		else:

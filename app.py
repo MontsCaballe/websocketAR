@@ -2,6 +2,8 @@ import tornado.ioloop
 import tornado.web
 import tornado.websocket
 import tornado.httpserver
+import warnings
+import requests
 import httpx
 import asyncio
 from sllurp import llrp
@@ -9,6 +11,7 @@ import sys
 sys.path.append('./sllurp/reader.py')
 from sllurp.reader import Reader, R420
 import logging
+from ping3 import ping
 
 # url = "https://apirepuve.minayarit.gob.mx/tramites/lecturas-arcos/"
         # payload = {"vin": "3N1CK3CD4LL211137","folio": vin,"arco": 2,"antena": 1}
@@ -110,6 +113,10 @@ async def fetch_device_data():
         response_devices.raise_for_status()
         devices = response_devices.json()
         
+        # Verifica si 'devices' es una lista y, si es así, conviértela en un diccionario
+        if isinstance(devices, list):
+            devices = {device['id']: device for device in devices}
+
         # Consulta las antenas
         response_antennas = await client.get(URL_ANTENNAS)
         response_antennas.raise_for_status()
@@ -117,10 +124,10 @@ async def fetch_device_data():
         
         # Asociar antenas a cada dispositivo
         devices_with_antennas = []
-        
-        for device in devices:
+
+        for device_id, device in devices.items():
             # Filtrar antenas que tienen el mismo id de dispositivo en 'arcos'
-            device_antennas = [antenna for antenna in antennas if antenna['arcos'] == device['id']]
+            device_antennas = [antenna for antenna in antennas if antenna['arcos'] == device_id]
             
             # Agregar la lista de antenas al dispositivo
             device_with_antennas = {**device, "antenas": device_antennas}
@@ -156,7 +163,7 @@ async def process_inventory_data(tag):
 
 async def connect_to_device(device):
     ip = device.get("ip")
-    mac_address = device.get("mac_address")
+    # mac_address = device.get("mac_address")
     # logging.basicConfig(filename='llrp.log', level=logging.DEBUG)
     reader = R420(ip)
     
@@ -192,8 +199,22 @@ async def connect_to_device(device):
     reader.startAccess(readWords=readSpecParam)
     
 
-    print('Before changing:')
-    tags = reader.detectTags(powerDBm=16, antennas=(1,)) # remove antennas argument or set to (0,) to use all antenna ports
+    print('Before start:')
+    #	print(reader)
+
+    tags = reader.detectTags() # remove antennas argument or set to (0,) to use all antenna ports
+#    tags = reader.detectTags(powerDBm=16, antennas=(1,)) # remove antennas argument or set to (0,) to use all antenna ports
+#     tag_report = reader.startLiveReports(
+#     reportCallback=tag_seen_callback2,  # Tu función de callback
+#     powerDBm=31.5,                     # Potencia en dBm
+#     freqMHz=866.9,                     # Frecuencia en MHz
+#     mode=1002,                         # Modo de operación
+#     searchmode=3,                      # Modo de búsqueda
+#     tagInterval=1,                    # Opcional: cada 10 tags encontrados, reportar
+#     timeInterval=2                     # Opcional: cada 5 segundos, si tagInterval está configurado
+# )
+    
+    print(tags)
     for tag in tags:
             resultado_convertido = {k: v.hex() if isinstance(v, bytes) else v for k, v in tag.items()}
             print(tag)
@@ -213,18 +234,284 @@ async def connect_to_device(device):
                 
                 print(f"Folio: {folio}")
                 print(f"VIN: {vin}")
+                # Suprimir la advertencia (solo para pruebas)
+                warnings.filterwarnings("ignore", message="Unverified HTTPS request")
+                # Remueve los caracteres nulos en vin
+                vin = vin.replace('\x00', '').strip()
+               
+                url = "https://192.168.0.200/tramites/lecturas-arcos/"
+                
+                # Identificar antena y dispositivo
+                antenna_index = tag.get('AntennaID', 1) - 1  # Ajustamos a índice de arreglo (0-based)
+                associated_device = next((d for d in devices_with_data if d.get("ip").strip() == ip.strip()), None)
+                arco_id = None
+                antenna_id = None
+                
+                if associated_device:
+                    print(f"Device found: {associated_device}")
+                    # Busca la antena por índice en el arreglo de antenas
+                    antenas = associated_device.get("antenas", [])
+                    if 0 <= antenna_index < len(antenas):
+                        antenna = antenas[antenna_index]
+                        antenna_id = antenna.get("id")
+                        arco_id = antenna.get("arcos")
+                        print(f"Antenna found: {antenna}")
+                    else:
+                        print(f"Antenna index {antenna_index} out of range for device {associated_device}")
+                else:
+                    print(f"No device found with IP {ip}")
             
+                
+                # Preparar la URL y el payload
+                url = "https://192.168.0.200/tramites/lecturas-arcos/"
+                payload = {
+                    "vin": vin,
+                    "folio": folio,
+                    "arco": arco_id,
+                    "antena": antenna_id
+                }
+                    
+                
+                # payload = {"vin": vin,"folio": folio,"arco": 5,"antena": 1}
 
-    # Normal inventory
-    print('After changing:')
-    tags = reader.detectTags(powerDBm=16, antennas=(1,))
-    for tag in tags:
-            print(tag)
+                print(f"Sending POST request to URL: {url} with payload: {payload}")
+                
+                try:
+                    response = requests.post(url, json=payload, verify=False, timeout=6)  # Tiempo máximo de espera de 6 segundos    
+                    
+                    if response.status_code == 200:
+                        print(f"API response for {vin}: {response.json()}")
+                    else:
+                        print(f"Failed to fetch data from API. Status code: {response.status_code}")
+                except Exception as e:
+                    print(f"Error querying API: {e}")
+      
+# async def connect_to_device(device, devices_list):
+#     ip = device.get("ip")
+#     reader = R420(ip)
+    
+#     print(f"Connecting to device at IP: {ip}")
+    
+#     # Setup parameters for reading tags
+#     readSpecParam = {
+#         'OpSpecID': 0,
+#         'MB': 3,
+#         'WordPtr': 0,
+#         'AccessPassword': 0,
+#         'WordCount': 13
+#     }
+#     reader.startAccess(readWords=readSpecParam)
+    
+#     tags = reader.detectTags()  # Detect tags on all antenna ports by default
+    
+#     print(f"Tags detected: {tags}")
+#     for tag in tags:
+#         resultado_convertido = {k: v.hex() if isinstance(v, bytes) else v for k, v in tag.items()}
+#         print(f"Tag data: {resultado_convertido}")
+        
+#         # Leer EPC del tag
+#         tid = tag.get('EPC-96', b'').hex()
+#         print(f"TID: {tid}")
+        
+#         # Leer datos del banco de usuario
+#         user_data = tag['OpSpecResult']['ReadData']
+#         print(f"Banco de Usuario - ReadData: {user_data.hex()}")
+        
+#         if len(user_data) >= 13:
+#             folio = str(int(user_data[:4].hex(), 16))
+#             vin = ConvertHex(user_data[4:34].hex()).replace('\x00', '').strip()
+            
+#             print(f"Folio: {folio}")
+#             print(f"VIN: {vin}")
+            
+#             # Identificar antena
+#             antenna_id = tag.get('AntennaID', 'Unknown')
+#             print(f"Antenna ID: {antenna_id}")
+            
+#             # Buscar dispositivo en la lista de dispositivos
+#             associated_device = next((d for d in devices_list if d.get("ip") == ip), None)
+#             arco_id = associated_device.get("arco_id") if associated_device else "Unknown"
+            
+#             # Preparar la URL y el payload
+#             url = "https://192.168.0.200/tramites/lecturas-arcos/"
+#             payload = {
+#                 "vin": vin,
+#                 "folio": folio,
+#                 "arco": arco_id,
+#                 "antena": antenna_id
+#             }
+            
+#             print(f"Sending POST request to URL: {url} with payload: {payload}")
+            
+#             # Enviar los datos a la API
+#             try:
+#                 response = requests.post(url, json=payload, verify=False)
+#                 if response.status_code == 200:
+#                     print(f"API response for {vin}: {response.json()}")
+#                 else:
+#                     print(f"Failed to fetch data from API. Status code: {response.status_code}")
+#             except Exception as e:
+#                 print(f"Error querying API: {e}")
+
+
+# async def connect_to_device(device):
+#     ip = device.get("ip")
+#     reader = R420(ip)
+#     print(f"Connecting to device at IP: {ip}")
+
+#     try:
+#         # Configuración de lectura de datos
+#         readSpecParam = {
+#             'OpSpecID': 0,
+#             'MB': 3,
+#             'WordPtr': 0,
+#             'AccessPassword': 0,
+#             'WordCount': 13
+#         }
+#         # Intentar establecer conexión con un límite de tiempo
+#         # await asyncio.wait_for(reader.startAccess(readWords=readSpecParam), timeout=5)  # Suponiendo que connect() es un método asincrónico
+#         print(f"Successfully connected to device at IP: {ip}")
+
+        
+#         reader.startAccess(readWords=readSpecParam)
+
+#         # Detectar tags
+#         print("Before start:")
+#         tags = reader.detectTags()
+#         print(tags)
+
+#         for tag in tags:
+#             resultado_convertido = {k: v.hex() if isinstance(v, bytes) else v for k, v in tag.items()}
+#             print(tag)
+#             tid = tag['EPC-96'].hex()
+#             print(f"TID: {tid}")
+            
+#             # Procesar datos del banco de Usuario
+#             user_data = tag['OpSpecResult']['ReadData']
+#             print(f"Banco de Usuario - ReadData: {user_data.hex()}")
+#             if len(user_data) >= 13:
+#                 folio = str(int(user_data[:4].hex(), 16))
+#                 vin = ConvertHex(user_data[4:34].hex())
+#                 vin = vin.replace('\x00', '').strip()
+#                 # Suprimir la advertencia (solo para pruebas)
+#                 warnings.filterwarnings("ignore", message="Unverified HTTPS request")
+#                 # Preparar la URL y el payload
+#                 url = "https://192.168.0.200/tramites/lecturas-arcos/"
+#                 payload = {
+#                     "vin": vin,
+#                     "folio": folio,
+#                     "arco": None,  # Ajustar con datos reales
+#                     "antena": None  # Ajustar con datos reales
+#                 }
+#                 print(f"Sending POST request to URL: {url} with payload: {payload}")
+
+#                 try:
+#                     response = requests.post(url, json=payload, verify=False, timeout=6)
+#                     if response.status_code == 200:
+#                         print(f"API response for {vin}: {response.json()}")
+#                     else:
+#                         print(f"Failed to fetch data from API. Status code: {response.status_code}")
+#                 except Exception as e:
+#                     print(f"Error querying API: {e}")
+
+#     except asyncio.TimeoutError:
+#         print(f"Connection to device at IP: {ip} timed out after 5 seconds.")
+#     except Exception as e:
+#         print(f"Error while connecting to device at IP: {ip}: {e}")
+#     finally:
+#         # Desconectar del dispositivo si es necesario
+#         try:
+#             # reader.disconnect()  # Suponiendo que hay un método disconnect()
+#             print(f"finally from device at IP: {ip}")
+#         except Exception as e:
+#             print(f"Error during disconnection from IP {ip}: {e}")
+            
+      
+def tag_seen_callback(tags):
+    print(tags)
+    if len(tags) > 0 :
+        for tag in tags:
+                        
+                # Obtener los datos de ReadData desde OpSpecResult, que contiene los datos del banco de Usuario
+                user_data = tag['OpSpecResult']['ReadData']
+                
+                print(f"Banco de Usuario - ReadData: {user_data.hex()}")
+                # Procesar ReadData para obtener 'folio' y 'vin' según las posiciones especificadas
+                if len(user_data) >= 13:  # Asegura que haya suficiente data en ReadData
+                    # Los primeros 4 bytes para 'folio' (ajusta según la estructura específica del usuario)
+                    folio = str(int(user_data[:4].hex(), 16))
+                    # Extrae VIN en el formato deseado (ajusta la posición según la estructura de usuario)
+                    vin = ConvertHex(user_data[4:34].hex())  # Suponiendo que vin empieza en el quinto byte
+                    
+                    print(f"Folio: {folio}")
+                    print(f"VIN: {vin}")
+ 
+def tag_seen_callback2(tags):
+    print(tags)
+    if len(tags) > 0:
+        for tag in tags:
+            # Verificar si 'OpSpecResult' está presente en el tag
+            if 'OpSpecResult' in tag:
+                # Obtener los datos de ReadData desde OpSpecResult
+                user_data = tag['OpSpecResult'].get('ReadData')
+                
+                if user_data:
+                    print(f"Banco de Usuario - ReadData: {user_data.hex()}")
+                    # Procesar ReadData para obtener 'folio' y 'vin' según las posiciones especificadas
+                    if len(user_data) >= 13:
+                        # Los primeros 4 bytes para 'folio' (ajusta según la estructura específica del usuario)
+                        folio = str(int(user_data[:4].hex(), 16))
+                        # Extrae VIN en el formato deseado (ajusta la posición según la estructura de usuario)
+                        vin = ConvertHex(user_data[4:34].hex())  # Suponiendo que vin empieza en el quinto byte
+                        
+                        print(f"Folio: {folio}")
+                        print(f"VIN: {vin}")
+                else:
+                    print("No hay datos en 'ReadData' en este tag.")
+            else:
+                print("No se encontró 'OpSpecResult' en este tag.")
+
+# # async def connect_to_devices():
+#     # Conectar a todos los dispositivos con datos
+#     for device in devices_with_data:
+#         try:
+#             # Limitar el tiempo de conexión a 5 segundos
+#             # await asyncio.wait_for(connect_to_device(device), timeout=2)
+#             await asyncio.wait_for(connect_to_device(device), timeout=)
+#         except asyncio.TimeoutError:
+#             print(f"Tiempo de espera agotado para el dispositivo {device['ip']}, intentando con el siguiente.")
+#         except Exception as e:
+#             print(f"Error inesperado con el dispositivo {device['ip']}: {e}")
+#     # # Conectar a todos los dispositivos con datos
+#     # for device in devices_with_data:
+#     #     await connect_to_device(device)
 
 async def connect_to_devices():
     # Conectar a todos los dispositivos con datos
     for device in devices_with_data:
-        await connect_to_device(device)
+        if device.get('estatus') == '1':  # Verificar si el estatus es '1'
+            try:
+                # Limitar el tiempo de conexión a 0.5 segundos
+                # connect_to_device(device)
+                # Realizar ping antes de intentar la conexión
+                if device['ip'] and await ping_device(device['ip']):  # Solo intentar conectar si el ping tiene éxito
+                    try:
+                        # Limitar el tiempo de conexión a 0.5 segundos
+                        await asyncio.wait_for(connect_to_device(device), timeout=0.5)
+                    except asyncio.TimeoutError:
+                        print(f"Tiempo de espera agotado para el dispositivo {device['ip']}, intentando con el siguiente.")
+                    except Exception as e:
+                        print(f"Error inesperado con el dispositivo {device['ip']}: {e}")
+                else:
+                    print(f"Dispositivo {device['ip']} no está disponible o no respondió al ping.")
+                # await asyncio.wait_for(connect_to_device(device), timeout=0.5)
+            except asyncio.TimeoutError:
+                print(f"Tiempo de espera agotado para el dispositivo {device['ip']}, intentando con el siguiente.")
+            except Exception as e:
+                print(f"Error inesperado con el dispositivo {device['ip']}: {e}")
+        else:
+            print(f"Dispositivo {device['ip']} ignorado, estatus: {device.get('estatus')}")
+
 
 async def update_device_lists():
     global devices_with_data, devices_without_data
@@ -234,7 +521,10 @@ async def update_device_lists():
             new_devices = await fetch_device_data()
 
             # Convertir la lista actual de devices_without_data a un conjunto de ids para fácil comparación
-            existing_ids_without_data = {device['id'] for device in devices_without_data}
+            if(len(devices_without_data)>0):
+                existing_ids_without_data = {device['id'] for device in devices_without_data}
+            else:
+                existing_ids_without_data = []
 
             # Listas temporales para los nuevos datos
             new_devices_with_data = []
@@ -246,12 +536,12 @@ async def update_device_lists():
 
                 # Clasificar dispositivos
                 # if ip is not None and mac_address is not None:
-                if ip is not None:
+                if ip is not None and ip != '0':
                     new_devices_with_data.append(device)
                 else:
                     # Verificar si el dispositivo ya estaba en la lista de dispositivos sin datos completos
                     if device['id'] not in existing_ids_without_data:
-                        print(f"Adding new device without data: {device}")
+                        # print(f"Adding new device without data: {device}")
                         new_devices_without_data.append(device)
 
             # Actualizar las listas globales
@@ -259,18 +549,18 @@ async def update_device_lists():
             devices_without_data.extend(new_devices_without_data)  # Agregar solo los nuevos dispositivos sin datos
 
             # Imprimir las listas actualizadas
-            # print("Updated devices with data:", devices_with_data)
+            print("Updated devices with data:", devices_with_data)
             # print("Updated devices without data:", devices_without_data)
 
             # Conectarse a los nuevos dispositivos en devices_with_data
             await connect_to_devices()
 
             # Esperar un intervalo de tiempo antes de volver a consultar
-            await asyncio.sleep(60)  # Consulta cada 60 segundos (ajusta según tus necesidades)
+            await asyncio.sleep(1)  # Consulta cada 60 segundos (ajusta según tus necesidades)
 
         except Exception as e:
             print("Error updating device lists:", e)
-            await asyncio.sleep(60)  # Esperar antes de intentar de nuevo en caso de error
+            # await asyncio.sleep(1)  # Esperar antes de intentar de nuevo en caso de error
 
 def convertir_EPC_a_texto(diccionario):
     diccionario_copia = diccionario.copy()
@@ -290,7 +580,19 @@ def ConvertHex(hex_string):
         # Si el hex no es un valor ASCII válido, devolvemos una cadena vacía o un valor predeterminado
         text = ""
     return text
-
+async def ping_device(ip):
+    """Realiza un ping a la IP del dispositivo y devuelve True si responde."""
+    try:
+        response_time = ping(ip, timeout=2)  # Timeout de 2 segundos
+        if response_time is None:
+            print(f"Dispositivo en {ip} no responde al ping.")
+            return False
+        else:
+            print(f"Dispositivo en {ip} respondió en {response_time} segundos.")
+            return True
+    except Exception as e:
+        print(f"Error al hacer ping a {ip}: {e}")
+        return False
 # Llamada a la función en un contexto asíncrono
 def handle_tag_read(tag):
     asyncio.create_task(process_inventory_data(tag))
