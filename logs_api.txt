@@ -1,0 +1,2450 @@
+2025-03-12 20:42:46,199 - INFO - 🚀 Tornado server iniciado en el puerto 8888
+2025-03-12 20:42:49,500 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:42:49,563 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:42:49,564 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:42:49,570 - INFO - ✅ Latencia segura (6.10 ms). Conectando...
+2025-03-12 20:42:49,798 - INFO - Using default mode (index 0)
+2025-03-12 20:42:49,798 - INFO - stopping politely
+2025-03-12 20:42:49,830 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:42:49,849 - INFO - starting inventory
+2025-03-12 20:42:50,912 - INFO - stopping politely
+2025-03-12 20:42:50,939 - INFO - stopping politely
+2025-03-12 20:42:50,987 - INFO - ✅ Latencia segura (31.05 ms). Conectando...
+2025-03-12 20:42:53,301 - INFO - Using default mode (index 0)
+2025-03-12 20:42:53,301 - INFO - stopping politely
+2025-03-12 20:42:53,328 - INFO - 🔌 Conectando a 172.17.50.104...
+2025-03-12 20:42:53,347 - INFO - starting inventory
+2025-03-12 20:42:54,426 - INFO - stopping politely
+2025-03-12 20:42:54,460 - INFO - stopping politely
+2025-03-12 20:42:54,478 - INFO - ✅ Latencia segura (2.23 ms). Conectando...
+2025-03-12 20:42:54,680 - INFO - Using default mode (index 0)
+2025-03-12 20:42:54,680 - INFO - stopping politely
+2025-03-12 20:42:54,704 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:42:54,724 - INFO - starting inventory
+2025-03-12 20:42:55,767 - INFO - stopping politely
+2025-03-12 20:42:55,788 - INFO - stopping politely
+2025-03-12 20:43:02,018 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:43:02,023 - INFO - ✅ Latencia segura (5.44 ms). Conectando...
+2025-03-12 20:43:02,260 - INFO - Using default mode (index 0)
+2025-03-12 20:43:02,260 - INFO - stopping politely
+2025-03-12 20:43:02,282 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:43:02,303 - INFO - starting inventory
+2025-03-12 20:43:02,597 - INFO - stopping politely
+2025-03-12 20:43:02,622 - INFO - 🏷️ Tag detectado: {'EPC-96': b'313031313538303620202020', 'AntennaID': 1, 'PeakRSSI': -62, 'ChannelIndex': 11, 'FirstSeenTimestampUTC': 1741833573284731, 'LastSeenTimestampUTC': 1741833573284731, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x00\x9aZ\xde\x00\x00\x00\x003N1AB7AD6HL602749 '}, 'PhaseAngle': 198.6328125, 'RSSI': -62.0}
+2025-03-12 20:43:02,623 - INFO - stopping politely
+2025-03-12 20:43:03,285 - ERROR - 🚨 Latencia alta (639.29 ms). Descartando conexión.
+2025-03-12 20:43:03,362 - INFO - ✅ Latencia segura (76.28 ms). Conectando...
+2025-03-12 20:43:03,810 - INFO - Using default mode (index 0)
+2025-03-12 20:43:03,810 - INFO - stopping politely
+2025-03-12 20:43:04,055 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:43:04,216 - INFO - starting inventory
+2025-03-12 20:43:05,405 - INFO - stopping politely
+2025-03-12 20:43:05,577 - INFO - stopping politely
+2025-03-12 20:43:06,489 - ERROR - 🚨 Latencia alta (755.78 ms). Descartando conexión.
+2025-03-12 20:43:06,506 - INFO - ✅ Latencia segura (17.20 ms). Conectando...
+2025-03-12 20:43:06,754 - INFO - Using default mode (index 0)
+2025-03-12 20:43:06,754 - INFO - stopping politely
+2025-03-12 20:43:06,814 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:43:06,852 - INFO - starting inventory
+2025-03-12 20:43:07,952 - INFO - stopping politely
+2025-03-12 20:43:07,995 - INFO - stopping politely
+2025-03-12 20:43:08,057 - INFO - TID: 333133303331333133353338333033363230323032303230
+2025-03-12 20:43:08,057 - INFO - 🏷️ Banco de Usuario - ReadData: 009a5ade00000000334e31414237414436484c36303237343920
+2025-03-12 20:43:08,057 - INFO - 🏷️ Folio: 10115806
+2025-03-12 20:43:08,057 - INFO - 🏷️ VIN: 3N1AB7AD6HL602749
+2025-03-12 20:43:08,057 - INFO - ⚠️ Device found: {'id': 7, 'nombre': 'CARRILLO PUERTO', 'ip': '172.17.50.107', 'mac_address': '00:16:25:11:E0:A7', 'estatus': '1', 'latitud': 21.495129, 'longitud': -104.906649, 'tiempo_de_espera': 2, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 90, 'nombre': 'SUR A NORTE 1', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}, {'id': 91, 'nombre': 'SUR A NORTE 2', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 20:43:08,057 - INFO - ✅ Antenna found: {'id': 90, 'nombre': 'SUR A NORTE 1', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 20:43:08,057 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': '3N1AB7AD6HL602749', 'folio': '10115806', 'arco': 7, 'antena': 90}
+2025-03-12 20:43:10,959 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 200 OK"
+2025-03-12 20:43:10,959 - INFO - 👓 Respuesta de la API: <Response [200 OK]>
+2025-03-12 20:43:10,960 - INFO - 🖥️ Datos enviados: {'vin': '3N1AB7AD6HL602749', 'folio': '10115806', 'arco': 7, 'antena': 90}
+2025-03-12 20:43:18,266 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:43:18,310 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:43:18,311 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:43:18,317 - INFO - ✅ Latencia segura (6.34 ms). Conectando...
+2025-03-12 20:43:18,536 - INFO - Using default mode (index 0)
+2025-03-12 20:43:18,537 - INFO - stopping politely
+2025-03-12 20:43:18,564 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:43:18,587 - INFO - starting inventory
+2025-03-12 20:43:18,875 - INFO - stopping politely
+2025-03-12 20:43:18,909 - INFO - 🏷️ Tag detectado: {'EPC-96': b'313934323038383020202020', 'AntennaID': 1, 'PeakRSSI': -60, 'ChannelIndex': 47, 'FirstSeenTimestampUTC': 1741813697147332, 'LastSeenTimestampUTC': 1741813697147332, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x01(V\xd0\x00\x00\x00\x00LSJW94U90RN024541 '}, 'PhaseAngle': 349.1015625, 'RSSI': -60.0}
+2025-03-12 20:43:18,909 - INFO - stopping politely
+2025-03-12 20:43:25,148 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:43:25,149 - INFO - ✅ Latencia segura (1.54 ms). Conectando...
+2025-03-12 20:43:25,347 - INFO - Using default mode (index 0)
+2025-03-12 20:43:25,347 - INFO - stopping politely
+2025-03-12 20:43:25,364 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:43:25,376 - INFO - starting inventory
+2025-03-12 20:43:26,415 - INFO - stopping politely
+2025-03-12 20:43:26,437 - INFO - stopping politely
+2025-03-12 20:43:32,658 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:43:32,660 - INFO - ✅ Latencia segura (2.54 ms). Conectando...
+2025-03-12 20:43:32,872 - INFO - Using default mode (index 0)
+2025-03-12 20:43:32,872 - INFO - stopping politely
+2025-03-12 20:43:32,904 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:43:32,929 - INFO - starting inventory
+2025-03-12 20:43:33,221 - INFO - stopping politely
+2025-03-12 20:43:33,249 - INFO - 🏷️ Tag detectado: {'EPC-96': b'323332353532343120202020', 'AntennaID': 1, 'PeakRSSI': -67, 'ChannelIndex': 13, 'FirstSeenTimestampUTC': 1741833603914756, 'LastSeenTimestampUTC': 1741833603914756, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x01b\xd8\xc9\x00\x00\x00\x003N1CN7ADXJK393186 '}, 'PhaseAngle': 101.6015625, 'RSSI': -67.0}
+2025-03-12 20:43:33,249 - INFO - stopping politely
+2025-03-12 20:43:33,889 - ERROR - 🚨 Latencia alta (622.67 ms). Descartando conexión.
+2025-03-12 20:43:33,966 - INFO - ✅ Latencia segura (76.63 ms). Conectando...
+2025-03-12 20:43:34,400 - INFO - Using default mode (index 0)
+2025-03-12 20:43:34,400 - INFO - stopping politely
+2025-03-12 20:43:34,645 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:43:34,813 - INFO - starting inventory
+2025-03-12 20:43:36,013 - INFO - stopping politely
+2025-03-12 20:43:36,183 - INFO - stopping politely
+2025-03-12 20:43:37,005 - ERROR - 🚨 Latencia alta (659.80 ms). Descartando conexión.
+2025-03-12 20:43:37,042 - INFO - ✅ Latencia segura (37.22 ms). Conectando...
+2025-03-12 20:43:37,341 - INFO - Using default mode (index 0)
+2025-03-12 20:43:37,341 - INFO - stopping politely
+2025-03-12 20:43:37,398 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:43:37,444 - INFO - starting inventory
+2025-03-12 20:43:38,520 - INFO - stopping politely
+2025-03-12 20:43:38,593 - INFO - stopping politely
+2025-03-12 20:43:38,653 - INFO - TID: 333133393334333233303338333833303230323032303230
+2025-03-12 20:43:38,653 - INFO - 🏷️ Banco de Usuario - ReadData: 012856d0000000004c534a573934553930524e30323435343120
+2025-03-12 20:43:38,653 - INFO - 🏷️ Folio: 19420880
+2025-03-12 20:43:38,653 - INFO - 🏷️ VIN: LSJW94U90RN024541
+2025-03-12 20:43:38,653 - INFO - ⚠️ Device found: {'id': 2, 'nombre': 'SALIDA A MIRAMAR', 'ip': '172.17.1.102', 'mac_address': '00:16:25:12:5E:9F', 'estatus': '1', 'latitud': 21.517687, 'longitud': -104.940088, 'tiempo_de_espera': None, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 75, 'nombre': 'TEPIC-MIRAMAR', 'estatus': '1', 'sentidos': 1, 'arcos': 2, 'estados_globales': 1, 'entidad': 1}, {'id': 76, 'nombre': 'MIRAMAR - TEPIC', 'estatus': '1', 'sentidos': 2, 'arcos': 2, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 20:43:38,653 - INFO - ✅ Antenna found: {'id': 75, 'nombre': 'TEPIC-MIRAMAR', 'estatus': '1', 'sentidos': 1, 'arcos': 2, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 20:43:38,653 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': 'LSJW94U90RN024541', 'folio': '19420880', 'arco': 2, 'antena': 75}
+2025-03-12 20:43:38,654 - INFO - TID: 333233333332333533353332333433313230323032303230
+2025-03-12 20:43:38,654 - INFO - 🏷️ Banco de Usuario - ReadData: 0162d8c900000000334e31434e374144584a4b33393331383620
+2025-03-12 20:43:38,654 - INFO - 🏷️ Folio: 23255241
+2025-03-12 20:43:38,654 - INFO - 🏷️ VIN: 3N1CN7ADXJK393186
+2025-03-12 20:43:38,654 - INFO - ⚠️ Device found: {'id': 7, 'nombre': 'CARRILLO PUERTO', 'ip': '172.17.50.107', 'mac_address': '00:16:25:11:E0:A7', 'estatus': '1', 'latitud': 21.495129, 'longitud': -104.906649, 'tiempo_de_espera': 2, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 90, 'nombre': 'SUR A NORTE 1', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}, {'id': 91, 'nombre': 'SUR A NORTE 2', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 20:43:38,654 - INFO - ✅ Antenna found: {'id': 90, 'nombre': 'SUR A NORTE 1', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 20:43:38,654 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': '3N1CN7ADXJK393186', 'folio': '23255241', 'arco': 7, 'antena': 90}
+2025-03-12 20:43:41,172 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 200 OK"
+2025-03-12 20:43:41,173 - INFO - 👓 Respuesta de la API: <Response [200 OK]>
+2025-03-12 20:43:41,173 - INFO - 🖥️ Datos enviados: {'vin': 'LSJW94U90RN024541', 'folio': '19420880', 'arco': 2, 'antena': 75}
+2025-03-12 20:43:41,810 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 200 OK"
+2025-03-12 20:43:41,810 - INFO - 👓 Respuesta de la API: <Response [200 OK]>
+2025-03-12 20:43:41,811 - INFO - 🖥️ Datos enviados: {'vin': '3N1CN7ADXJK393186', 'folio': '23255241', 'arco': 7, 'antena': 90}
+2025-03-12 20:43:48,826 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:43:48,871 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:43:48,872 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:43:48,877 - INFO - ✅ Latencia segura (5.68 ms). Conectando...
+2025-03-12 20:43:49,142 - INFO - Using default mode (index 0)
+2025-03-12 20:43:49,142 - INFO - stopping politely
+2025-03-12 20:43:49,173 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:43:49,193 - INFO - starting inventory
+2025-03-12 20:43:50,243 - INFO - stopping politely
+2025-03-12 20:43:50,266 - INFO - stopping politely
+2025-03-12 20:43:56,498 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:43:56,500 - INFO - ✅ Latencia segura (2.22 ms). Conectando...
+2025-03-12 20:43:56,704 - INFO - Using default mode (index 0)
+2025-03-12 20:43:56,704 - INFO - stopping politely
+2025-03-12 20:43:56,721 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:43:56,734 - INFO - starting inventory
+2025-03-12 20:43:57,783 - INFO - stopping politely
+2025-03-12 20:43:57,809 - INFO - stopping politely
+2025-03-12 20:44:04,098 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:44:04,100 - INFO - ✅ Latencia segura (2.42 ms). Conectando...
+2025-03-12 20:44:04,329 - INFO - Using default mode (index 0)
+2025-03-12 20:44:04,329 - INFO - stopping politely
+2025-03-12 20:44:04,355 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:44:04,373 - INFO - starting inventory
+2025-03-12 20:44:05,423 - INFO - stopping politely
+2025-03-12 20:44:05,446 - INFO - stopping politely
+2025-03-12 20:44:06,245 - ERROR - 🚨 Latencia alta (774.89 ms). Descartando conexión.
+2025-03-12 20:44:06,320 - INFO - ✅ Latencia segura (74.54 ms). Conectando...
+2025-03-12 20:44:06,749 - INFO - Using default mode (index 0)
+2025-03-12 20:44:06,749 - INFO - stopping politely
+2025-03-12 20:44:06,995 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:44:07,155 - INFO - starting inventory
+2025-03-12 20:44:08,350 - INFO - stopping politely
+2025-03-12 20:44:08,521 - INFO - stopping politely
+2025-03-12 20:44:09,285 - ERROR - 🚨 Latencia alta (603.71 ms). Descartando conexión.
+2025-03-12 20:44:09,295 - INFO - ✅ Latencia segura (10.19 ms). Conectando...
+2025-03-12 20:44:09,538 - INFO - Using default mode (index 0)
+2025-03-12 20:44:09,538 - INFO - stopping politely
+2025-03-12 20:44:09,588 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:44:09,631 - INFO - starting inventory
+2025-03-12 20:44:10,694 - INFO - stopping politely
+2025-03-12 20:44:10,754 - INFO - stopping politely
+2025-03-12 20:44:20,926 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:44:20,969 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:44:20,969 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:44:20,973 - INFO - ✅ Latencia segura (3.44 ms). Conectando...
+2025-03-12 20:44:21,186 - INFO - Using default mode (index 0)
+2025-03-12 20:44:21,186 - INFO - stopping politely
+2025-03-12 20:44:21,219 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:44:21,237 - INFO - starting inventory
+2025-03-12 20:44:22,283 - INFO - stopping politely
+2025-03-12 20:44:22,310 - INFO - stopping politely
+2025-03-12 20:44:28,578 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:44:28,579 - INFO - ✅ Latencia segura (1.56 ms). Conectando...
+2025-03-12 20:44:28,809 - INFO - Using default mode (index 0)
+2025-03-12 20:44:28,809 - INFO - stopping politely
+2025-03-12 20:44:28,827 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:44:28,840 - INFO - starting inventory
+2025-03-12 20:44:29,888 - INFO - stopping politely
+2025-03-12 20:44:29,908 - INFO - stopping politely
+2025-03-12 20:44:36,188 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:44:36,194 - INFO - ✅ Latencia segura (5.65 ms). Conectando...
+2025-03-12 20:44:36,445 - INFO - Using default mode (index 0)
+2025-03-12 20:44:36,445 - INFO - stopping politely
+2025-03-12 20:44:36,470 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:44:36,486 - INFO - starting inventory
+2025-03-12 20:44:36,783 - INFO - stopping politely
+2025-03-12 20:44:36,812 - INFO - 🏷️ Tag detectado: {'EPC-96': b'313537323335383720202020', 'AntennaID': 2, 'PeakRSSI': -68, 'ChannelIndex': 20, 'FirstSeenTimestampUTC': 1741833667522371, 'LastSeenTimestampUTC': 1741833667522371, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x80\xef\xecC\x00\x00\x00\x009BWAG4121HT502930 '}, 'PhaseAngle': 353.671875, 'RSSI': -68.5}
+2025-03-12 20:44:36,812 - INFO - stopping politely
+2025-03-12 20:44:37,581 - ERROR - 🚨 Latencia alta (753.07 ms). Descartando conexión.
+2025-03-12 20:44:37,655 - INFO - ✅ Latencia segura (74.41 ms). Conectando...
+2025-03-12 20:44:38,082 - INFO - Using default mode (index 0)
+2025-03-12 20:44:38,082 - INFO - stopping politely
+2025-03-12 20:44:38,321 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:44:38,481 - INFO - starting inventory
+2025-03-12 20:44:39,673 - INFO - stopping politely
+2025-03-12 20:44:39,841 - INFO - stopping politely
+2025-03-12 20:44:40,729 - ERROR - 🚨 Latencia alta (729.70 ms). Descartando conexión.
+2025-03-12 20:44:40,740 - INFO - ✅ Latencia segura (11.44 ms). Conectando...
+2025-03-12 20:44:41,008 - INFO - Using default mode (index 0)
+2025-03-12 20:44:41,008 - INFO - stopping politely
+2025-03-12 20:44:41,100 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:44:41,137 - INFO - starting inventory
+2025-03-12 20:44:42,203 - INFO - stopping politely
+2025-03-12 20:44:42,252 - INFO - stopping politely
+2025-03-12 20:44:42,298 - INFO - TID: 333133353337333233333335333833373230323032303230
+2025-03-12 20:44:42,298 - INFO - 🏷️ Banco de Usuario - ReadData: 80efec4300000000394257414734313231485435303239333020
+2025-03-12 20:44:42,298 - INFO - 🏷️ Folio: 2163207235
+2025-03-12 20:44:42,298 - INFO - 🏷️ VIN: 9BWAG4121HT502930
+2025-03-12 20:44:42,298 - INFO - ⚠️ Device found: {'id': 7, 'nombre': 'CARRILLO PUERTO', 'ip': '172.17.50.107', 'mac_address': '00:16:25:11:E0:A7', 'estatus': '1', 'latitud': 21.495129, 'longitud': -104.906649, 'tiempo_de_espera': 2, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 90, 'nombre': 'SUR A NORTE 1', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}, {'id': 91, 'nombre': 'SUR A NORTE 2', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 20:44:42,298 - INFO - ✅ Antenna found: {'id': 91, 'nombre': 'SUR A NORTE 2', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 20:44:42,298 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': '9BWAG4121HT502930', 'folio': '2163207235', 'arco': 7, 'antena': 91}
+2025-03-12 20:44:42,301 - INFO - 200 GET / (127.0.0.1) 0.83ms
+2025-03-12 20:44:45,264 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 200 OK"
+2025-03-12 20:44:45,264 - INFO - 👓 Respuesta de la API: <Response [200 OK]>
+2025-03-12 20:44:45,265 - INFO - 🖥️ Datos enviados: {'vin': '9BWAG4121HT502930', 'folio': '2163207235', 'arco': 7, 'antena': 91}
+2025-03-12 20:44:52,642 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:44:52,675 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:44:52,675 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:44:52,680 - INFO - ✅ Latencia segura (4.27 ms). Conectando...
+2025-03-12 20:44:52,899 - INFO - Using default mode (index 0)
+2025-03-12 20:44:52,899 - INFO - stopping politely
+2025-03-12 20:44:52,930 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:44:52,952 - INFO - starting inventory
+2025-03-12 20:44:54,025 - INFO - stopping politely
+2025-03-12 20:44:54,051 - INFO - stopping politely
+2025-03-12 20:45:00,348 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:45:00,349 - INFO - ✅ Latencia segura (1.48 ms). Conectando...
+2025-03-12 20:45:00,551 - INFO - Using default mode (index 0)
+2025-03-12 20:45:00,551 - INFO - stopping politely
+2025-03-12 20:45:00,568 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:45:00,580 - INFO - starting inventory
+2025-03-12 20:45:01,639 - INFO - stopping politely
+2025-03-12 20:45:01,658 - INFO - stopping politely
+2025-03-12 20:45:07,938 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:45:07,943 - INFO - ✅ Latencia segura (5.50 ms). Conectando...
+2025-03-12 20:45:08,183 - INFO - Using default mode (index 0)
+2025-03-12 20:45:08,183 - INFO - stopping politely
+2025-03-12 20:45:08,210 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:45:08,230 - INFO - starting inventory
+2025-03-12 20:45:09,282 - INFO - stopping politely
+2025-03-12 20:45:09,307 - INFO - stopping politely
+2025-03-12 20:45:09,925 - ERROR - 🚨 Latencia alta (600.74 ms). Descartando conexión.
+2025-03-12 20:45:10,001 - INFO - ✅ Latencia segura (76.62 ms). Conectando...
+2025-03-12 20:45:10,432 - INFO - Using default mode (index 0)
+2025-03-12 20:45:10,432 - INFO - stopping politely
+2025-03-12 20:45:10,671 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:45:10,831 - INFO - starting inventory
+2025-03-12 20:45:12,017 - INFO - stopping politely
+2025-03-12 20:45:12,185 - INFO - stopping politely
+2025-03-12 20:45:13,093 - ERROR - 🚨 Latencia alta (747.38 ms). Descartando conexión.
+2025-03-12 20:45:13,133 - INFO - ✅ Latencia segura (40.49 ms). Conectando...
+2025-03-12 20:45:13,372 - INFO - Using default mode (index 0)
+2025-03-12 20:45:13,372 - INFO - stopping politely
+2025-03-12 20:45:13,456 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:45:13,485 - INFO - starting inventory
+2025-03-12 20:45:14,550 - INFO - stopping politely
+2025-03-12 20:45:14,624 - INFO - stopping politely
+2025-03-12 20:45:24,795 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:45:24,846 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:45:24,846 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:45:24,851 - INFO - ✅ Latencia segura (5.26 ms). Conectando...
+2025-03-12 20:45:25,069 - INFO - Using default mode (index 0)
+2025-03-12 20:45:25,069 - INFO - stopping politely
+2025-03-12 20:45:25,097 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:45:25,125 - INFO - starting inventory
+2025-03-12 20:45:25,431 - INFO - stopping politely
+2025-03-12 20:45:25,468 - INFO - 🏷️ Tag detectado: {'EPC-96': b'313131373037313220202020', 'AntennaID': 1, 'PeakRSSI': -66, 'ChannelIndex': 15, 'FirstSeenTimestampUTC': 1741813823838486, 'LastSeenTimestampUTC': 1741813823838486, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 2, 'OpSpecID': 0, 'ReadDataWordCount': 0, 'ReadData': b''}, 'PhaseAngle': 178.9453125, 'RSSI': -66.5}
+2025-03-12 20:45:25,468 - INFO - stopping politely
+2025-03-12 20:45:31,698 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:45:31,700 - INFO - ✅ Latencia segura (1.80 ms). Conectando...
+2025-03-12 20:45:31,916 - INFO - Using default mode (index 0)
+2025-03-12 20:45:31,916 - INFO - stopping politely
+2025-03-12 20:45:31,933 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:45:31,949 - INFO - starting inventory
+2025-03-12 20:45:32,989 - INFO - stopping politely
+2025-03-12 20:45:33,009 - INFO - stopping politely
+2025-03-12 20:45:39,297 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:45:39,302 - INFO - ✅ Latencia segura (4.75 ms). Conectando...
+2025-03-12 20:45:39,525 - INFO - Using default mode (index 0)
+2025-03-12 20:45:39,525 - INFO - stopping politely
+2025-03-12 20:45:39,548 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:45:39,567 - INFO - starting inventory
+2025-03-12 20:45:40,616 - INFO - stopping politely
+2025-03-12 20:45:40,639 - INFO - stopping politely
+2025-03-12 20:45:41,381 - ERROR - 🚨 Latencia alta (722.99 ms). Descartando conexión.
+2025-03-12 20:45:41,455 - INFO - ✅ Latencia segura (74.64 ms). Conectando...
+2025-03-12 20:45:41,892 - INFO - Using default mode (index 0)
+2025-03-12 20:45:41,892 - INFO - stopping politely
+2025-03-12 20:45:42,140 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:45:42,299 - INFO - starting inventory
+2025-03-12 20:45:43,485 - INFO - stopping politely
+2025-03-12 20:45:43,655 - INFO - stopping politely
+2025-03-12 20:45:44,544 - ERROR - 🚨 Latencia alta (731.35 ms). Descartando conexión.
+2025-03-12 20:45:44,559 - INFO - ✅ Latencia segura (14.39 ms). Conectando...
+2025-03-12 20:45:44,812 - INFO - Using default mode (index 0)
+2025-03-12 20:45:44,812 - INFO - stopping politely
+2025-03-12 20:45:44,904 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:45:44,963 - INFO - starting inventory
+2025-03-12 20:45:46,086 - INFO - stopping politely
+2025-03-12 20:45:46,190 - INFO - stopping politely
+2025-03-12 20:45:46,243 - INFO - TID: 333133313331333733303337333133323230323032303230
+2025-03-12 20:45:46,243 - INFO - 🏷️ Banco de Usuario - ReadData: 
+2025-03-12 20:45:56,481 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:45:56,542 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:45:56,543 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:45:56,551 - INFO - ✅ Latencia segura (8.39 ms). Conectando...
+2025-03-12 20:45:56,814 - INFO - Using default mode (index 0)
+2025-03-12 20:45:56,814 - INFO - stopping politely
+2025-03-12 20:45:56,843 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:45:56,863 - INFO - starting inventory
+2025-03-12 20:45:57,919 - INFO - stopping politely
+2025-03-12 20:45:57,944 - INFO - stopping politely
+2025-03-12 20:46:02,105 - INFO - 🚀 Tornado server iniciado en el puerto 8888
+2025-03-12 20:46:02,340 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:46:02,388 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:46:02,389 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:46:02,397 - INFO - ✅ Latencia segura (7.86 ms). Conectando...
+2025-03-12 20:46:02,647 - INFO - Using default mode (index 0)
+2025-03-12 20:46:02,647 - INFO - stopping politely
+2025-03-12 20:46:02,673 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:46:02,695 - INFO - starting inventory
+2025-03-12 20:46:03,747 - INFO - stopping politely
+2025-03-12 20:46:03,781 - INFO - stopping politely
+2025-03-12 20:46:10,311 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:46:10,313 - INFO - ✅ Latencia segura (1.82 ms). Conectando...
+2025-03-12 20:46:10,527 - INFO - Using default mode (index 0)
+2025-03-12 20:46:10,527 - INFO - stopping politely
+2025-03-12 20:46:10,546 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:46:10,560 - INFO - starting inventory
+2025-03-12 20:46:11,603 - INFO - stopping politely
+2025-03-12 20:46:11,625 - INFO - stopping politely
+2025-03-12 20:46:17,858 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:46:17,866 - INFO - ✅ Latencia segura (8.00 ms). Conectando...
+2025-03-12 20:46:18,120 - INFO - Using default mode (index 0)
+2025-03-12 20:46:18,120 - INFO - stopping politely
+2025-03-12 20:46:18,145 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:46:18,161 - INFO - starting inventory
+2025-03-12 20:46:18,463 - INFO - stopping politely
+2025-03-12 20:46:18,489 - INFO - 🏷️ Tag detectado: {'EPC-96': b'303932393032343420202020', 'AntennaID': 1, 'PeakRSSI': -62, 'ChannelIndex': 32, 'FirstSeenTimestampUTC': 1741833769174635, 'LastSeenTimestampUTC': 1741833769174635, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x00\x8d\xc2\x04\x00\x00\x00\x003KPA34AC9PE569085 '}, 'PhaseAngle': 124.1015625, 'RSSI': -62.0}
+2025-03-12 20:46:18,489 - INFO - stopping politely
+2025-03-12 20:46:19,244 - ERROR - 🚨 Latencia alta (738.95 ms). Descartando conexión.
+2025-03-12 20:46:19,320 - INFO - ✅ Latencia segura (74.95 ms). Conectando...
+2025-03-12 20:46:19,751 - INFO - Using default mode (index 0)
+2025-03-12 20:46:19,751 - INFO - stopping politely
+2025-03-12 20:46:19,993 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:46:20,155 - INFO - starting inventory
+2025-03-12 20:46:21,343 - INFO - stopping politely
+2025-03-12 20:46:21,521 - INFO - stopping politely
+2025-03-12 20:46:22,464 - ERROR - 🚨 Latencia alta (785.38 ms). Descartando conexión.
+2025-03-12 20:46:22,481 - INFO - ✅ Latencia segura (16.68 ms). Conectando...
+2025-03-12 20:46:22,746 - INFO - Using default mode (index 0)
+2025-03-12 20:46:22,746 - INFO - stopping politely
+2025-03-12 20:46:22,833 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:46:22,911 - INFO - starting inventory
+2025-03-12 20:46:24,000 - INFO - stopping politely
+2025-03-12 20:46:24,151 - INFO - stopping politely
+2025-03-12 20:46:24,197 - INFO - TID: 333033393332333933303332333433343230323032303230
+2025-03-12 20:46:24,197 - INFO - 🏷️ Banco de Usuario - ReadData: 008dc20400000000334b50413334414339504535363930383520
+2025-03-12 20:46:24,198 - INFO - 🏷️ Folio: 9290244
+2025-03-12 20:46:24,198 - INFO - 🏷️ VIN: 3KPA34AC9PE569085
+2025-03-12 20:46:24,198 - INFO - ⚠️ Device found: {'id': 7, 'nombre': 'CARRILLO PUERTO', 'ip': '172.17.50.107', 'mac_address': '00:16:25:11:E0:A7', 'estatus': '1', 'latitud': 21.495129, 'longitud': -104.906649, 'tiempo_de_espera': 2, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 90, 'nombre': 'SUR A NORTE 1', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}, {'id': 91, 'nombre': 'SUR A NORTE 2', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 20:46:24,198 - INFO - ✅ Antenna found: {'id': 90, 'nombre': 'SUR A NORTE 1', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 20:46:24,198 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': '3KPA34AC9PE569085', 'folio': '9290244', 'arco': 7, 'antena': 90}
+2025-03-12 20:46:26,629 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 200 OK"
+2025-03-12 20:46:26,629 - INFO - 👓 Respuesta de la API: <Response [200 OK]>
+2025-03-12 20:46:26,629 - INFO - 🖥️ Datos enviados: {'vin': '3KPA34AC9PE569085', 'folio': '9290244', 'arco': 7, 'antena': 90}
+2025-03-12 20:46:30,518 - INFO - 200 GET / (127.0.0.1) 0.74ms
+2025-03-12 20:46:34,397 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:46:34,445 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:46:34,446 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:46:34,452 - INFO - ✅ Latencia segura (6.51 ms). Conectando...
+2025-03-12 20:46:34,663 - INFO - Using default mode (index 0)
+2025-03-12 20:46:34,663 - INFO - stopping politely
+2025-03-12 20:46:34,694 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:46:34,712 - INFO - starting inventory
+2025-03-12 20:46:35,778 - INFO - stopping politely
+2025-03-12 20:46:35,815 - INFO - stopping politely
+2025-03-12 20:46:42,098 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:46:42,099 - INFO - ✅ Latencia segura (1.45 ms). Conectando...
+2025-03-12 20:46:42,306 - INFO - Using default mode (index 0)
+2025-03-12 20:46:42,306 - INFO - stopping politely
+2025-03-12 20:46:42,324 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:46:42,337 - INFO - starting inventory
+2025-03-12 20:46:43,385 - INFO - stopping politely
+2025-03-12 20:46:43,405 - INFO - stopping politely
+2025-03-12 20:46:49,698 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:46:49,702 - INFO - ✅ Latencia segura (4.02 ms). Conectando...
+2025-03-12 20:46:49,912 - INFO - Using default mode (index 0)
+2025-03-12 20:46:49,912 - INFO - stopping politely
+2025-03-12 20:46:49,939 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:46:49,956 - INFO - starting inventory
+2025-03-12 20:46:51,011 - INFO - stopping politely
+2025-03-12 20:46:51,031 - INFO - stopping politely
+2025-03-12 20:46:51,852 - ERROR - 🚨 Latencia alta (806.63 ms). Descartando conexión.
+2025-03-12 20:46:51,929 - INFO - ✅ Latencia segura (77.18 ms). Conectando...
+2025-03-12 20:46:52,360 - INFO - Using default mode (index 0)
+2025-03-12 20:46:52,360 - INFO - stopping politely
+2025-03-12 20:46:52,599 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:46:52,757 - INFO - starting inventory
+2025-03-12 20:46:53,945 - INFO - stopping politely
+2025-03-12 20:46:54,107 - INFO - stopping politely
+2025-03-12 20:46:55,024 - ERROR - 🚨 Latencia alta (759.26 ms). Descartando conexión.
+2025-03-12 20:46:55,099 - INFO - ✅ Latencia segura (74.97 ms). Conectando...
+2025-03-12 20:46:55,434 - INFO - Using default mode (index 0)
+2025-03-12 20:46:55,434 - INFO - stopping politely
+2025-03-12 20:46:55,525 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:46:55,602 - INFO - starting inventory
+2025-03-12 20:46:56,713 - INFO - stopping politely
+2025-03-12 20:46:56,797 - INFO - stopping politely
+2025-03-12 20:47:07,028 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:47:07,090 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:47:07,090 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:47:07,095 - INFO - ✅ Latencia segura (4.66 ms). Conectando...
+2025-03-12 20:47:07,312 - INFO - Using default mode (index 0)
+2025-03-12 20:47:07,313 - INFO - stopping politely
+2025-03-12 20:47:07,339 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:47:07,357 - INFO - starting inventory
+2025-03-12 20:47:08,408 - INFO - stopping politely
+2025-03-12 20:47:08,443 - INFO - stopping politely
+2025-03-12 20:47:14,738 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:47:14,739 - INFO - ✅ Latencia segura (1.53 ms). Conectando...
+2025-03-12 20:47:14,967 - INFO - Using default mode (index 0)
+2025-03-12 20:47:14,968 - INFO - stopping politely
+2025-03-12 20:47:14,985 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:47:14,997 - INFO - starting inventory
+2025-03-12 20:47:16,045 - INFO - stopping politely
+2025-03-12 20:47:16,067 - INFO - stopping politely
+2025-03-12 20:47:22,348 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:47:22,351 - INFO - ✅ Latencia segura (3.60 ms). Conectando...
+2025-03-12 20:47:22,579 - INFO - Using default mode (index 0)
+2025-03-12 20:47:22,579 - INFO - stopping politely
+2025-03-12 20:47:22,604 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:47:22,622 - INFO - starting inventory
+2025-03-12 20:47:23,678 - INFO - stopping politely
+2025-03-12 20:47:23,706 - INFO - stopping politely
+2025-03-12 20:47:24,452 - ERROR - 🚨 Latencia alta (727.21 ms). Descartando conexión.
+2025-03-12 20:47:24,527 - INFO - ✅ Latencia segura (75.17 ms). Conectando...
+2025-03-12 20:47:24,951 - INFO - Using default mode (index 0)
+2025-03-12 20:47:24,951 - INFO - stopping politely
+2025-03-12 20:47:25,189 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:47:25,349 - INFO - starting inventory
+2025-03-12 20:47:26,543 - INFO - stopping politely
+2025-03-12 20:47:26,711 - INFO - stopping politely
+2025-03-12 20:47:27,580 - ERROR - 🚨 Latencia alta (711.24 ms). Descartando conexión.
+2025-03-12 20:47:27,617 - INFO - ✅ Latencia segura (36.41 ms). Conectando...
+2025-03-12 20:47:27,893 - INFO - Using default mode (index 0)
+2025-03-12 20:47:27,893 - INFO - stopping politely
+2025-03-12 20:47:27,963 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:47:28,015 - INFO - starting inventory
+2025-03-12 20:47:29,155 - INFO - stopping politely
+2025-03-12 20:47:29,209 - INFO - stopping politely
+2025-03-12 20:47:39,474 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:47:39,522 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:47:39,523 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:47:39,527 - INFO - ✅ Latencia segura (4.28 ms). Conectando...
+2025-03-12 20:47:39,779 - INFO - Using default mode (index 0)
+2025-03-12 20:47:39,779 - INFO - stopping politely
+2025-03-12 20:47:39,807 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:47:39,826 - INFO - starting inventory
+2025-03-12 20:47:40,877 - INFO - stopping politely
+2025-03-12 20:47:40,905 - INFO - stopping politely
+2025-03-12 20:47:42,424 - INFO - ✅ Latencia segura (4.36 ms). Conectando...
+2025-03-12 20:47:42,666 - INFO - Using default mode (index 0)
+2025-03-12 20:47:42,666 - INFO - stopping politely
+2025-03-12 20:47:42,692 - INFO - 🔌 Conectando a 172.17.50.104...
+2025-03-12 20:47:42,710 - INFO - starting inventory
+2025-03-12 20:47:43,775 - INFO - stopping politely
+2025-03-12 20:47:43,812 - INFO - stopping politely
+2025-03-12 20:47:43,848 - INFO - ✅ Latencia segura (1.67 ms). Conectando...
+2025-03-12 20:47:44,053 - INFO - Using default mode (index 0)
+2025-03-12 20:47:44,053 - INFO - stopping politely
+2025-03-12 20:47:44,078 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:47:44,093 - INFO - starting inventory
+2025-03-12 20:47:45,138 - INFO - stopping politely
+2025-03-12 20:47:45,158 - INFO - stopping politely
+2025-03-12 20:47:51,388 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:47:51,393 - INFO - ✅ Latencia segura (4.78 ms). Conectando...
+2025-03-12 20:47:51,613 - INFO - Using default mode (index 0)
+2025-03-12 20:47:51,613 - INFO - stopping politely
+2025-03-12 20:47:51,639 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:47:51,655 - INFO - starting inventory
+2025-03-12 20:47:52,716 - INFO - stopping politely
+2025-03-12 20:47:52,736 - INFO - stopping politely
+2025-03-12 20:47:53,360 - ERROR - 🚨 Latencia alta (605.92 ms). Descartando conexión.
+2025-03-12 20:47:53,435 - INFO - ✅ Latencia segura (75.36 ms). Conectando...
+2025-03-12 20:47:53,860 - INFO - Using default mode (index 0)
+2025-03-12 20:47:53,860 - INFO - stopping politely
+2025-03-12 20:47:54,107 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:47:54,270 - INFO - starting inventory
+2025-03-12 20:47:55,461 - INFO - stopping politely
+2025-03-12 20:47:55,631 - INFO - stopping politely
+2025-03-12 20:47:57,516 - ERROR - 🚨 Latencia alta (711.07 ms). Descartando conexión.
+2025-03-12 20:47:57,589 - INFO - ✅ Latencia segura (72.80 ms). Conectando...
+2025-03-12 20:47:57,874 - INFO - Using default mode (index 0)
+2025-03-12 20:47:57,875 - INFO - stopping politely
+2025-03-12 20:47:57,946 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:47:58,183 - INFO - starting inventory
+2025-03-12 20:47:59,361 - INFO - stopping politely
+2025-03-12 20:47:59,446 - INFO - stopping politely
+2025-03-12 20:48:09,913 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:48:09,961 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:48:09,962 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:48:09,971 - INFO - ✅ Latencia segura (9.66 ms). Conectando...
+2025-03-12 20:48:10,180 - INFO - Using default mode (index 0)
+2025-03-12 20:48:10,180 - INFO - stopping politely
+2025-03-12 20:48:10,210 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:48:10,231 - INFO - starting inventory
+2025-03-12 20:48:11,279 - INFO - stopping politely
+2025-03-12 20:48:11,306 - INFO - stopping politely
+2025-03-12 20:48:11,334 - INFO - ✅ Latencia segura (8.11 ms). Conectando...
+2025-03-12 20:48:11,548 - INFO - Using default mode (index 0)
+2025-03-12 20:48:11,548 - INFO - stopping politely
+2025-03-12 20:48:11,578 - INFO - 🔌 Conectando a 172.17.50.104...
+2025-03-12 20:48:11,600 - INFO - starting inventory
+2025-03-12 20:48:12,666 - INFO - stopping politely
+2025-03-12 20:48:12,690 - INFO - stopping politely
+2025-03-12 20:48:12,710 - INFO - ✅ Latencia segura (3.51 ms). Conectando...
+2025-03-12 20:48:12,913 - INFO - Using default mode (index 0)
+2025-03-12 20:48:12,913 - INFO - stopping politely
+2025-03-12 20:48:12,929 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:48:12,943 - INFO - starting inventory
+2025-03-12 20:48:13,991 - INFO - stopping politely
+2025-03-12 20:48:14,011 - INFO - stopping politely
+2025-03-12 20:48:20,268 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:48:20,270 - INFO - ✅ Latencia segura (2.68 ms). Conectando...
+2025-03-12 20:48:20,504 - INFO - Using default mode (index 0)
+2025-03-12 20:48:20,504 - INFO - stopping politely
+2025-03-12 20:48:20,539 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:48:20,559 - INFO - starting inventory
+2025-03-12 20:48:20,858 - INFO - stopping politely
+2025-03-12 20:48:20,889 - INFO - 🏷️ Tag detectado: {'EPC-96': b'313232303435333520001417', 'AntennaID': 2, 'PeakRSSI': -59, 'ChannelIndex': 49, 'FirstSeenTimestampUTC': 1741833891592292, 'LastSeenTimestampUTC': 1741833891592292, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x00\xba9\xf7\x00\x00\x00\x00LZWLLNGL4NB0045291'}, 'PhaseAngle': 320.625, 'RSSI': -59.5}
+2025-03-12 20:48:20,890 - INFO - stopping politely
+2025-03-12 20:48:21,625 - ERROR - 🚨 Latencia alta (721.64 ms). Descartando conexión.
+2025-03-12 20:48:21,703 - INFO - ✅ Latencia segura (78.44 ms). Conectando...
+2025-03-12 20:48:22,138 - INFO - Using default mode (index 0)
+2025-03-12 20:48:22,138 - INFO - stopping politely
+2025-03-12 20:48:22,379 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:48:22,547 - INFO - starting inventory
+2025-03-12 20:48:23,739 - INFO - stopping politely
+2025-03-12 20:48:23,925 - INFO - stopping politely
+2025-03-12 20:48:24,748 - ERROR - 🚨 Latencia alta (664.95 ms). Descartando conexión.
+2025-03-12 20:48:24,783 - INFO - ✅ Latencia segura (35.32 ms). Conectando...
+2025-03-12 20:48:25,068 - INFO - Using default mode (index 0)
+2025-03-12 20:48:25,068 - INFO - stopping politely
+2025-03-12 20:48:25,237 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:48:25,320 - INFO - starting inventory
+2025-03-12 20:48:26,418 - INFO - stopping politely
+2025-03-12 20:48:26,463 - INFO - stopping politely
+2025-03-12 20:48:26,499 - INFO - TID: 333133323332333033343335333333353230303031343137
+2025-03-12 20:48:26,499 - INFO - 🏷️ Banco de Usuario - ReadData: 00ba39f7000000004c5a574c4c4e474c344e4230303435323931
+2025-03-12 20:48:26,499 - INFO - 🏷️ Folio: 12204535
+2025-03-12 20:48:26,499 - INFO - 🏷️ VIN: LZWLLNGL4NB0045291
+2025-03-12 20:48:26,499 - INFO - ⚠️ Device found: {'id': 7, 'nombre': 'CARRILLO PUERTO', 'ip': '172.17.50.107', 'mac_address': '00:16:25:11:E0:A7', 'estatus': '1', 'latitud': 21.495129, 'longitud': -104.906649, 'tiempo_de_espera': 2, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 90, 'nombre': 'SUR A NORTE 1', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}, {'id': 91, 'nombre': 'SUR A NORTE 2', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 20:48:26,499 - INFO - ✅ Antenna found: {'id': 91, 'nombre': 'SUR A NORTE 2', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 20:48:26,499 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': 'LZWLLNGL4NB0045291', 'folio': '12204535', 'arco': 7, 'antena': 91}
+2025-03-12 20:48:31,944 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 500 Internal Server Error"
+2025-03-12 20:48:31,944 - ERROR - ❌ Error enviando datos: Server error '500 Internal Server Error' for url 'https://192.168.0.200/tramites/lecturas-arcos/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-03-12 20:48:36,645 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:48:36,681 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:48:36,681 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:48:36,692 - INFO - ✅ Latencia segura (10.75 ms). Conectando...
+2025-03-12 20:48:36,905 - INFO - Using default mode (index 0)
+2025-03-12 20:48:36,905 - INFO - stopping politely
+2025-03-12 20:48:36,936 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:48:36,954 - INFO - starting inventory
+2025-03-12 20:48:38,007 - INFO - stopping politely
+2025-03-12 20:48:38,035 - INFO - stopping politely
+2025-03-12 20:48:38,060 - INFO - ✅ Latencia segura (6.29 ms). Conectando...
+2025-03-12 20:48:38,282 - INFO - Using default mode (index 0)
+2025-03-12 20:48:38,283 - INFO - stopping politely
+2025-03-12 20:48:38,309 - INFO - 🔌 Conectando a 172.17.50.104...
+2025-03-12 20:48:38,327 - INFO - starting inventory
+2025-03-12 20:48:39,394 - INFO - stopping politely
+2025-03-12 20:48:39,426 - INFO - stopping politely
+2025-03-12 20:48:39,446 - INFO - ✅ Latencia segura (1.60 ms). Conectando...
+2025-03-12 20:48:39,647 - INFO - Using default mode (index 0)
+2025-03-12 20:48:39,647 - INFO - stopping politely
+2025-03-12 20:48:39,665 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:48:39,681 - INFO - starting inventory
+2025-03-12 20:48:40,728 - INFO - stopping politely
+2025-03-12 20:48:40,758 - INFO - stopping politely
+2025-03-12 20:48:46,978 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:48:46,981 - INFO - ✅ Latencia segura (3.30 ms). Conectando...
+2025-03-12 20:48:47,195 - INFO - Using default mode (index 0)
+2025-03-12 20:48:47,195 - INFO - stopping politely
+2025-03-12 20:48:47,219 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:48:47,241 - INFO - starting inventory
+2025-03-12 20:48:48,290 - INFO - stopping politely
+2025-03-12 20:48:48,319 - INFO - stopping politely
+2025-03-12 20:48:49,040 - ERROR - 🚨 Latencia alta (703.40 ms). Descartando conexión.
+2025-03-12 20:48:49,115 - INFO - ✅ Latencia segura (75.40 ms). Conectando...
+2025-03-12 20:48:49,564 - INFO - Using default mode (index 0)
+2025-03-12 20:48:49,564 - INFO - stopping politely
+2025-03-12 20:48:49,806 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:48:49,969 - INFO - starting inventory
+2025-03-12 20:48:51,165 - INFO - stopping politely
+2025-03-12 20:48:51,337 - INFO - stopping politely
+2025-03-12 20:48:52,160 - ERROR - 🚨 Latencia alta (659.07 ms). Descartando conexión.
+2025-03-12 20:48:52,234 - INFO - ✅ Latencia segura (73.98 ms). Conectando...
+2025-03-12 20:48:52,494 - INFO - Using default mode (index 0)
+2025-03-12 20:48:52,495 - INFO - stopping politely
+2025-03-12 20:48:52,589 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:48:52,640 - INFO - starting inventory
+2025-03-12 20:48:53,722 - INFO - stopping politely
+2025-03-12 20:48:53,809 - INFO - stopping politely
+2025-03-12 20:49:04,069 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:49:04,121 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:49:04,122 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:49:04,127 - INFO - ✅ Latencia segura (5.60 ms). Conectando...
+2025-03-12 20:49:04,345 - INFO - Using default mode (index 0)
+2025-03-12 20:49:04,345 - INFO - stopping politely
+2025-03-12 20:49:04,375 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:49:04,393 - INFO - starting inventory
+2025-03-12 20:49:04,692 - INFO - stopping politely
+2025-03-12 20:49:04,725 - INFO - 🏷️ Tag detectado: {'EPC-96': b'313030353130323420202020', 'AntennaID': 1, 'PeakRSSI': -65, 'ChannelIndex': 4, 'FirstSeenTimestampUTC': 1741814042947526, 'LastSeenTimestampUTC': 1741814042947526, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x00\x99]\xd0\x00\x00\x00\x001G1AK52F757543348 '}, 'PhaseAngle': 180.703125, 'RSSI': -65.5}
+2025-03-12 20:49:04,725 - INFO - stopping politely
+2025-03-12 20:49:12,751 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:49:12,753 - INFO - ✅ Latencia segura (1.92 ms). Conectando...
+2025-03-12 20:49:12,979 - INFO - Using default mode (index 0)
+2025-03-12 20:49:12,979 - INFO - stopping politely
+2025-03-12 20:49:12,999 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:49:13,014 - INFO - starting inventory
+2025-03-12 20:49:14,059 - INFO - stopping politely
+2025-03-12 20:49:14,080 - INFO - stopping politely
+2025-03-12 20:49:20,338 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:49:20,342 - INFO - ✅ Latencia segura (4.50 ms). Conectando...
+2025-03-12 20:49:20,597 - INFO - Using default mode (index 0)
+2025-03-12 20:49:20,597 - INFO - stopping politely
+2025-03-12 20:49:20,625 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:49:20,645 - INFO - starting inventory
+2025-03-12 20:49:21,708 - INFO - stopping politely
+2025-03-12 20:49:21,729 - INFO - stopping politely
+2025-03-12 20:49:22,348 - ERROR - 🚨 Latencia alta (604.90 ms). Descartando conexión.
+2025-03-12 20:49:22,425 - INFO - ✅ Latencia segura (77.63 ms). Conectando...
+2025-03-12 20:49:22,875 - INFO - Using default mode (index 0)
+2025-03-12 20:49:22,875 - INFO - stopping politely
+2025-03-12 20:49:23,119 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:49:23,281 - INFO - starting inventory
+2025-03-12 20:49:24,477 - INFO - stopping politely
+2025-03-12 20:49:24,649 - INFO - stopping politely
+2025-03-12 20:49:25,476 - ERROR - 🚨 Latencia alta (666.79 ms). Descartando conexión.
+2025-03-12 20:49:25,491 - INFO - ✅ Latencia segura (14.75 ms). Conectando...
+2025-03-12 20:49:25,785 - INFO - Using default mode (index 0)
+2025-03-12 20:49:25,785 - INFO - stopping politely
+2025-03-12 20:49:25,863 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:49:25,894 - INFO - starting inventory
+2025-03-12 20:49:26,989 - INFO - stopping politely
+2025-03-12 20:49:27,052 - INFO - stopping politely
+2025-03-12 20:49:27,115 - INFO - TID: 333133303330333533313330333233343230323032303230
+2025-03-12 20:49:27,115 - INFO - 🏷️ Banco de Usuario - ReadData: 00995dd000000000314731414b35324637353735343333343820
+2025-03-12 20:49:27,115 - INFO - 🏷️ Folio: 10051024
+2025-03-12 20:49:27,115 - INFO - 🏷️ VIN: 1G1AK52F757543348
+2025-03-12 20:49:27,115 - INFO - ⚠️ Device found: {'id': 2, 'nombre': 'SALIDA A MIRAMAR', 'ip': '172.17.1.102', 'mac_address': '00:16:25:12:5E:9F', 'estatus': '1', 'latitud': 21.517687, 'longitud': -104.940088, 'tiempo_de_espera': None, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 75, 'nombre': 'TEPIC-MIRAMAR', 'estatus': '1', 'sentidos': 1, 'arcos': 2, 'estados_globales': 1, 'entidad': 1}, {'id': 76, 'nombre': 'MIRAMAR - TEPIC', 'estatus': '1', 'sentidos': 2, 'arcos': 2, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 20:49:27,115 - INFO - ✅ Antenna found: {'id': 75, 'nombre': 'TEPIC-MIRAMAR', 'estatus': '1', 'sentidos': 1, 'arcos': 2, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 20:49:27,115 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': '1G1AK52F757543348', 'folio': '10051024', 'arco': 2, 'antena': 75}
+2025-03-12 20:49:27,291 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 502 Bad Gateway"
+2025-03-12 20:49:27,291 - ERROR - ❌ Error enviando datos: Server error '502 Bad Gateway' for url 'https://192.168.0.200/tramites/lecturas-arcos/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2025-03-12 20:49:37,243 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:49:37,274 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:49:37,274 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:49:37,392 - WARNING - ⚠️ Latencia moderada (117.31 ms). Intentando conexión...
+2025-03-12 20:49:37,644 - INFO - Using default mode (index 0)
+2025-03-12 20:49:37,644 - INFO - stopping politely
+2025-03-12 20:49:37,672 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:49:37,692 - INFO - starting inventory
+2025-03-12 20:49:38,748 - INFO - stopping politely
+2025-03-12 20:49:38,775 - INFO - stopping politely
+2025-03-12 20:49:45,067 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:49:45,070 - INFO - ✅ Latencia segura (1.95 ms). Conectando...
+2025-03-12 20:49:45,285 - INFO - Using default mode (index 0)
+2025-03-12 20:49:45,285 - INFO - stopping politely
+2025-03-12 20:49:45,303 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:49:45,318 - INFO - starting inventory
+2025-03-12 20:49:46,370 - INFO - stopping politely
+2025-03-12 20:49:46,399 - INFO - stopping politely
+2025-03-12 20:49:52,668 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:49:52,671 - INFO - ✅ Latencia segura (3.55 ms). Conectando...
+2025-03-12 20:49:52,884 - INFO - Using default mode (index 0)
+2025-03-12 20:49:52,884 - INFO - stopping politely
+2025-03-12 20:49:52,909 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:49:52,930 - INFO - starting inventory
+2025-03-12 20:49:53,972 - INFO - stopping politely
+2025-03-12 20:49:53,994 - INFO - stopping politely
+2025-03-12 20:49:54,528 - ERROR - 🚨 Latencia alta (515.41 ms). Descartando conexión.
+2025-03-12 20:49:54,603 - INFO - ✅ Latencia segura (75.66 ms). Conectando...
+2025-03-12 20:49:55,060 - INFO - Using default mode (index 0)
+2025-03-12 20:49:55,060 - INFO - stopping politely
+2025-03-12 20:49:55,307 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:49:55,469 - INFO - starting inventory
+2025-03-12 20:49:56,667 - INFO - stopping politely
+2025-03-12 20:49:56,835 - INFO - stopping politely
+2025-03-12 20:49:57,643 - ERROR - 🚨 Latencia alta (646.55 ms). Descartando conexión.
+2025-03-12 20:49:57,682 - INFO - ✅ Latencia segura (38.82 ms). Conectando...
+2025-03-12 20:49:57,971 - INFO - Using default mode (index 0)
+2025-03-12 20:49:57,971 - INFO - stopping politely
+2025-03-12 20:49:58,127 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:49:58,159 - INFO - starting inventory
+2025-03-12 20:49:59,225 - INFO - stopping politely
+2025-03-12 20:49:59,273 - INFO - stopping politely
+2025-03-12 20:50:09,488 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:50:09,539 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:50:09,539 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:50:09,546 - INFO - ✅ Latencia segura (6.32 ms). Conectando...
+2025-03-12 20:50:09,782 - INFO - Using default mode (index 0)
+2025-03-12 20:50:09,782 - INFO - stopping politely
+2025-03-12 20:50:09,810 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:50:09,830 - INFO - starting inventory
+2025-03-12 20:50:10,878 - INFO - stopping politely
+2025-03-12 20:50:10,905 - INFO - stopping politely
+2025-03-12 20:50:17,138 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:50:17,139 - INFO - ✅ Latencia segura (1.40 ms). Conectando...
+2025-03-12 20:50:17,374 - INFO - Using default mode (index 0)
+2025-03-12 20:50:17,374 - INFO - stopping politely
+2025-03-12 20:50:17,393 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:50:17,409 - INFO - starting inventory
+2025-03-12 20:50:18,454 - INFO - stopping politely
+2025-03-12 20:50:18,480 - INFO - stopping politely
+2025-03-12 20:50:24,738 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:50:24,742 - INFO - ✅ Latencia segura (3.99 ms). Conectando...
+2025-03-12 20:50:24,963 - INFO - Using default mode (index 0)
+2025-03-12 20:50:24,963 - INFO - stopping politely
+2025-03-12 20:50:24,987 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:50:25,008 - INFO - starting inventory
+2025-03-12 20:50:26,066 - INFO - stopping politely
+2025-03-12 20:50:26,085 - INFO - stopping politely
+2025-03-12 20:50:26,759 - ERROR - 🚨 Latencia alta (657.39 ms). Descartando conexión.
+2025-03-12 20:50:26,835 - INFO - ✅ Latencia segura (75.79 ms). Conectando...
+2025-03-12 20:50:27,266 - INFO - Using default mode (index 0)
+2025-03-12 20:50:27,266 - INFO - stopping politely
+2025-03-12 20:50:27,507 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:50:27,665 - INFO - starting inventory
+2025-03-12 20:50:28,859 - INFO - stopping politely
+2025-03-12 20:50:29,029 - INFO - stopping politely
+2025-03-12 20:50:29,831 - ERROR - 🚨 Latencia alta (642.66 ms). Descartando conexión.
+2025-03-12 20:50:29,884 - INFO - ✅ Latencia segura (51.98 ms). Conectando...
+2025-03-12 20:50:30,123 - INFO - Using default mode (index 0)
+2025-03-12 20:50:30,124 - INFO - stopping politely
+2025-03-12 20:50:30,238 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:50:30,272 - INFO - starting inventory
+2025-03-12 20:50:31,330 - INFO - stopping politely
+2025-03-12 20:50:31,381 - INFO - stopping politely
+2025-03-12 20:50:41,576 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:50:41,623 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:50:41,623 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:50:41,627 - INFO - ✅ Latencia segura (4.25 ms). Conectando...
+2025-03-12 20:50:41,869 - INFO - Using default mode (index 0)
+2025-03-12 20:50:41,869 - INFO - stopping politely
+2025-03-12 20:50:41,899 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:50:41,917 - INFO - starting inventory
+2025-03-12 20:50:42,971 - INFO - stopping politely
+2025-03-12 20:50:42,996 - INFO - stopping politely
+2025-03-12 20:50:51,023 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:50:51,027 - INFO - ✅ Latencia segura (3.06 ms). Conectando...
+2025-03-12 20:50:51,238 - INFO - Using default mode (index 0)
+2025-03-12 20:50:51,238 - INFO - stopping politely
+2025-03-12 20:50:51,255 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:50:51,269 - INFO - starting inventory
+2025-03-12 20:50:52,315 - INFO - stopping politely
+2025-03-12 20:50:52,341 - INFO - stopping politely
+2025-03-12 20:50:58,587 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:50:58,592 - INFO - ✅ Latencia segura (4.39 ms). Conectando...
+2025-03-12 20:50:58,816 - INFO - Using default mode (index 0)
+2025-03-12 20:50:58,816 - INFO - stopping politely
+2025-03-12 20:50:58,835 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:50:58,855 - INFO - starting inventory
+2025-03-12 20:50:59,908 - INFO - stopping politely
+2025-03-12 20:50:59,936 - INFO - stopping politely
+2025-03-12 20:51:00,707 - ERROR - 🚨 Latencia alta (751.63 ms). Descartando conexión.
+2025-03-12 20:51:00,783 - INFO - ✅ Latencia segura (75.72 ms). Conectando...
+2025-03-12 20:51:01,221 - INFO - Using default mode (index 0)
+2025-03-12 20:51:01,221 - INFO - stopping politely
+2025-03-12 20:51:01,459 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:51:01,621 - INFO - starting inventory
+2025-03-12 20:51:02,813 - INFO - stopping politely
+2025-03-12 20:51:02,989 - INFO - stopping politely
+2025-03-12 20:51:03,899 - ERROR - 🚨 Latencia alta (752.63 ms). Descartando conexión.
+2025-03-12 20:51:03,916 - INFO - ✅ Latencia segura (16.06 ms). Conectando...
+2025-03-12 20:51:04,171 - INFO - Using default mode (index 0)
+2025-03-12 20:51:04,171 - INFO - stopping politely
+2025-03-12 20:51:04,272 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:51:04,330 - INFO - starting inventory
+2025-03-12 20:51:05,391 - INFO - stopping politely
+2025-03-12 20:51:05,439 - INFO - stopping politely
+2025-03-12 20:51:15,693 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:51:15,739 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:51:15,739 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:51:15,745 - INFO - ✅ Latencia segura (5.18 ms). Conectando...
+2025-03-12 20:51:15,977 - INFO - Using default mode (index 0)
+2025-03-12 20:51:15,977 - INFO - stopping politely
+2025-03-12 20:51:16,010 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:51:16,031 - INFO - starting inventory
+2025-03-12 20:51:17,103 - INFO - stopping politely
+2025-03-12 20:51:17,129 - INFO - stopping politely
+2025-03-12 20:51:23,377 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:51:23,379 - INFO - ✅ Latencia segura (1.54 ms). Conectando...
+2025-03-12 20:51:23,575 - INFO - Using default mode (index 0)
+2025-03-12 20:51:23,575 - INFO - stopping politely
+2025-03-12 20:51:23,592 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:51:23,606 - INFO - starting inventory
+2025-03-12 20:51:24,649 - INFO - stopping politely
+2025-03-12 20:51:24,678 - INFO - stopping politely
+2025-03-12 20:51:30,898 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:51:30,904 - INFO - ✅ Latencia segura (6.42 ms). Conectando...
+2025-03-12 20:51:31,141 - INFO - Using default mode (index 0)
+2025-03-12 20:51:31,142 - INFO - stopping politely
+2025-03-12 20:51:31,170 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:51:31,188 - INFO - starting inventory
+2025-03-12 20:51:32,236 - INFO - stopping politely
+2025-03-12 20:51:32,265 - INFO - stopping politely
+2025-03-12 20:51:32,923 - ERROR - 🚨 Latencia alta (642.73 ms). Descartando conexión.
+2025-03-12 20:51:33,001 - INFO - ✅ Latencia segura (77.67 ms). Conectando...
+2025-03-12 20:51:33,442 - INFO - Using default mode (index 0)
+2025-03-12 20:51:33,443 - INFO - stopping politely
+2025-03-12 20:51:33,687 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:51:33,851 - INFO - starting inventory
+2025-03-12 20:51:35,047 - INFO - stopping politely
+2025-03-12 20:51:35,217 - INFO - stopping politely
+2025-03-12 20:51:36,067 - ERROR - 🚨 Latencia alta (686.61 ms). Descartando conexión.
+2025-03-12 20:51:36,120 - INFO - ✅ Latencia segura (53.05 ms). Conectando...
+2025-03-12 20:51:36,356 - INFO - Using default mode (index 0)
+2025-03-12 20:51:36,356 - INFO - stopping politely
+2025-03-12 20:51:36,431 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:51:36,472 - INFO - starting inventory
+2025-03-12 20:51:37,648 - INFO - stopping politely
+2025-03-12 20:51:37,774 - INFO - stopping politely
+2025-03-12 20:51:47,940 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:51:47,973 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:51:47,974 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:51:47,978 - INFO - ✅ Latencia segura (4.26 ms). Conectando...
+2025-03-12 20:51:48,224 - INFO - Using default mode (index 0)
+2025-03-12 20:51:48,225 - INFO - stopping politely
+2025-03-12 20:51:48,255 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:51:48,277 - INFO - starting inventory
+2025-03-12 20:51:49,343 - INFO - stopping politely
+2025-03-12 20:51:49,370 - INFO - stopping politely
+2025-03-12 20:51:55,617 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:51:55,619 - INFO - ✅ Latencia segura (1.77 ms). Conectando...
+2025-03-12 20:51:55,854 - INFO - Using default mode (index 0)
+2025-03-12 20:51:55,854 - INFO - stopping politely
+2025-03-12 20:51:55,871 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:51:55,888 - INFO - starting inventory
+2025-03-12 20:51:56,931 - INFO - stopping politely
+2025-03-12 20:51:56,951 - INFO - stopping politely
+2025-03-12 20:52:03,217 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:52:03,225 - INFO - ✅ Latencia segura (7.37 ms). Conectando...
+2025-03-12 20:52:03,462 - INFO - Using default mode (index 0)
+2025-03-12 20:52:03,462 - INFO - stopping politely
+2025-03-12 20:52:03,493 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:52:03,512 - INFO - starting inventory
+2025-03-12 20:52:04,053 - INFO - stopping politely
+2025-03-12 20:52:04,080 - INFO - 🏷️ Tag detectado: {'EPC-96': b'303538353537313920202020', 'AntennaID': 2, 'PeakRSSI': -65, 'ChannelIndex': 32, 'FirstSeenTimestampUTC': 1741834114814670, 'LastSeenTimestampUTC': 1741834114814670, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 2, 'OpSpecID': 0, 'ReadDataWordCount': 0, 'ReadData': b''}, 'PhaseAngle': 118.4765625, 'RSSI': -65.5}
+2025-03-12 20:52:04,080 - INFO - stopping politely
+2025-03-12 20:52:04,775 - ERROR - 🚨 Latencia alta (679.86 ms). Descartando conexión.
+2025-03-12 20:52:04,853 - INFO - ✅ Latencia segura (78.12 ms). Conectando...
+2025-03-12 20:52:05,297 - INFO - Using default mode (index 0)
+2025-03-12 20:52:05,298 - INFO - stopping politely
+2025-03-12 20:52:05,545 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:52:05,707 - INFO - starting inventory
+2025-03-12 20:52:06,909 - INFO - stopping politely
+2025-03-12 20:52:07,071 - INFO - stopping politely
+2025-03-12 20:52:07,951 - ERROR - 🚨 Latencia alta (721.74 ms). Descartando conexión.
+2025-03-12 20:52:07,965 - INFO - ✅ Latencia segura (13.38 ms). Conectando...
+2025-03-12 20:52:08,411 - INFO - Using default mode (index 0)
+2025-03-12 20:52:08,411 - INFO - stopping politely
+2025-03-12 20:52:08,465 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:52:08,514 - INFO - starting inventory
+2025-03-12 20:52:09,595 - INFO - stopping politely
+2025-03-12 20:52:09,645 - INFO - stopping politely
+2025-03-12 20:52:09,694 - INFO - TID: 333033353338333533353337333133393230323032303230
+2025-03-12 20:52:09,694 - INFO - 🏷️ Banco de Usuario - ReadData: 
+2025-03-12 20:52:19,872 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:52:19,933 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:52:19,933 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:52:19,939 - INFO - ✅ Latencia segura (5.75 ms). Conectando...
+2025-03-12 20:52:20,153 - INFO - Using default mode (index 0)
+2025-03-12 20:52:20,153 - INFO - stopping politely
+2025-03-12 20:52:20,184 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:52:20,201 - INFO - starting inventory
+2025-03-12 20:52:20,998 - INFO - stopping politely
+2025-03-12 20:52:21,033 - INFO - 🏷️ Tag detectado: {'EPC-96': b'303630333831393520202020', 'AntennaID': 1, 'PeakRSSI': -65, 'ChannelIndex': 33, 'FirstSeenTimestampUTC': 1741814239284105, 'LastSeenTimestampUTC': 1741814239284105, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x00\\"\xb3\x00\x00\x00\x003KPF24AD2KE094812 '}, 'PhaseAngle': 40.4296875, 'RSSI': -65.0}
+2025-03-12 20:52:21,033 - INFO - stopping politely
+2025-03-12 20:52:27,297 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:52:27,299 - INFO - ✅ Latencia segura (1.45 ms). Conectando...
+2025-03-12 20:52:27,531 - INFO - Using default mode (index 0)
+2025-03-12 20:52:27,531 - INFO - stopping politely
+2025-03-12 20:52:27,550 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:52:27,566 - INFO - starting inventory
+2025-03-12 20:52:28,608 - INFO - stopping politely
+2025-03-12 20:52:28,631 - INFO - stopping politely
+2025-03-12 20:52:34,908 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:52:34,912 - INFO - ✅ Latencia segura (4.14 ms). Conectando...
+2025-03-12 20:52:35,126 - INFO - Using default mode (index 0)
+2025-03-12 20:52:35,126 - INFO - stopping politely
+2025-03-12 20:52:35,152 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:52:35,175 - INFO - starting inventory
+2025-03-12 20:52:36,221 - INFO - stopping politely
+2025-03-12 20:52:36,247 - INFO - stopping politely
+2025-03-12 20:52:38,091 - ERROR - 🚨 Latencia alta (789.88 ms). Descartando conexión.
+2025-03-12 20:52:38,167 - INFO - ✅ Latencia segura (76.07 ms). Conectando...
+2025-03-12 20:52:38,621 - INFO - Using default mode (index 0)
+2025-03-12 20:52:38,621 - INFO - stopping politely
+2025-03-12 20:52:38,859 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:52:39,021 - INFO - starting inventory
+2025-03-12 20:52:40,213 - INFO - stopping politely
+2025-03-12 20:52:40,383 - INFO - stopping politely
+2025-03-12 20:52:41,215 - ERROR - 🚨 Latencia alta (670.34 ms). Descartando conexión.
+2025-03-12 20:52:41,228 - INFO - ✅ Latencia segura (12.63 ms). Conectando...
+2025-03-12 20:52:41,642 - INFO - Using default mode (index 0)
+2025-03-12 20:52:41,642 - INFO - stopping politely
+2025-03-12 20:52:41,723 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:52:41,780 - INFO - starting inventory
+2025-03-12 20:52:42,922 - INFO - stopping politely
+2025-03-12 20:52:42,964 - INFO - stopping politely
+2025-03-12 20:52:43,054 - INFO - TID: 333033363330333333383331333933353230323032303230
+2025-03-12 20:52:43,054 - INFO - 🏷️ Banco de Usuario - ReadData: 005c22b300000000334b504632344144324b4530393438313220
+2025-03-12 20:52:43,054 - INFO - 🏷️ Folio: 6038195
+2025-03-12 20:52:43,054 - INFO - 🏷️ VIN: 3KPF24AD2KE094812
+2025-03-12 20:52:43,054 - INFO - ⚠️ Device found: {'id': 2, 'nombre': 'SALIDA A MIRAMAR', 'ip': '172.17.1.102', 'mac_address': '00:16:25:12:5E:9F', 'estatus': '1', 'latitud': 21.517687, 'longitud': -104.940088, 'tiempo_de_espera': None, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 75, 'nombre': 'TEPIC-MIRAMAR', 'estatus': '1', 'sentidos': 1, 'arcos': 2, 'estados_globales': 1, 'entidad': 1}, {'id': 76, 'nombre': 'MIRAMAR - TEPIC', 'estatus': '1', 'sentidos': 2, 'arcos': 2, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 20:52:43,054 - INFO - ✅ Antenna found: {'id': 75, 'nombre': 'TEPIC-MIRAMAR', 'estatus': '1', 'sentidos': 1, 'arcos': 2, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 20:52:43,054 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': '3KPF24AD2KE094812', 'folio': '6038195', 'arco': 2, 'antena': 75}
+2025-03-12 20:52:47,678 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 200 OK"
+2025-03-12 20:52:47,678 - INFO - 👓 Respuesta de la API: <Response [200 OK]>
+2025-03-12 20:52:47,678 - INFO - 🖥️ Datos enviados: {'vin': '3KPF24AD2KE094812', 'folio': '6038195', 'arco': 2, 'antena': 75}
+2025-03-12 20:52:53,238 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:52:53,286 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:52:53,287 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:52:53,292 - INFO - ✅ Latencia segura (4.76 ms). Conectando...
+2025-03-12 20:52:53,529 - INFO - Using default mode (index 0)
+2025-03-12 20:52:53,529 - INFO - stopping politely
+2025-03-12 20:52:53,563 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:52:53,582 - INFO - starting inventory
+2025-03-12 20:52:54,645 - INFO - stopping politely
+2025-03-12 20:52:54,673 - INFO - stopping politely
+2025-03-12 20:53:00,897 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:53:00,899 - INFO - ✅ Latencia segura (1.39 ms). Conectando...
+2025-03-12 20:53:01,124 - INFO - Using default mode (index 0)
+2025-03-12 20:53:01,124 - INFO - stopping politely
+2025-03-12 20:53:01,146 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:53:01,158 - INFO - starting inventory
+2025-03-12 20:53:02,216 - INFO - stopping politely
+2025-03-12 20:53:02,237 - INFO - stopping politely
+2025-03-12 20:53:08,507 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:53:08,520 - INFO - ✅ Latencia segura (12.35 ms). Conectando...
+2025-03-12 20:53:08,773 - INFO - Using default mode (index 0)
+2025-03-12 20:53:08,773 - INFO - stopping politely
+2025-03-12 20:53:08,798 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:53:08,816 - INFO - starting inventory
+2025-03-12 20:53:09,870 - INFO - stopping politely
+2025-03-12 20:53:09,899 - INFO - stopping politely
+2025-03-12 20:53:10,551 - ERROR - 🚨 Latencia alta (637.92 ms). Descartando conexión.
+2025-03-12 20:53:10,627 - INFO - ✅ Latencia segura (76.17 ms). Conectando...
+2025-03-12 20:53:11,062 - INFO - Using default mode (index 0)
+2025-03-12 20:53:11,062 - INFO - stopping politely
+2025-03-12 20:53:11,303 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:53:11,463 - INFO - starting inventory
+2025-03-12 20:53:12,659 - INFO - stopping politely
+2025-03-12 20:53:12,831 - INFO - stopping politely
+2025-03-12 20:53:13,759 - ERROR - 🚨 Latencia alta (767.78 ms). Descartando conexión.
+2025-03-12 20:53:13,772 - INFO - ✅ Latencia segura (13.43 ms). Conectando...
+2025-03-12 20:53:14,019 - INFO - Using default mode (index 0)
+2025-03-12 20:53:14,019 - INFO - stopping politely
+2025-03-12 20:53:14,147 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:53:14,183 - INFO - starting inventory
+2025-03-12 20:53:15,304 - INFO - stopping politely
+2025-03-12 20:53:15,356 - INFO - stopping politely
+2025-03-12 20:53:25,738 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:53:25,767 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:53:25,768 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:53:25,772 - INFO - ✅ Latencia segura (4.22 ms). Conectando...
+2025-03-12 20:53:25,988 - INFO - Using default mode (index 0)
+2025-03-12 20:53:25,988 - INFO - stopping politely
+2025-03-12 20:53:26,018 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:53:26,036 - INFO - starting inventory
+2025-03-12 20:53:27,096 - INFO - stopping politely
+2025-03-12 20:53:27,123 - INFO - stopping politely
+2025-03-12 20:53:33,377 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:53:33,381 - INFO - ✅ Latencia segura (3.82 ms). Conectando...
+2025-03-12 20:53:33,607 - INFO - Using default mode (index 0)
+2025-03-12 20:53:33,607 - INFO - stopping politely
+2025-03-12 20:53:33,630 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:53:33,645 - INFO - starting inventory
+2025-03-12 20:53:34,689 - INFO - stopping politely
+2025-03-12 20:53:34,710 - INFO - stopping politely
+2025-03-12 20:53:40,977 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:53:40,985 - INFO - ✅ Latencia segura (7.26 ms). Conectando...
+2025-03-12 20:53:41,220 - INFO - Using default mode (index 0)
+2025-03-12 20:53:41,221 - INFO - stopping politely
+2025-03-12 20:53:41,245 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:53:41,261 - INFO - starting inventory
+2025-03-12 20:53:42,317 - INFO - stopping politely
+2025-03-12 20:53:42,341 - INFO - stopping politely
+2025-03-12 20:53:42,995 - ERROR - 🚨 Latencia alta (639.36 ms). Descartando conexión.
+2025-03-12 20:53:43,071 - INFO - ✅ Latencia segura (76.62 ms). Conectando...
+2025-03-12 20:53:43,497 - INFO - Using default mode (index 0)
+2025-03-12 20:53:43,497 - INFO - stopping politely
+2025-03-12 20:53:43,743 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:53:43,905 - INFO - starting inventory
+2025-03-12 20:53:45,097 - INFO - stopping politely
+2025-03-12 20:53:45,267 - INFO - stopping politely
+2025-03-12 20:53:46,043 - ERROR - 🚨 Latencia alta (617.89 ms). Descartando conexión.
+2025-03-12 20:53:46,169 - WARNING - ⚠️ Latencia moderada (126.48 ms). Intentando conexión...
+2025-03-12 20:53:46,481 - INFO - Using default mode (index 0)
+2025-03-12 20:53:46,481 - INFO - stopping politely
+2025-03-12 20:53:46,530 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:53:46,568 - INFO - starting inventory
+2025-03-12 20:53:47,641 - INFO - stopping politely
+2025-03-12 20:53:47,727 - INFO - stopping politely
+2025-03-12 20:53:57,956 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:53:58,019 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:53:58,020 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:53:58,026 - INFO - ✅ Latencia segura (5.91 ms). Conectando...
+2025-03-12 20:53:58,238 - INFO - Using default mode (index 0)
+2025-03-12 20:53:58,238 - INFO - stopping politely
+2025-03-12 20:53:58,267 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:53:58,285 - INFO - starting inventory
+2025-03-12 20:53:59,337 - INFO - stopping politely
+2025-03-12 20:53:59,371 - INFO - stopping politely
+2025-03-12 20:54:05,627 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:54:05,630 - INFO - ✅ Latencia segura (2.73 ms). Conectando...
+2025-03-12 20:54:05,845 - INFO - Using default mode (index 0)
+2025-03-12 20:54:05,845 - INFO - stopping politely
+2025-03-12 20:54:05,864 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:54:05,879 - INFO - starting inventory
+2025-03-12 20:54:06,924 - INFO - stopping politely
+2025-03-12 20:54:06,953 - INFO - stopping politely
+2025-03-12 20:54:13,217 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:54:13,224 - INFO - ✅ Latencia segura (6.18 ms). Conectando...
+2025-03-12 20:54:13,450 - INFO - Using default mode (index 0)
+2025-03-12 20:54:13,450 - INFO - stopping politely
+2025-03-12 20:54:13,474 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:54:13,495 - INFO - starting inventory
+2025-03-12 20:54:13,797 - INFO - stopping politely
+2025-03-12 20:54:13,825 - INFO - 🏷️ Tag detectado: {'EPC-96': b'323337363538313020202020', 'AntennaID': 2, 'PeakRSSI': -65, 'ChannelIndex': 1, 'FirstSeenTimestampUTC': 1741834244784424, 'LastSeenTimestampUTC': 1741834244784424, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x01j\xa32\x00\x00\x00\x00KL8MJ6A07FC333635 '}, 'PhaseAngle': 263.3203125, 'RSSI': -65.0}
+2025-03-12 20:54:13,825 - INFO - stopping politely
+2025-03-12 20:54:14,551 - ERROR - 🚨 Latencia alta (711.01 ms). Descartando conexión.
+2025-03-12 20:54:14,625 - INFO - ✅ Latencia segura (74.53 ms). Conectando...
+2025-03-12 20:54:15,067 - INFO - Using default mode (index 0)
+2025-03-12 20:54:15,067 - INFO - stopping politely
+2025-03-12 20:54:15,303 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:54:15,469 - INFO - starting inventory
+2025-03-12 20:54:16,663 - INFO - stopping politely
+2025-03-12 20:54:16,835 - INFO - stopping politely
+2025-03-12 20:54:17,643 - ERROR - 🚨 Latencia alta (647.90 ms). Descartando conexión.
+2025-03-12 20:54:17,655 - INFO - ✅ Latencia segura (12.14 ms). Conectando...
+2025-03-12 20:54:17,908 - INFO - Using default mode (index 0)
+2025-03-12 20:54:17,908 - INFO - stopping politely
+2025-03-12 20:54:18,102 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:54:18,440 - INFO - starting inventory
+2025-03-12 20:54:19,581 - INFO - stopping politely
+2025-03-12 20:54:19,640 - INFO - stopping politely
+2025-03-12 20:54:19,698 - INFO - TID: 333233333337333633353338333133303230323032303230
+2025-03-12 20:54:19,698 - INFO - 🏷️ Banco de Usuario - ReadData: 016aa332000000004b4c384d4a36413037464333333336333520
+2025-03-12 20:54:19,698 - INFO - 🏷️ Folio: 23765810
+2025-03-12 20:54:19,698 - INFO - 🏷️ VIN: KL8MJ6A07FC333635
+2025-03-12 20:54:19,698 - INFO - ⚠️ Device found: {'id': 7, 'nombre': 'CARRILLO PUERTO', 'ip': '172.17.50.107', 'mac_address': '00:16:25:11:E0:A7', 'estatus': '1', 'latitud': 21.495129, 'longitud': -104.906649, 'tiempo_de_espera': 2, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 90, 'nombre': 'SUR A NORTE 1', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}, {'id': 91, 'nombre': 'SUR A NORTE 2', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 20:54:19,698 - INFO - ✅ Antenna found: {'id': 91, 'nombre': 'SUR A NORTE 2', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 20:54:19,698 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': 'KL8MJ6A07FC333635', 'folio': '23765810', 'arco': 7, 'antena': 91}
+2025-03-12 20:54:22,615 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 200 OK"
+2025-03-12 20:54:22,616 - INFO - 👓 Respuesta de la API: <Response [200 OK]>
+2025-03-12 20:54:22,616 - INFO - 🖥️ Datos enviados: {'vin': 'KL8MJ6A07FC333635', 'folio': '23765810', 'arco': 7, 'antena': 91}
+2025-03-12 20:54:29,946 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:54:30,008 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:54:30,008 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:54:30,017 - INFO - ✅ Latencia segura (8.52 ms). Conectando...
+2025-03-12 20:54:30,237 - INFO - Using default mode (index 0)
+2025-03-12 20:54:30,237 - INFO - stopping politely
+2025-03-12 20:54:30,273 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:54:30,292 - INFO - starting inventory
+2025-03-12 20:54:31,368 - INFO - stopping politely
+2025-03-12 20:54:31,394 - INFO - stopping politely
+2025-03-12 20:54:37,617 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:54:37,619 - INFO - ✅ Latencia segura (1.36 ms). Conectando...
+2025-03-12 20:54:37,846 - INFO - Using default mode (index 0)
+2025-03-12 20:54:37,847 - INFO - stopping politely
+2025-03-12 20:54:37,867 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:54:37,882 - INFO - starting inventory
+2025-03-12 20:54:38,929 - INFO - stopping politely
+2025-03-12 20:54:38,951 - INFO - stopping politely
+2025-03-12 20:54:45,227 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:54:45,231 - INFO - ✅ Latencia segura (3.03 ms). Conectando...
+2025-03-12 20:54:45,454 - INFO - Using default mode (index 0)
+2025-03-12 20:54:45,454 - INFO - stopping politely
+2025-03-12 20:54:45,480 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:54:45,501 - INFO - starting inventory
+2025-03-12 20:54:46,557 - INFO - stopping politely
+2025-03-12 20:54:46,579 - INFO - stopping politely
+2025-03-12 20:54:47,330 - ERROR - 🚨 Latencia alta (736.42 ms). Descartando conexión.
+2025-03-12 20:54:47,407 - INFO - ✅ Latencia segura (76.24 ms). Conectando...
+2025-03-12 20:54:47,837 - INFO - Using default mode (index 0)
+2025-03-12 20:54:47,837 - INFO - stopping politely
+2025-03-12 20:54:48,081 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:54:48,241 - INFO - starting inventory
+2025-03-12 20:54:49,437 - INFO - stopping politely
+2025-03-12 20:54:49,609 - INFO - stopping politely
+2025-03-12 20:54:50,482 - ERROR - 🚨 Latencia alta (715.53 ms). Descartando conexión.
+2025-03-12 20:54:50,494 - INFO - ✅ Latencia segura (11.14 ms). Conectando...
+2025-03-12 20:54:50,729 - INFO - Using default mode (index 0)
+2025-03-12 20:54:50,730 - INFO - stopping politely
+2025-03-12 20:54:50,840 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:54:50,900 - INFO - starting inventory
+2025-03-12 20:54:51,953 - INFO - stopping politely
+2025-03-12 20:54:51,988 - INFO - stopping politely
+2025-03-12 20:55:02,209 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:55:02,236 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:55:02,237 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:55:02,243 - INFO - ✅ Latencia segura (6.22 ms). Conectando...
+2025-03-12 20:55:02,452 - INFO - Using default mode (index 0)
+2025-03-12 20:55:02,452 - INFO - stopping politely
+2025-03-12 20:55:02,482 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:55:02,502 - INFO - starting inventory
+2025-03-12 20:55:03,546 - INFO - stopping politely
+2025-03-12 20:55:03,580 - INFO - stopping politely
+2025-03-12 20:55:09,857 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:55:09,860 - INFO - ✅ Latencia segura (1.96 ms). Conectando...
+2025-03-12 20:55:10,056 - INFO - Using default mode (index 0)
+2025-03-12 20:55:10,056 - INFO - stopping politely
+2025-03-12 20:55:10,072 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:55:10,084 - INFO - starting inventory
+2025-03-12 20:55:11,130 - INFO - stopping politely
+2025-03-12 20:55:11,149 - INFO - stopping politely
+2025-03-12 20:55:17,377 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:55:17,384 - INFO - ✅ Latencia segura (6.27 ms). Conectando...
+2025-03-12 20:55:17,613 - INFO - Using default mode (index 0)
+2025-03-12 20:55:17,613 - INFO - stopping politely
+2025-03-12 20:55:17,642 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:55:17,661 - INFO - starting inventory
+2025-03-12 20:55:18,713 - INFO - stopping politely
+2025-03-12 20:55:18,751 - INFO - stopping politely
+2025-03-12 20:55:19,518 - ERROR - 🚨 Latencia alta (745.87 ms). Descartando conexión.
+2025-03-12 20:55:19,593 - INFO - ✅ Latencia segura (74.62 ms). Conectando...
+2025-03-12 20:55:20,042 - INFO - Using default mode (index 0)
+2025-03-12 20:55:20,042 - INFO - stopping politely
+2025-03-12 20:55:20,283 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:55:20,443 - INFO - starting inventory
+2025-03-12 20:55:21,634 - INFO - stopping politely
+2025-03-12 20:55:21,805 - INFO - stopping politely
+2025-03-12 20:55:22,734 - ERROR - 🚨 Latencia alta (769.57 ms). Descartando conexión.
+2025-03-12 20:55:22,755 - INFO - ✅ Latencia segura (20.59 ms). Conectando...
+2025-03-12 20:55:23,049 - INFO - Using default mode (index 0)
+2025-03-12 20:55:23,049 - INFO - stopping politely
+2025-03-12 20:55:23,282 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:55:23,409 - INFO - starting inventory
+2025-03-12 20:55:24,554 - INFO - stopping politely
+2025-03-12 20:55:24,629 - INFO - stopping politely
+2025-03-12 20:55:34,929 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:55:34,992 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:55:34,993 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:55:35,000 - INFO - ✅ Latencia segura (7.14 ms). Conectando...
+2025-03-12 20:55:35,228 - INFO - Using default mode (index 0)
+2025-03-12 20:55:35,228 - INFO - stopping politely
+2025-03-12 20:55:35,263 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:55:35,286 - INFO - starting inventory
+2025-03-12 20:55:36,360 - INFO - stopping politely
+2025-03-12 20:55:36,384 - INFO - stopping politely
+2025-03-12 20:55:37,535 - INFO - ✅ Latencia segura (5.24 ms). Conectando...
+2025-03-12 20:55:37,760 - INFO - Using default mode (index 0)
+2025-03-12 20:55:37,760 - INFO - stopping politely
+2025-03-12 20:55:37,788 - INFO - 🔌 Conectando a 172.17.50.104...
+2025-03-12 20:55:37,806 - INFO - starting inventory
+2025-03-12 20:55:38,879 - INFO - stopping politely
+2025-03-12 20:55:38,907 - INFO - stopping politely
+2025-03-12 20:55:38,927 - INFO - ✅ Latencia segura (1.84 ms). Conectando...
+2025-03-12 20:55:39,138 - INFO - Using default mode (index 0)
+2025-03-12 20:55:39,138 - INFO - stopping politely
+2025-03-12 20:55:39,155 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:55:39,168 - INFO - starting inventory
+2025-03-12 20:55:39,720 - INFO - stopping politely
+2025-03-12 20:55:39,749 - INFO - 🏷️ Tag detectado: {'EPC-96': b'313533383631353520001305', 'AntennaID': 1, 'PeakRSSI': -62, 'ChannelIndex': 42, 'FirstSeenTimestampUTC': 1741832101251959, 'LastSeenTimestampUTC': 1741832101251959, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x00\xea\xc6+\x00\x00\x00\x003N1CN7AD5HK4200453'}, 'PhaseAngle': 28.828125, 'RSSI': -62.0}
+2025-03-12 20:55:39,749 - INFO - stopping politely
+2025-03-12 20:55:46,017 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:55:46,024 - INFO - ✅ Latencia segura (6.34 ms). Conectando...
+2025-03-12 20:55:46,263 - INFO - Using default mode (index 0)
+2025-03-12 20:55:46,263 - INFO - stopping politely
+2025-03-12 20:55:46,290 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:55:46,312 - INFO - starting inventory
+2025-03-12 20:55:46,856 - INFO - stopping politely
+2025-03-12 20:55:46,885 - INFO - 🏷️ Tag detectado: {'EPC-96': b'303539373736393520202020', 'AntennaID': 2, 'PeakRSSI': -67, 'ChannelIndex': 14, 'FirstSeenTimestampUTC': 1741834337661995, 'LastSeenTimestampUTC': 1741834337661995, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 2, 'OpSpecID': 0, 'ReadDataWordCount': 0, 'ReadData': b''}, 'PhaseAngle': 224.6484375, 'RSSI': -67.0}
+2025-03-12 20:55:46,885 - INFO - stopping politely
+2025-03-12 20:55:47,569 - ERROR - 🚨 Latencia alta (667.11 ms). Descartando conexión.
+2025-03-12 20:55:47,645 - INFO - ✅ Latencia segura (76.27 ms). Conectando...
+2025-03-12 20:55:48,068 - INFO - Using default mode (index 0)
+2025-03-12 20:55:48,069 - INFO - stopping politely
+2025-03-12 20:55:48,313 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:55:48,473 - INFO - starting inventory
+2025-03-12 20:55:49,659 - INFO - stopping politely
+2025-03-12 20:55:49,829 - INFO - stopping politely
+2025-03-12 20:55:50,630 - ERROR - 🚨 Latencia alta (641.76 ms). Descartando conexión.
+2025-03-12 20:55:50,657 - INFO - ✅ Latencia segura (26.29 ms). Conectando...
+2025-03-12 20:55:50,958 - INFO - Using default mode (index 0)
+2025-03-12 20:55:50,958 - INFO - stopping politely
+2025-03-12 20:55:51,101 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:55:51,177 - INFO - starting inventory
+2025-03-12 20:55:52,253 - INFO - stopping politely
+2025-03-12 20:55:52,301 - INFO - stopping politely
+2025-03-12 20:55:52,377 - INFO - TID: 333133353333333833363331333533353230303031333035
+2025-03-12 20:55:52,377 - INFO - 🏷️ Banco de Usuario - ReadData: 00eac62b00000000334e31434e37414435484b34323030343533
+2025-03-12 20:55:52,377 - INFO - 🏷️ Folio: 15386155
+2025-03-12 20:55:52,377 - INFO - 🏷️ VIN: 3N1CN7AD5HK4200453
+2025-03-12 20:55:52,377 - INFO - ⚠️ Device found: {'id': 5, 'nombre': 'ENTRADA GDL - TEPIC', 'ip': '172.17.50.105', 'mac_address': '00:16:25:11:DF:B6', 'estatus': '1', 'latitud': 21.466399, 'longitud': -104.836543, 'tiempo_de_espera': 2, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 83, 'nombre': 'CARRIL ALTA', 'estatus': '1', 'sentidos': 1, 'arcos': 5, 'estados_globales': 1, 'entidad': 1}, {'id': 84, 'nombre': 'CARRIL CENTRAL', 'estatus': '1', 'sentidos': 1, 'arcos': 5, 'estados_globales': 1, 'entidad': 1}, {'id': 85, 'nombre': 'CARRIBAL BAJA', 'estatus': '1', 'sentidos': 2, 'arcos': 5, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 20:55:52,377 - INFO - ✅ Antenna found: {'id': 83, 'nombre': 'CARRIL ALTA', 'estatus': '1', 'sentidos': 1, 'arcos': 5, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 20:55:52,377 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': '3N1CN7AD5HK4200453', 'folio': '15386155', 'arco': 5, 'antena': 83}
+2025-03-12 20:55:52,378 - INFO - TID: 333033353339333733373336333933353230323032303230
+2025-03-12 20:55:52,378 - INFO - 🏷️ Banco de Usuario - ReadData: 
+2025-03-12 20:55:57,176 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 500 Internal Server Error"
+2025-03-12 20:55:57,176 - ERROR - ❌ Error enviando datos: Server error '500 Internal Server Error' for url 'https://192.168.0.200/tramites/lecturas-arcos/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-03-12 20:56:02,573 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:56:02,638 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:56:02,638 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:56:02,643 - INFO - ✅ Latencia segura (4.16 ms). Conectando...
+2025-03-12 20:56:02,867 - INFO - Using default mode (index 0)
+2025-03-12 20:56:02,868 - INFO - stopping politely
+2025-03-12 20:56:02,894 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:56:02,916 - INFO - starting inventory
+2025-03-12 20:56:03,964 - INFO - stopping politely
+2025-03-12 20:56:03,989 - INFO - stopping politely
+2025-03-12 20:56:04,011 - INFO - ✅ Latencia segura (5.02 ms). Conectando...
+2025-03-12 20:56:04,290 - INFO - Using default mode (index 0)
+2025-03-12 20:56:04,290 - INFO - stopping politely
+2025-03-12 20:56:04,417 - INFO - 🔌 Conectando a 172.17.50.104...
+2025-03-12 20:56:04,438 - INFO - starting inventory
+2025-03-12 20:56:05,499 - INFO - stopping politely
+2025-03-12 20:56:05,523 - INFO - stopping politely
+2025-03-12 20:56:05,541 - INFO - ✅ Latencia segura (1.39 ms). Conectando...
+2025-03-12 20:56:05,744 - INFO - Using default mode (index 0)
+2025-03-12 20:56:05,744 - INFO - stopping politely
+2025-03-12 20:56:05,765 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:56:05,780 - INFO - starting inventory
+2025-03-12 20:56:06,822 - INFO - stopping politely
+2025-03-12 20:56:06,841 - INFO - stopping politely
+2025-03-12 20:56:13,057 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:56:13,065 - INFO - ✅ Latencia segura (7.66 ms). Conectando...
+2025-03-12 20:56:13,306 - INFO - Using default mode (index 0)
+2025-03-12 20:56:13,306 - INFO - stopping politely
+2025-03-12 20:56:13,332 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:56:13,351 - INFO - starting inventory
+2025-03-12 20:56:13,894 - INFO - stopping politely
+2025-03-12 20:56:13,924 - INFO - 🏷️ Tag detectado: {'EPC-96': b'e2002069d89b59650750c95b', 'AntennaID': 2, 'PeakRSSI': -70, 'ChannelIndex': 17, 'FirstSeenTimestampUTC': 1741834364832915, 'LastSeenTimestampUTC': 1741834364832915, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'}, 'PhaseAngle': 348.046875, 'RSSI': -70.0}
+2025-03-12 20:56:13,924 - INFO - stopping politely
+2025-03-12 20:56:14,646 - ERROR - 🚨 Latencia alta (707.52 ms). Descartando conexión.
+2025-03-12 20:56:14,721 - INFO - ✅ Latencia segura (74.91 ms). Conectando...
+2025-03-12 20:56:15,148 - INFO - Using default mode (index 0)
+2025-03-12 20:56:15,148 - INFO - stopping politely
+2025-03-12 20:56:15,384 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:56:15,549 - INFO - starting inventory
+2025-03-12 20:56:16,738 - INFO - stopping politely
+2025-03-12 20:56:16,907 - INFO - stopping politely
+2025-03-12 20:56:17,726 - ERROR - 🚨 Latencia alta (659.55 ms). Descartando conexión.
+2025-03-12 20:56:17,761 - INFO - ✅ Latencia segura (34.97 ms). Conectando...
+2025-03-12 20:56:17,996 - INFO - Using default mode (index 0)
+2025-03-12 20:56:17,996 - INFO - stopping politely
+2025-03-12 20:56:18,151 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:56:18,229 - INFO - starting inventory
+2025-03-12 20:56:19,352 - INFO - stopping politely
+2025-03-12 20:56:19,409 - INFO - stopping politely
+2025-03-12 20:56:19,486 - INFO - TID: 653230303230363964383962353936353037353063393562
+2025-03-12 20:56:19,486 - INFO - 🏷️ Banco de Usuario - ReadData: 0000000000000000000000000000000000000000000000000000
+2025-03-12 20:56:19,486 - INFO - 🏷️ Folio: 0
+2025-03-12 20:56:19,486 - INFO - 🏷️ VIN: 
+2025-03-12 20:56:19,486 - INFO - ⚠️ Device found: {'id': 7, 'nombre': 'CARRILLO PUERTO', 'ip': '172.17.50.107', 'mac_address': '00:16:25:11:E0:A7', 'estatus': '1', 'latitud': 21.495129, 'longitud': -104.906649, 'tiempo_de_espera': 2, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 90, 'nombre': 'SUR A NORTE 1', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}, {'id': 91, 'nombre': 'SUR A NORTE 2', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 20:56:19,486 - INFO - ✅ Antenna found: {'id': 91, 'nombre': 'SUR A NORTE 2', 'estatus': '1', 'sentidos': 2, 'arcos': 7, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 20:56:19,486 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': '', 'folio': '0', 'arco': 7, 'antena': 91}
+2025-03-12 20:56:21,754 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 400 Bad Request"
+2025-03-12 20:56:21,755 - ERROR - ❌ Error enviando datos: Client error '400 Bad Request' for url 'https://192.168.0.200/tramites/lecturas-arcos/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2025-03-12 20:56:29,628 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:56:29,661 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:56:29,662 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:56:29,667 - INFO - ✅ Latencia segura (4.81 ms). Conectando...
+2025-03-12 20:56:29,885 - INFO - Using default mode (index 0)
+2025-03-12 20:56:29,885 - INFO - stopping politely
+2025-03-12 20:56:29,914 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:56:29,933 - INFO - starting inventory
+2025-03-12 20:56:31,011 - INFO - stopping politely
+2025-03-12 20:56:31,045 - INFO - stopping politely
+2025-03-12 20:56:31,070 - INFO - ✅ Latencia segura (8.72 ms). Conectando...
+2025-03-12 20:56:31,289 - INFO - Using default mode (index 0)
+2025-03-12 20:56:31,289 - INFO - stopping politely
+2025-03-12 20:56:31,340 - INFO - 🔌 Conectando a 172.17.50.104...
+2025-03-12 20:56:31,357 - INFO - starting inventory
+2025-03-12 20:56:32,409 - INFO - stopping politely
+2025-03-12 20:56:32,463 - INFO - stopping politely
+2025-03-12 20:56:32,484 - INFO - ✅ Latencia segura (3.39 ms). Conectando...
+2025-03-12 20:56:32,687 - INFO - Using default mode (index 0)
+2025-03-12 20:56:32,687 - INFO - stopping politely
+2025-03-12 20:56:32,705 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:56:32,718 - INFO - starting inventory
+2025-03-12 20:56:33,758 - INFO - stopping politely
+2025-03-12 20:56:33,784 - INFO - stopping politely
+2025-03-12 20:56:40,017 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:56:40,023 - INFO - ✅ Latencia segura (5.20 ms). Conectando...
+2025-03-12 20:56:40,239 - INFO - Using default mode (index 0)
+2025-03-12 20:56:40,239 - INFO - stopping politely
+2025-03-12 20:56:40,262 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:56:40,278 - INFO - starting inventory
+2025-03-12 20:56:41,324 - INFO - stopping politely
+2025-03-12 20:56:41,344 - INFO - stopping politely
+2025-03-12 20:56:42,070 - ERROR - 🚨 Latencia alta (711.76 ms). Descartando conexión.
+2025-03-12 20:56:42,145 - INFO - ✅ Latencia segura (75.18 ms). Conectando...
+2025-03-12 20:56:42,589 - INFO - Using default mode (index 0)
+2025-03-12 20:56:42,589 - INFO - stopping politely
+2025-03-12 20:56:42,823 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:56:42,981 - INFO - starting inventory
+2025-03-12 20:56:44,176 - INFO - stopping politely
+2025-03-12 20:56:44,343 - INFO - stopping politely
+2025-03-12 20:56:45,222 - ERROR - 🚨 Latencia alta (719.54 ms). Descartando conexión.
+2025-03-12 20:56:45,257 - INFO - ✅ Latencia segura (34.62 ms). Conectando...
+2025-03-12 20:56:45,532 - INFO - Using default mode (index 0)
+2025-03-12 20:56:45,533 - INFO - stopping politely
+2025-03-12 20:56:45,608 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:56:45,652 - INFO - starting inventory
+2025-03-12 20:56:46,719 - INFO - stopping politely
+2025-03-12 20:56:46,755 - INFO - stopping politely
+2025-03-12 20:56:56,957 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:56:57,000 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:56:57,001 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:56:57,007 - INFO - ✅ Latencia segura (5.94 ms). Conectando...
+2025-03-12 20:56:57,212 - INFO - Using default mode (index 0)
+2025-03-12 20:56:57,212 - INFO - stopping politely
+2025-03-12 20:56:57,245 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:56:57,263 - INFO - starting inventory
+2025-03-12 20:56:58,321 - INFO - stopping politely
+2025-03-12 20:56:58,348 - INFO - stopping politely
+2025-03-12 20:56:58,375 - INFO - ✅ Latencia segura (6.31 ms). Conectando...
+2025-03-12 20:56:58,586 - INFO - Using default mode (index 0)
+2025-03-12 20:56:58,586 - INFO - stopping politely
+2025-03-12 20:56:58,612 - INFO - 🔌 Conectando a 172.17.50.104...
+2025-03-12 20:56:58,629 - INFO - starting inventory
+2025-03-12 20:56:59,689 - INFO - stopping politely
+2025-03-12 20:56:59,714 - INFO - stopping politely
+2025-03-12 20:56:59,733 - INFO - ✅ Latencia segura (1.89 ms). Conectando...
+2025-03-12 20:56:59,936 - INFO - Using default mode (index 0)
+2025-03-12 20:56:59,936 - INFO - stopping politely
+2025-03-12 20:56:59,955 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:56:59,969 - INFO - starting inventory
+2025-03-12 20:57:01,015 - INFO - stopping politely
+2025-03-12 20:57:01,036 - INFO - stopping politely
+2025-03-12 20:57:07,297 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:57:07,301 - INFO - ✅ Latencia segura (3.54 ms). Conectando...
+2025-03-12 20:57:07,558 - INFO - Using default mode (index 0)
+2025-03-12 20:57:07,558 - INFO - stopping politely
+2025-03-12 20:57:07,584 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:57:07,602 - INFO - starting inventory
+2025-03-12 20:57:08,647 - INFO - stopping politely
+2025-03-12 20:57:08,682 - INFO - stopping politely
+2025-03-12 20:57:10,486 - ERROR - 🚨 Latencia alta (752.38 ms). Descartando conexión.
+2025-03-12 20:57:10,563 - INFO - ✅ Latencia segura (77.05 ms). Conectando...
+2025-03-12 20:57:10,987 - INFO - Using default mode (index 0)
+2025-03-12 20:57:10,987 - INFO - stopping politely
+2025-03-12 20:57:11,221 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:57:11,383 - INFO - starting inventory
+2025-03-12 20:57:12,575 - INFO - stopping politely
+2025-03-12 20:57:12,745 - INFO - stopping politely
+2025-03-12 20:57:13,622 - ERROR - 🚨 Latencia alta (719.43 ms). Descartando conexión.
+2025-03-12 20:57:13,642 - INFO - ✅ Latencia segura (20.34 ms). Conectando...
+2025-03-12 20:57:13,905 - INFO - Using default mode (index 0)
+2025-03-12 20:57:13,905 - INFO - stopping politely
+2025-03-12 20:57:13,956 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:57:14,032 - INFO - starting inventory
+2025-03-12 20:57:15,188 - INFO - stopping politely
+2025-03-12 20:57:15,245 - INFO - stopping politely
+2025-03-12 20:57:25,468 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:57:25,528 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:57:25,529 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:57:25,536 - INFO - ✅ Latencia segura (6.96 ms). Conectando...
+2025-03-12 20:57:25,754 - INFO - Using default mode (index 0)
+2025-03-12 20:57:25,754 - INFO - stopping politely
+2025-03-12 20:57:25,784 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:57:25,806 - INFO - starting inventory
+2025-03-12 20:57:26,870 - INFO - stopping politely
+2025-03-12 20:57:26,895 - INFO - stopping politely
+2025-03-12 20:57:34,922 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:57:34,924 - INFO - ✅ Latencia segura (1.44 ms). Conectando...
+2025-03-12 20:57:35,157 - INFO - Using default mode (index 0)
+2025-03-12 20:57:35,157 - INFO - stopping politely
+2025-03-12 20:57:35,181 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:57:35,195 - INFO - starting inventory
+2025-03-12 20:57:36,238 - INFO - stopping politely
+2025-03-12 20:57:36,259 - INFO - stopping politely
+2025-03-12 20:57:42,497 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:57:42,501 - INFO - ✅ Latencia segura (3.41 ms). Conectando...
+2025-03-12 20:57:42,749 - INFO - Using default mode (index 0)
+2025-03-12 20:57:42,749 - INFO - stopping politely
+2025-03-12 20:57:42,774 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:57:42,793 - INFO - starting inventory
+2025-03-12 20:57:43,847 - INFO - stopping politely
+2025-03-12 20:57:43,879 - INFO - stopping politely
+2025-03-12 20:57:44,646 - ERROR - 🚨 Latencia alta (748.14 ms). Descartando conexión.
+2025-03-12 20:57:44,721 - INFO - ✅ Latencia segura (75.20 ms). Conectando...
+2025-03-12 20:57:45,155 - INFO - Using default mode (index 0)
+2025-03-12 20:57:45,155 - INFO - stopping politely
+2025-03-12 20:57:45,407 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:57:45,569 - INFO - starting inventory
+2025-03-12 20:57:46,765 - INFO - stopping politely
+2025-03-12 20:57:46,937 - INFO - stopping politely
+2025-03-12 20:57:47,842 - ERROR - 🚨 Latencia alta (745.26 ms). Descartando conexión.
+2025-03-12 20:57:47,860 - INFO - ✅ Latencia segura (18.28 ms). Conectando...
+2025-03-12 20:57:48,107 - INFO - Using default mode (index 0)
+2025-03-12 20:57:48,107 - INFO - stopping politely
+2025-03-12 20:57:48,176 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:57:48,219 - INFO - starting inventory
+2025-03-12 20:57:49,359 - INFO - stopping politely
+2025-03-12 20:57:49,420 - INFO - stopping politely
+2025-03-12 20:57:59,621 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:57:59,654 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:57:59,655 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:57:59,661 - INFO - ✅ Latencia segura (6.17 ms). Conectando...
+2025-03-12 20:57:59,878 - INFO - Using default mode (index 0)
+2025-03-12 20:57:59,878 - INFO - stopping politely
+2025-03-12 20:57:59,904 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:57:59,922 - INFO - starting inventory
+2025-03-12 20:58:00,214 - INFO - stopping politely
+2025-03-12 20:58:00,244 - INFO - 🏷️ Tag detectado: {'EPC-96': b'313031333230383520202020', 'AntennaID': 1, 'PeakRSSI': -64, 'ChannelIndex': 40, 'FirstSeenTimestampUTC': 1741814578467404, 'LastSeenTimestampUTC': 1741814578467404, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x00\x9a\x9au\x00\x00\x00\x005N1AA08A84N706314 '}, 'PhaseAngle': 313.9453125, 'RSSI': -64.5}
+2025-03-12 20:58:00,244 - INFO - stopping politely
+2025-03-12 20:58:05,552 - INFO - 🚀 Tornado server iniciado en el puerto 8888
+2025-03-12 20:58:05,684 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:58:05,719 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:58:05,720 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:58:05,723 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 20:58:05,724 - INFO - ✅ Latencia segura (3.79 ms). Conectando...
+2025-03-12 20:58:05,955 - INFO - Using default mode (index 0)
+2025-03-12 20:58:05,955 - INFO - stopping politely
+2025-03-12 20:58:05,986 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:58:06,004 - INFO - starting inventory
+2025-03-12 20:58:07,047 - INFO - stopping politely
+2025-03-12 20:58:07,072 - INFO - stopping politely
+2025-03-12 20:58:13,297 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 20:58:13,298 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:58:13,300 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 20:58:13,300 - INFO - ✅ Latencia segura (2.45 ms). Conectando...
+2025-03-12 20:58:13,509 - INFO - Using default mode (index 0)
+2025-03-12 20:58:13,509 - INFO - stopping politely
+2025-03-12 20:58:13,533 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:58:13,553 - INFO - starting inventory
+2025-03-12 20:58:14,596 - INFO - stopping politely
+2025-03-12 20:58:14,616 - INFO - stopping politely
+2025-03-12 20:58:20,898 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 20:58:20,898 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:58:20,910 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 20:58:20,910 - INFO - ✅ Latencia segura (12.50 ms). Conectando...
+2025-03-12 20:58:21,140 - INFO - Using default mode (index 0)
+2025-03-12 20:58:21,140 - INFO - stopping politely
+2025-03-12 20:58:21,170 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:58:21,190 - INFO - starting inventory
+2025-03-12 20:58:22,241 - INFO - stopping politely
+2025-03-12 20:58:22,262 - INFO - stopping politely
+2025-03-12 20:58:22,910 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 20:58:22,910 - ERROR - 🚨 Latencia alta (631.03 ms). Descartando conexión.
+2025-03-12 20:58:22,987 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 20:58:22,987 - INFO - ✅ Latencia segura (77.25 ms). Conectando...
+2025-03-12 20:58:23,413 - INFO - Using default mode (index 0)
+2025-03-12 20:58:23,414 - INFO - stopping politely
+2025-03-12 20:58:23,655 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:58:23,817 - INFO - starting inventory
+2025-03-12 20:58:25,006 - INFO - stopping politely
+2025-03-12 20:58:25,172 - INFO - stopping politely
+2025-03-12 20:58:26,062 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 20:58:26,062 - ERROR - 🚨 Latencia alta (731.03 ms). Descartando conexión.
+2025-03-12 20:58:26,096 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 20:58:26,096 - INFO - ✅ Latencia segura (34.40 ms). Conectando...
+2025-03-12 20:58:26,351 - INFO - Using default mode (index 0)
+2025-03-12 20:58:26,352 - INFO - stopping politely
+2025-03-12 20:58:26,419 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:58:26,454 - INFO - starting inventory
+2025-03-12 20:58:27,522 - INFO - stopping politely
+2025-03-12 20:58:27,583 - INFO - stopping politely
+2025-03-12 20:58:37,971 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:58:38,014 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:58:38,015 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:58:38,020 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 20:58:38,020 - INFO - ✅ Latencia segura (4.81 ms). Conectando...
+2025-03-12 20:58:38,244 - INFO - Using default mode (index 0)
+2025-03-12 20:58:38,244 - INFO - stopping politely
+2025-03-12 20:58:38,271 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:58:38,298 - INFO - starting inventory
+2025-03-12 20:58:39,353 - INFO - stopping politely
+2025-03-12 20:58:39,379 - INFO - stopping politely
+2025-03-12 20:58:45,617 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 20:58:45,618 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:58:45,619 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 20:58:45,620 - INFO - ✅ Latencia segura (1.82 ms). Conectando...
+2025-03-12 20:58:45,829 - INFO - Using default mode (index 0)
+2025-03-12 20:58:45,829 - INFO - stopping politely
+2025-03-12 20:58:45,846 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:58:45,859 - INFO - starting inventory
+2025-03-12 20:58:46,905 - INFO - stopping politely
+2025-03-12 20:58:46,923 - INFO - stopping politely
+2025-03-12 20:58:53,137 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 20:58:53,138 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:58:53,143 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 20:58:53,143 - INFO - ✅ Latencia segura (5.26 ms). Conectando...
+2025-03-12 20:58:53,374 - INFO - Using default mode (index 0)
+2025-03-12 20:58:53,374 - INFO - stopping politely
+2025-03-12 20:58:53,398 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:58:53,422 - INFO - starting inventory
+2025-03-12 20:58:54,478 - INFO - stopping politely
+2025-03-12 20:58:54,501 - INFO - stopping politely
+2025-03-12 20:58:55,278 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 20:58:55,278 - ERROR - 🚨 Latencia alta (760.70 ms). Descartando conexión.
+2025-03-12 20:58:55,353 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 20:58:55,353 - INFO - ✅ Latencia segura (75.44 ms). Conectando...
+2025-03-12 20:58:55,791 - INFO - Using default mode (index 0)
+2025-03-12 20:58:55,791 - INFO - stopping politely
+2025-03-12 20:58:56,029 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:58:56,189 - INFO - starting inventory
+2025-03-12 20:58:57,393 - INFO - stopping politely
+2025-03-12 20:58:57,561 - INFO - stopping politely
+2025-03-12 20:58:58,450 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 20:58:58,450 - ERROR - 🚨 Latencia alta (729.08 ms). Descartando conexión.
+2025-03-12 20:58:58,464 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 20:58:58,464 - INFO - ✅ Latencia segura (13.77 ms). Conectando...
+2025-03-12 20:58:58,725 - INFO - Using default mode (index 0)
+2025-03-12 20:58:58,725 - INFO - stopping politely
+2025-03-12 20:58:58,818 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:58:58,861 - INFO - starting inventory
+2025-03-12 20:58:59,936 - INFO - stopping politely
+2025-03-12 20:59:00,055 - INFO - stopping politely
+2025-03-12 20:59:10,389 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:59:10,449 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:59:10,449 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:59:10,455 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 20:59:10,455 - INFO - ✅ Latencia segura (5.40 ms). Conectando...
+2025-03-12 20:59:10,663 - INFO - Using default mode (index 0)
+2025-03-12 20:59:10,663 - INFO - stopping politely
+2025-03-12 20:59:10,694 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:59:10,716 - INFO - starting inventory
+2025-03-12 20:59:11,767 - INFO - stopping politely
+2025-03-12 20:59:11,790 - INFO - stopping politely
+2025-03-12 20:59:18,017 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 20:59:18,018 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:59:18,019 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 20:59:18,019 - INFO - ✅ Latencia segura (1.80 ms). Conectando...
+2025-03-12 20:59:18,230 - INFO - Using default mode (index 0)
+2025-03-12 20:59:18,230 - INFO - stopping politely
+2025-03-12 20:59:18,248 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:59:18,264 - INFO - starting inventory
+2025-03-12 20:59:19,310 - INFO - stopping politely
+2025-03-12 20:59:19,339 - INFO - stopping politely
+2025-03-12 20:59:25,617 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 20:59:25,618 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:59:25,622 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 20:59:25,622 - INFO - ✅ Latencia segura (4.24 ms). Conectando...
+2025-03-12 20:59:25,857 - INFO - Using default mode (index 0)
+2025-03-12 20:59:25,857 - INFO - stopping politely
+2025-03-12 20:59:25,883 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:59:25,899 - INFO - starting inventory
+2025-03-12 20:59:26,952 - INFO - stopping politely
+2025-03-12 20:59:26,976 - INFO - stopping politely
+2025-03-12 20:59:27,546 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 20:59:27,546 - ERROR - 🚨 Latencia alta (550.71 ms). Descartando conexión.
+2025-03-12 20:59:27,623 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 20:59:27,623 - INFO - ✅ Latencia segura (77.43 ms). Conectando...
+2025-03-12 20:59:28,049 - INFO - Using default mode (index 0)
+2025-03-12 20:59:28,050 - INFO - stopping politely
+2025-03-12 20:59:28,287 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 20:59:28,445 - INFO - starting inventory
+2025-03-12 20:59:29,647 - INFO - stopping politely
+2025-03-12 20:59:29,819 - INFO - stopping politely
+2025-03-12 20:59:30,630 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 20:59:30,630 - ERROR - 🚨 Latencia alta (648.74 ms). Descartando conexión.
+2025-03-12 20:59:30,642 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 20:59:30,642 - INFO - ✅ Latencia segura (12.13 ms). Conectando...
+2025-03-12 20:59:30,897 - INFO - Using default mode (index 0)
+2025-03-12 20:59:30,897 - INFO - stopping politely
+2025-03-12 20:59:30,962 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 20:59:31,041 - INFO - starting inventory
+2025-03-12 20:59:32,203 - INFO - stopping politely
+2025-03-12 20:59:32,259 - INFO - stopping politely
+2025-03-12 20:59:42,505 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:59:42,551 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 20:59:42,552 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 20:59:42,558 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 20:59:42,558 - INFO - ✅ Latencia segura (5.60 ms). Conectando...
+2025-03-12 20:59:42,780 - INFO - Using default mode (index 0)
+2025-03-12 20:59:42,780 - INFO - stopping politely
+2025-03-12 20:59:42,812 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 20:59:42,830 - INFO - starting inventory
+2025-03-12 20:59:43,885 - INFO - stopping politely
+2025-03-12 20:59:43,914 - INFO - stopping politely
+2025-03-12 20:59:50,177 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 20:59:50,178 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 20:59:50,180 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 20:59:50,180 - INFO - ✅ Latencia segura (2.02 ms). Conectando...
+2025-03-12 20:59:50,427 - INFO - Using default mode (index 0)
+2025-03-12 20:59:50,427 - INFO - stopping politely
+2025-03-12 20:59:50,444 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 20:59:50,459 - INFO - starting inventory
+2025-03-12 20:59:51,506 - INFO - stopping politely
+2025-03-12 20:59:51,526 - INFO - stopping politely
+2025-03-12 20:59:57,777 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 20:59:57,778 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 20:59:57,782 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 20:59:57,782 - INFO - ✅ Latencia segura (4.35 ms). Conectando...
+2025-03-12 20:59:57,997 - INFO - Using default mode (index 0)
+2025-03-12 20:59:57,997 - INFO - stopping politely
+2025-03-12 20:59:58,020 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 20:59:58,038 - INFO - starting inventory
+2025-03-12 20:59:59,081 - INFO - stopping politely
+2025-03-12 20:59:59,103 - INFO - stopping politely
+2025-03-12 20:59:59,837 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 20:59:59,838 - ERROR - 🚨 Latencia alta (717.97 ms). Descartando conexión.
+2025-03-12 20:59:59,915 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 20:59:59,915 - INFO - ✅ Latencia segura (77.53 ms). Conectando...
+2025-03-12 21:00:00,350 - INFO - Using default mode (index 0)
+2025-03-12 21:00:00,350 - INFO - stopping politely
+2025-03-12 21:00:00,589 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:00:00,751 - INFO - starting inventory
+2025-03-12 21:00:01,945 - INFO - stopping politely
+2025-03-12 21:00:02,108 - INFO - stopping politely
+2025-03-12 21:00:03,041 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:00:03,042 - ERROR - 🚨 Latencia alta (774.72 ms). Descartando conexión.
+2025-03-12 21:00:03,109 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:00:03,109 - INFO - ✅ Latencia segura (67.61 ms). Conectando...
+2025-03-12 21:00:03,386 - INFO - Using default mode (index 0)
+2025-03-12 21:00:03,386 - INFO - stopping politely
+2025-03-12 21:00:03,446 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:00:03,555 - INFO - starting inventory
+2025-03-12 21:00:04,643 - INFO - stopping politely
+2025-03-12 21:00:04,764 - INFO - stopping politely
+2025-03-12 21:00:14,992 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:00:15,037 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:00:15,038 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:00:15,046 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:00:15,046 - INFO - ✅ Latencia segura (8.35 ms). Conectando...
+2025-03-12 21:00:15,266 - INFO - Using default mode (index 0)
+2025-03-12 21:00:15,266 - INFO - stopping politely
+2025-03-12 21:00:15,295 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:00:15,314 - INFO - starting inventory
+2025-03-12 21:00:16,375 - INFO - stopping politely
+2025-03-12 21:00:16,400 - INFO - stopping politely
+2025-03-12 21:00:22,667 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:00:22,668 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 21:00:22,670 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:00:22,670 - INFO - ✅ Latencia segura (1.77 ms). Conectando...
+2025-03-12 21:00:22,887 - INFO - Using default mode (index 0)
+2025-03-12 21:00:22,887 - INFO - stopping politely
+2025-03-12 21:00:22,904 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:00:22,915 - INFO - starting inventory
+2025-03-12 21:00:23,962 - INFO - stopping politely
+2025-03-12 21:00:23,984 - INFO - stopping politely
+2025-03-12 21:00:30,257 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:00:30,258 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:00:30,261 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:00:30,261 - INFO - ✅ Latencia segura (3.58 ms). Conectando...
+2025-03-12 21:00:30,487 - INFO - Using default mode (index 0)
+2025-03-12 21:00:30,487 - INFO - stopping politely
+2025-03-12 21:00:30,514 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:00:30,531 - INFO - starting inventory
+2025-03-12 21:00:31,581 - INFO - stopping politely
+2025-03-12 21:00:31,602 - INFO - stopping politely
+2025-03-12 21:00:32,297 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:00:32,298 - ERROR - 🚨 Latencia alta (679.05 ms). Descartando conexión.
+2025-03-12 21:00:32,375 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:00:32,375 - INFO - ✅ Latencia segura (77.58 ms). Conectando...
+2025-03-12 21:00:32,801 - INFO - Using default mode (index 0)
+2025-03-12 21:00:32,801 - INFO - stopping politely
+2025-03-12 21:00:33,037 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:00:33,201 - INFO - starting inventory
+2025-03-12 21:00:34,401 - INFO - stopping politely
+2025-03-12 21:00:34,571 - INFO - stopping politely
+2025-03-12 21:00:35,485 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:00:35,486 - ERROR - 🚨 Latencia alta (752.93 ms). Descartando conexión.
+2025-03-12 21:00:35,535 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:00:35,535 - INFO - ✅ Latencia segura (49.57 ms). Conectando...
+2025-03-12 21:00:35,837 - INFO - Using default mode (index 0)
+2025-03-12 21:00:35,837 - INFO - stopping politely
+2025-03-12 21:00:35,940 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:00:36,022 - INFO - starting inventory
+2025-03-12 21:00:37,166 - INFO - stopping politely
+2025-03-12 21:00:37,239 - INFO - stopping politely
+2025-03-12 21:00:47,404 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:00:47,448 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:00:47,449 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:00:47,454 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:00:47,454 - INFO - ✅ Latencia segura (4.79 ms). Conectando...
+2025-03-12 21:00:47,674 - INFO - Using default mode (index 0)
+2025-03-12 21:00:47,674 - INFO - stopping politely
+2025-03-12 21:00:47,704 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:00:47,722 - INFO - starting inventory
+2025-03-12 21:00:48,784 - INFO - stopping politely
+2025-03-12 21:00:48,810 - INFO - stopping politely
+2025-03-12 21:00:55,057 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:00:55,058 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 21:00:55,059 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:00:55,059 - INFO - ✅ Latencia segura (1.44 ms). Conectando...
+2025-03-12 21:00:55,277 - INFO - Using default mode (index 0)
+2025-03-12 21:00:55,277 - INFO - stopping politely
+2025-03-12 21:00:55,295 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:00:55,308 - INFO - starting inventory
+2025-03-12 21:00:56,356 - INFO - stopping politely
+2025-03-12 21:00:56,375 - INFO - stopping politely
+2025-03-12 21:01:02,667 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:01:02,668 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:01:02,671 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:01:02,671 - INFO - ✅ Latencia segura (2.91 ms). Conectando...
+2025-03-12 21:01:02,890 - INFO - Using default mode (index 0)
+2025-03-12 21:01:02,890 - INFO - stopping politely
+2025-03-12 21:01:02,911 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:01:02,928 - INFO - starting inventory
+2025-03-12 21:01:03,979 - INFO - stopping politely
+2025-03-12 21:01:04,000 - INFO - stopping politely
+2025-03-12 21:01:04,789 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:01:04,789 - ERROR - 🚨 Latencia alta (769.40 ms). Descartando conexión.
+2025-03-12 21:01:04,867 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:01:04,867 - INFO - ✅ Latencia segura (77.87 ms). Conectando...
+2025-03-12 21:01:05,292 - INFO - Using default mode (index 0)
+2025-03-12 21:01:05,292 - INFO - stopping politely
+2025-03-12 21:01:05,535 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:01:05,699 - INFO - starting inventory
+2025-03-12 21:01:06,895 - INFO - stopping politely
+2025-03-12 21:01:07,065 - INFO - stopping politely
+2025-03-12 21:01:07,981 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:01:07,981 - ERROR - 🚨 Latencia alta (751.90 ms). Descartando conexión.
+2025-03-12 21:01:08,022 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:01:08,022 - INFO - ✅ Latencia segura (40.10 ms). Conectando...
+2025-03-12 21:01:08,423 - INFO - Using default mode (index 0)
+2025-03-12 21:01:08,423 - INFO - stopping politely
+2025-03-12 21:01:08,499 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:01:08,533 - INFO - starting inventory
+2025-03-12 21:01:09,634 - INFO - stopping politely
+2025-03-12 21:01:09,710 - INFO - stopping politely
+2025-03-12 21:01:19,940 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:01:20,001 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:01:20,001 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:01:20,007 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:01:20,007 - INFO - ✅ Latencia segura (5.26 ms). Conectando...
+2025-03-12 21:01:20,251 - INFO - Using default mode (index 0)
+2025-03-12 21:01:20,251 - INFO - stopping politely
+2025-03-12 21:01:20,284 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:01:20,305 - INFO - starting inventory
+2025-03-12 21:01:21,374 - INFO - stopping politely
+2025-03-12 21:01:21,401 - INFO - stopping politely
+2025-03-12 21:01:27,697 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:01:27,697 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 21:01:27,699 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:01:27,699 - INFO - ✅ Latencia segura (1.79 ms). Conectando...
+2025-03-12 21:01:27,901 - INFO - Using default mode (index 0)
+2025-03-12 21:01:27,901 - INFO - stopping politely
+2025-03-12 21:01:27,917 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:01:27,932 - INFO - starting inventory
+2025-03-12 21:01:28,971 - INFO - stopping politely
+2025-03-12 21:01:28,991 - INFO - stopping politely
+2025-03-12 21:01:35,217 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:01:35,218 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:01:35,222 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:01:35,222 - INFO - ✅ Latencia segura (4.25 ms). Conectando...
+2025-03-12 21:01:35,460 - INFO - Using default mode (index 0)
+2025-03-12 21:01:35,460 - INFO - stopping politely
+2025-03-12 21:01:35,487 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:01:35,507 - INFO - starting inventory
+2025-03-12 21:01:36,555 - INFO - stopping politely
+2025-03-12 21:01:36,575 - INFO - stopping politely
+2025-03-12 21:01:37,209 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:01:37,209 - ERROR - 🚨 Latencia alta (615.98 ms). Descartando conexión.
+2025-03-12 21:01:37,285 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:01:37,285 - INFO - ✅ Latencia segura (75.88 ms). Conectando...
+2025-03-12 21:01:37,725 - INFO - Using default mode (index 0)
+2025-03-12 21:01:37,725 - INFO - stopping politely
+2025-03-12 21:01:37,967 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:01:38,125 - INFO - starting inventory
+2025-03-12 21:01:39,325 - INFO - stopping politely
+2025-03-12 21:01:39,493 - INFO - stopping politely
+2025-03-12 21:01:40,405 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:01:40,405 - ERROR - 🚨 Latencia alta (750.41 ms). Descartando conexión.
+2025-03-12 21:01:40,469 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:01:40,469 - INFO - ✅ Latencia segura (63.06 ms). Conectando...
+2025-03-12 21:01:40,716 - INFO - Using default mode (index 0)
+2025-03-12 21:01:40,716 - INFO - stopping politely
+2025-03-12 21:01:40,817 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:01:40,853 - INFO - starting inventory
+2025-03-12 21:01:41,941 - INFO - stopping politely
+2025-03-12 21:01:42,016 - INFO - stopping politely
+2025-03-12 21:01:52,590 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:01:52,649 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:01:52,649 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:01:52,657 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:01:52,657 - INFO - ✅ Latencia segura (7.68 ms). Conectando...
+2025-03-12 21:01:52,872 - INFO - Using default mode (index 0)
+2025-03-12 21:01:52,873 - INFO - stopping politely
+2025-03-12 21:01:52,903 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:01:52,921 - INFO - starting inventory
+2025-03-12 21:01:53,985 - INFO - stopping politely
+2025-03-12 21:01:54,011 - INFO - stopping politely
+2025-03-12 21:02:01,379 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:02:01,379 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 21:02:01,381 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:02:01,381 - INFO - ✅ Latencia segura (1.59 ms). Conectando...
+2025-03-12 21:02:01,596 - INFO - Using default mode (index 0)
+2025-03-12 21:02:01,596 - INFO - stopping politely
+2025-03-12 21:02:01,614 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:02:01,626 - INFO - starting inventory
+2025-03-12 21:02:02,663 - INFO - stopping politely
+2025-03-12 21:02:02,682 - INFO - stopping politely
+2025-03-12 21:02:08,898 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:02:08,898 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:02:08,902 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:02:08,902 - INFO - ✅ Latencia segura (4.50 ms). Conectando...
+2025-03-12 21:02:09,111 - INFO - Using default mode (index 0)
+2025-03-12 21:02:09,111 - INFO - stopping politely
+2025-03-12 21:02:09,137 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:02:09,153 - INFO - starting inventory
+2025-03-12 21:02:10,211 - INFO - stopping politely
+2025-03-12 21:02:10,236 - INFO - stopping politely
+2025-03-12 21:02:10,989 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:02:10,989 - ERROR - 🚨 Latencia alta (736.27 ms). Descartando conexión.
+2025-03-12 21:02:11,067 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:02:11,067 - INFO - ✅ Latencia segura (78.05 ms). Conectando...
+2025-03-12 21:02:11,489 - INFO - Using default mode (index 0)
+2025-03-12 21:02:11,489 - INFO - stopping politely
+2025-03-12 21:02:11,725 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:02:11,887 - INFO - starting inventory
+2025-03-12 21:02:13,081 - INFO - stopping politely
+2025-03-12 21:02:13,249 - INFO - stopping politely
+2025-03-12 21:02:14,057 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:02:14,057 - ERROR - 🚨 Latencia alta (648.35 ms). Descartando conexión.
+2025-03-12 21:02:14,149 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:02:14,149 - INFO - ✅ Latencia segura (91.25 ms). Conectando...
+2025-03-12 21:02:14,456 - INFO - Using default mode (index 0)
+2025-03-12 21:02:14,456 - INFO - stopping politely
+2025-03-12 21:02:14,514 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:02:14,551 - INFO - starting inventory
+2025-03-12 21:02:14,879 - INFO - stopping politely
+2025-03-12 21:02:14,992 - INFO - 🏷️ Tag detectado: {'EPC-96': b'313031323331313320202020', 'AntennaID': 1, 'PeakRSSI': -63, 'ChannelIndex': 6, 'FirstSeenTimestampUTC': 1741834990114629, 'LastSeenTimestampUTC': 1741834990114629, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x00\x9awi\x00\x00\x00\x0019XFB2682CE601533 '}, 'PhaseAngle': 224.296875, 'RSSI': -63.0}
+2025-03-12 21:02:14,992 - INFO - 💻 Procesando TAG 
+2025-03-12 21:02:14,993 - INFO - stopping politely
+2025-03-12 21:02:15,062 - INFO - TID: 333133303331333233333331333133333230323032303230
+2025-03-12 21:02:15,062 - INFO - 🏷️ Banco de Usuario - ReadData: 009a776900000000313958464232363832434536303135333320
+2025-03-12 21:02:15,063 - INFO - 🏷️ Folio: 10123113
+2025-03-12 21:02:15,063 - INFO - 🏷️ VIN: 19XFB2682CE601533
+2025-03-12 21:02:15,063 - INFO - ⚠️ Device found: {'id': 17, 'nombre': 'SALIDA A BELLAVISTA', 'ip': '172.17.50.111', 'mac_address': '00:16:25:12:5E:9F', 'estatus': '1', 'latitud': 21.543594, 'longitud': -104.864668, 'tiempo_de_espera': 2, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 112, 'nombre': 'TEPIC-BELLAVISTA', 'estatus': '1', 'sentidos': 1, 'arcos': 17, 'estados_globales': 1, 'entidad': 1}, {'id': 113, 'nombre': 'BELLAVISTA-TEPIC', 'estatus': '1', 'sentidos': 2, 'arcos': 17, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 21:02:15,063 - INFO - ✅ Antenna found: {'id': 112, 'nombre': 'TEPIC-BELLAVISTA', 'estatus': '1', 'sentidos': 1, 'arcos': 17, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 21:02:15,063 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': '19XFB2682CE601533', 'folio': '10123113', 'arco': 17, 'antena': 112}
+2025-03-12 21:02:18,455 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 200 OK"
+2025-03-12 21:02:18,455 - INFO - 👓 Respuesta de la API: <Response [200 OK]>
+2025-03-12 21:02:18,455 - INFO - 📑 Datos enviados: {'vin': '19XFB2682CE601533', 'folio': '10123113', 'arco': 17, 'antena': 112}
+2025-03-12 21:02:25,189 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:02:25,233 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:02:25,234 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:02:25,240 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:02:25,240 - INFO - ✅ Latencia segura (6.04 ms). Conectando...
+2025-03-12 21:02:25,458 - INFO - Using default mode (index 0)
+2025-03-12 21:02:25,458 - INFO - stopping politely
+2025-03-12 21:02:25,486 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:02:25,508 - INFO - starting inventory
+2025-03-12 21:02:25,810 - INFO - stopping politely
+2025-03-12 21:02:25,846 - INFO - 🏷️ Tag detectado: {'EPC-96': b'303435393832303420001306', 'AntennaID': 2, 'PeakRSSI': -63, 'ChannelIndex': 34, 'FirstSeenTimestampUTC': 1741814844095754, 'LastSeenTimestampUTC': 1741814844095754, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x00F)\xbc\x00\x00\x00\x003N1CN7AD0KK4384753'}, 'PhaseAngle': 140.9765625, 'RSSI': -63.0}
+2025-03-12 21:02:25,846 - INFO - 💻 Procesando TAG 
+2025-03-12 21:02:25,846 - INFO - stopping politely
+2025-03-12 21:02:25,882 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:02:25,882 - INFO - ✅ Latencia segura (16.12 ms). Conectando...
+2025-03-12 21:02:26,162 - INFO - Using default mode (index 0)
+2025-03-12 21:02:26,162 - INFO - stopping politely
+2025-03-12 21:02:26,200 - INFO - 🔌 Conectando a 172.17.50.104...
+2025-03-12 21:02:26,226 - INFO - starting inventory
+2025-03-12 21:02:27,314 - INFO - stopping politely
+2025-03-12 21:02:27,386 - INFO - stopping politely
+2025-03-12 21:02:27,404 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:02:27,405 - INFO - ✅ Latencia segura (1.62 ms). Conectando...
+2025-03-12 21:02:27,611 - INFO - Using default mode (index 0)
+2025-03-12 21:02:27,611 - INFO - stopping politely
+2025-03-12 21:02:27,629 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:02:27,643 - INFO - starting inventory
+2025-03-12 21:02:28,683 - INFO - stopping politely
+2025-03-12 21:02:28,713 - INFO - stopping politely
+2025-03-12 21:02:34,977 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:02:34,977 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:02:34,980 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:02:34,981 - INFO - ✅ Latencia segura (2.93 ms). Conectando...
+2025-03-12 21:02:35,197 - INFO - Using default mode (index 0)
+2025-03-12 21:02:35,197 - INFO - stopping politely
+2025-03-12 21:02:35,222 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:02:35,243 - INFO - starting inventory
+2025-03-12 21:02:35,532 - INFO - stopping politely
+2025-03-12 21:02:35,568 - INFO - 🏷️ Tag detectado: {'EPC-96': b'30340c138c0cfa6b0bbe9006', 'AntennaID': 2, 'PeakRSSI': -70, 'ChannelIndex': 24, 'FirstSeenTimestampUTC': 1741834746534466, 'LastSeenTimestampUTC': 1741834746534466, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 1, 'OpSpecID': 0, 'ReadDataWordCount': 0, 'ReadData': b''}, 'PhaseAngle': 83.3203125, 'RSSI': -70.5}
+2025-03-12 21:02:35,569 - INFO - 💻 Procesando TAG 
+2025-03-12 21:02:35,569 - INFO - stopping politely
+2025-03-12 21:02:36,337 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:02:36,337 - ERROR - 🚨 Latencia alta (751.74 ms). Descartando conexión.
+2025-03-12 21:02:36,414 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:02:36,414 - INFO - ✅ Latencia segura (76.39 ms). Conectando...
+2025-03-12 21:02:36,867 - INFO - Using default mode (index 0)
+2025-03-12 21:02:36,867 - INFO - stopping politely
+2025-03-12 21:02:37,103 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:02:37,265 - INFO - starting inventory
+2025-03-12 21:02:38,455 - INFO - stopping politely
+2025-03-12 21:02:38,617 - INFO - stopping politely
+2025-03-12 21:02:39,541 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:02:39,541 - ERROR - 🚨 Latencia alta (762.15 ms). Descartando conexión.
+2025-03-12 21:02:39,590 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:02:39,590 - INFO - ✅ Latencia segura (48.73 ms). Conectando...
+2025-03-12 21:02:39,878 - INFO - Using default mode (index 0)
+2025-03-12 21:02:39,878 - INFO - stopping politely
+2025-03-12 21:02:39,959 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:02:40,006 - INFO - starting inventory
+2025-03-12 21:02:41,132 - INFO - stopping politely
+2025-03-12 21:02:41,177 - INFO - stopping politely
+2025-03-12 21:02:41,203 - INFO - TID: 333033343335333933383332333033343230303031333036
+2025-03-12 21:02:41,203 - INFO - 🏷️ Banco de Usuario - ReadData: 004629bc00000000334e31434e374144304b4b34333834373533
+2025-03-12 21:02:41,204 - INFO - 🏷️ Folio: 4598204
+2025-03-12 21:02:41,204 - INFO - 🏷️ VIN: 3N1CN7AD0KK4384753
+2025-03-12 21:02:41,204 - INFO - ⚠️ Device found: {'id': 2, 'nombre': 'SALIDA A MIRAMAR', 'ip': '172.17.1.102', 'mac_address': '00:16:25:12:5E:9F', 'estatus': '1', 'latitud': 21.517687, 'longitud': -104.940088, 'tiempo_de_espera': None, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 75, 'nombre': 'TEPIC-MIRAMAR', 'estatus': '1', 'sentidos': 1, 'arcos': 2, 'estados_globales': 1, 'entidad': 1}, {'id': 76, 'nombre': 'MIRAMAR - TEPIC', 'estatus': '1', 'sentidos': 2, 'arcos': 2, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 21:02:41,204 - INFO - ✅ Antenna found: {'id': 76, 'nombre': 'MIRAMAR - TEPIC', 'estatus': '1', 'sentidos': 2, 'arcos': 2, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 21:02:41,204 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': '3N1CN7AD0KK4384753', 'folio': '4598204', 'arco': 2, 'antena': 76}
+2025-03-12 21:02:41,205 - INFO - TID: 333033343063313338633063666136623062626539303036
+2025-03-12 21:02:41,205 - INFO - 🏷️ Banco de Usuario - ReadData: 
+2025-03-12 21:02:45,024 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 500 Internal Server Error"
+2025-03-12 21:02:45,024 - ERROR - ❌ Error enviando datos: Server error '500 Internal Server Error' for url 'https://192.168.0.200/tramites/lecturas-arcos/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-03-12 21:02:45,025 - INFO -  Datos enviados: {'vin': '3N1CN7AD0KK4384753', 'folio': '4598204', 'arco': 2, 'antena': 76}
+2025-03-12 21:02:51,326 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:02:51,361 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:02:51,362 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:02:51,366 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:02:51,366 - INFO - ✅ Latencia segura (3.72 ms). Conectando...
+2025-03-12 21:02:51,585 - INFO - Using default mode (index 0)
+2025-03-12 21:02:51,586 - INFO - stopping politely
+2025-03-12 21:02:51,613 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:02:51,635 - INFO - starting inventory
+2025-03-12 21:02:52,699 - INFO - stopping politely
+2025-03-12 21:02:52,725 - INFO - stopping politely
+2025-03-12 21:02:58,978 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:02:58,978 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 21:02:58,980 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:02:58,980 - INFO - ✅ Latencia segura (2.30 ms). Conectando...
+2025-03-12 21:02:59,179 - INFO - Using default mode (index 0)
+2025-03-12 21:02:59,179 - INFO - stopping politely
+2025-03-12 21:02:59,197 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:02:59,209 - INFO - starting inventory
+2025-03-12 21:03:00,250 - INFO - stopping politely
+2025-03-12 21:03:00,279 - INFO - stopping politely
+2025-03-12 21:03:06,498 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:03:06,498 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:03:06,502 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:03:06,502 - INFO - ✅ Latencia segura (3.80 ms). Conectando...
+2025-03-12 21:03:06,742 - INFO - Using default mode (index 0)
+2025-03-12 21:03:06,742 - INFO - stopping politely
+2025-03-12 21:03:06,765 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:03:06,787 - INFO - starting inventory
+2025-03-12 21:03:07,840 - INFO - stopping politely
+2025-03-12 21:03:07,866 - INFO - stopping politely
+2025-03-12 21:03:08,489 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:03:08,489 - ERROR - 🚨 Latencia alta (607.01 ms). Descartando conexión.
+2025-03-12 21:03:08,563 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:03:08,564 - INFO - ✅ Latencia segura (74.31 ms). Conectando...
+2025-03-12 21:03:08,991 - INFO - Using default mode (index 0)
+2025-03-12 21:03:08,991 - INFO - stopping politely
+2025-03-12 21:03:09,231 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:03:09,391 - INFO - starting inventory
+2025-03-12 21:03:10,579 - INFO - stopping politely
+2025-03-12 21:03:10,749 - INFO - stopping politely
+2025-03-12 21:03:11,593 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:03:11,593 - ERROR - 🚨 Latencia alta (686.11 ms). Descartando conexión.
+2025-03-12 21:03:11,625 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:03:11,625 - INFO - ✅ Latencia segura (31.95 ms). Conectando...
+2025-03-12 21:03:11,883 - INFO - Using default mode (index 0)
+2025-03-12 21:03:11,883 - INFO - stopping politely
+2025-03-12 21:03:11,943 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:03:11,990 - INFO - starting inventory
+2025-03-12 21:03:13,153 - INFO - stopping politely
+2025-03-12 21:03:13,204 - INFO - stopping politely
+2025-03-12 21:03:23,363 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:03:23,392 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:03:23,392 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:03:23,397 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:03:23,397 - INFO - ✅ Latencia segura (4.97 ms). Conectando...
+2025-03-12 21:03:23,607 - INFO - Using default mode (index 0)
+2025-03-12 21:03:23,607 - INFO - stopping politely
+2025-03-12 21:03:23,635 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:03:23,654 - INFO - starting inventory
+2025-03-12 21:03:24,730 - INFO - stopping politely
+2025-03-12 21:03:24,755 - INFO - stopping politely
+2025-03-12 21:03:31,076 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:03:31,076 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 21:03:31,077 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:03:31,077 - INFO - ✅ Latencia segura (1.32 ms). Conectando...
+2025-03-12 21:03:31,298 - INFO - Using default mode (index 0)
+2025-03-12 21:03:31,298 - INFO - stopping politely
+2025-03-12 21:03:31,318 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:03:31,331 - INFO - starting inventory
+2025-03-12 21:03:32,373 - INFO - stopping politely
+2025-03-12 21:03:32,401 - INFO - stopping politely
+2025-03-12 21:03:38,658 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:03:38,658 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:03:38,678 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:03:38,678 - INFO - ✅ Latencia segura (19.99 ms). Conectando...
+2025-03-12 21:03:38,911 - INFO - Using default mode (index 0)
+2025-03-12 21:03:38,911 - INFO - stopping politely
+2025-03-12 21:03:38,934 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:03:38,952 - INFO - starting inventory
+2025-03-12 21:03:39,995 - INFO - stopping politely
+2025-03-12 21:03:40,018 - INFO - stopping politely
+2025-03-12 21:03:41,657 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:03:41,657 - ERROR - 🚨 Latencia alta (592.98 ms). Descartando conexión.
+2025-03-12 21:03:41,733 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:03:41,733 - INFO - ✅ Latencia segura (76.28 ms). Conectando...
+2025-03-12 21:03:42,171 - INFO - Using default mode (index 0)
+2025-03-12 21:03:42,171 - INFO - stopping politely
+2025-03-12 21:03:42,412 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:03:42,573 - INFO - starting inventory
+2025-03-12 21:03:43,767 - INFO - stopping politely
+2025-03-12 21:03:43,941 - INFO - stopping politely
+2025-03-12 21:03:44,797 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:03:44,797 - ERROR - 🚨 Latencia alta (694.06 ms). Descartando conexión.
+2025-03-12 21:03:44,812 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:03:44,812 - INFO - ✅ Latencia segura (14.57 ms). Conectando...
+2025-03-12 21:03:45,089 - INFO - Using default mode (index 0)
+2025-03-12 21:03:45,089 - INFO - stopping politely
+2025-03-12 21:03:45,177 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:03:45,217 - INFO - starting inventory
+2025-03-12 21:03:46,300 - INFO - stopping politely
+2025-03-12 21:03:46,344 - INFO - stopping politely
+2025-03-12 21:03:56,806 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:03:56,865 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:03:56,865 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:03:56,872 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:03:56,872 - INFO - ✅ Latencia segura (6.04 ms). Conectando...
+2025-03-12 21:03:57,084 - INFO - Using default mode (index 0)
+2025-03-12 21:03:57,084 - INFO - stopping politely
+2025-03-12 21:03:57,112 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:03:57,131 - INFO - starting inventory
+2025-03-12 21:03:58,183 - INFO - stopping politely
+2025-03-12 21:03:58,209 - INFO - stopping politely
+2025-03-12 21:03:58,243 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:03:58,243 - INFO - ✅ Latencia segura (7.41 ms). Conectando...
+2025-03-12 21:03:58,461 - INFO - Using default mode (index 0)
+2025-03-12 21:03:58,461 - INFO - stopping politely
+2025-03-12 21:03:58,486 - INFO - 🔌 Conectando a 172.17.50.104...
+2025-03-12 21:03:58,503 - INFO - starting inventory
+2025-03-12 21:03:59,556 - INFO - stopping politely
+2025-03-12 21:03:59,582 - INFO - stopping politely
+2025-03-12 21:03:59,603 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:03:59,603 - INFO - ✅ Latencia segura (3.34 ms). Conectando...
+2025-03-12 21:03:59,805 - INFO - Using default mode (index 0)
+2025-03-12 21:03:59,805 - INFO - stopping politely
+2025-03-12 21:03:59,823 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:03:59,836 - INFO - starting inventory
+2025-03-12 21:04:00,879 - INFO - stopping politely
+2025-03-12 21:04:00,900 - INFO - stopping politely
+2025-03-12 21:04:07,138 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:04:07,138 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:04:07,145 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:04:07,145 - INFO - ✅ Latencia segura (7.45 ms). Conectando...
+2025-03-12 21:04:07,365 - INFO - Using default mode (index 0)
+2025-03-12 21:04:07,365 - INFO - stopping politely
+2025-03-12 21:04:07,390 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:04:07,406 - INFO - starting inventory
+2025-03-12 21:04:08,454 - INFO - stopping politely
+2025-03-12 21:04:08,482 - INFO - stopping politely
+2025-03-12 21:04:09,205 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:04:09,205 - ERROR - 🚨 Latencia alta (699.46 ms). Descartando conexión.
+2025-03-12 21:04:09,282 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:04:09,282 - INFO - ✅ Latencia segura (76.56 ms). Conectando...
+2025-03-12 21:04:09,710 - INFO - Using default mode (index 0)
+2025-03-12 21:04:09,710 - INFO - stopping politely
+2025-03-12 21:04:09,949 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:04:10,111 - INFO - starting inventory
+2025-03-12 21:04:11,307 - INFO - stopping politely
+2025-03-12 21:04:11,475 - INFO - stopping politely
+2025-03-12 21:04:12,313 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:04:12,313 - ERROR - 🚨 Latencia alta (680.08 ms). Descartando conexión.
+2025-03-12 21:04:12,327 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:04:12,327 - INFO - ✅ Latencia segura (14.00 ms). Conectando...
+2025-03-12 21:04:12,596 - INFO - Using default mode (index 0)
+2025-03-12 21:04:12,596 - INFO - stopping politely
+2025-03-12 21:04:12,727 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:04:12,758 - INFO - starting inventory
+2025-03-12 21:04:13,831 - INFO - stopping politely
+2025-03-12 21:04:13,893 - INFO - stopping politely
+2025-03-12 21:04:24,111 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:04:24,155 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:04:24,156 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:04:24,163 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:04:24,163 - INFO - ✅ Latencia segura (6.96 ms). Conectando...
+2025-03-12 21:04:24,391 - INFO - Using default mode (index 0)
+2025-03-12 21:04:24,391 - INFO - stopping politely
+2025-03-12 21:04:24,422 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:04:24,442 - INFO - starting inventory
+2025-03-12 21:04:25,499 - INFO - stopping politely
+2025-03-12 21:04:25,525 - INFO - stopping politely
+2025-03-12 21:04:25,546 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:04:25,546 - INFO - ✅ Latencia segura (5.69 ms). Conectando...
+2025-03-12 21:04:25,779 - INFO - Using default mode (index 0)
+2025-03-12 21:04:25,779 - INFO - stopping politely
+2025-03-12 21:04:25,805 - INFO - 🔌 Conectando a 172.17.50.104...
+2025-03-12 21:04:25,822 - INFO - starting inventory
+2025-03-12 21:04:26,885 - INFO - stopping politely
+2025-03-12 21:04:26,912 - INFO - stopping politely
+2025-03-12 21:04:26,930 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:04:26,931 - INFO - ✅ Latencia segura (1.55 ms). Conectando...
+2025-03-12 21:04:27,149 - INFO - Using default mode (index 0)
+2025-03-12 21:04:27,149 - INFO - stopping politely
+2025-03-12 21:04:27,169 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:04:27,184 - INFO - starting inventory
+2025-03-12 21:04:28,229 - INFO - stopping politely
+2025-03-12 21:04:28,258 - INFO - stopping politely
+2025-03-12 21:04:34,508 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:04:34,508 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:04:34,512 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:04:34,512 - INFO - ✅ Latencia segura (4.43 ms). Conectando...
+2025-03-12 21:04:34,756 - INFO - Using default mode (index 0)
+2025-03-12 21:04:34,756 - INFO - stopping politely
+2025-03-12 21:04:34,782 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:04:34,800 - INFO - starting inventory
+2025-03-12 21:04:35,851 - INFO - stopping politely
+2025-03-12 21:04:35,875 - INFO - stopping politely
+2025-03-12 21:04:36,653 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:04:36,653 - ERROR - 🚨 Latencia alta (756.13 ms). Descartando conexión.
+2025-03-12 21:04:36,727 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:04:36,727 - INFO - ✅ Latencia segura (74.41 ms). Conectando...
+2025-03-12 21:04:37,170 - INFO - Using default mode (index 0)
+2025-03-12 21:04:37,170 - INFO - stopping politely
+2025-03-12 21:04:37,411 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:04:37,571 - INFO - starting inventory
+2025-03-12 21:04:38,765 - INFO - stopping politely
+2025-03-12 21:04:38,935 - INFO - stopping politely
+2025-03-12 21:04:39,833 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:04:39,833 - ERROR - 🚨 Latencia alta (737.83 ms). Descartando conexión.
+2025-03-12 21:04:39,874 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:04:39,874 - INFO - ✅ Latencia segura (40.86 ms). Conectando...
+2025-03-12 21:04:40,130 - INFO - Using default mode (index 0)
+2025-03-12 21:04:40,130 - INFO - stopping politely
+2025-03-12 21:04:40,190 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:04:40,228 - INFO - starting inventory
+2025-03-12 21:04:41,321 - INFO - stopping politely
+2025-03-12 21:04:41,362 - INFO - stopping politely
+2025-03-12 21:04:51,613 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:04:51,660 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:04:51,661 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:04:51,667 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:04:51,667 - INFO - ✅ Latencia segura (6.25 ms). Conectando...
+2025-03-12 21:04:51,892 - INFO - Using default mode (index 0)
+2025-03-12 21:04:51,892 - INFO - stopping politely
+2025-03-12 21:04:51,923 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:04:51,943 - INFO - starting inventory
+2025-03-12 21:04:53,000 - INFO - stopping politely
+2025-03-12 21:04:53,028 - INFO - stopping politely
+2025-03-12 21:05:01,055 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:05:01,055 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 21:05:01,057 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:05:01,057 - INFO - ✅ Latencia segura (1.65 ms). Conectando...
+2025-03-12 21:05:01,269 - INFO - Using default mode (index 0)
+2025-03-12 21:05:01,269 - INFO - stopping politely
+2025-03-12 21:05:01,286 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:05:01,301 - INFO - starting inventory
+2025-03-12 21:05:02,354 - INFO - stopping politely
+2025-03-12 21:05:02,375 - INFO - stopping politely
+2025-03-12 21:05:08,658 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:05:08,658 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:05:08,662 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:05:08,663 - INFO - ✅ Latencia segura (4.71 ms). Conectando...
+2025-03-12 21:05:08,886 - INFO - Using default mode (index 0)
+2025-03-12 21:05:08,886 - INFO - stopping politely
+2025-03-12 21:05:08,910 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:05:08,928 - INFO - starting inventory
+2025-03-12 21:05:09,976 - INFO - stopping politely
+2025-03-12 21:05:09,996 - INFO - stopping politely
+2025-03-12 21:05:10,749 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:05:10,749 - ERROR - 🚨 Latencia alta (739.16 ms). Descartando conexión.
+2025-03-12 21:05:10,823 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:05:10,823 - INFO - ✅ Latencia segura (74.55 ms). Conectando...
+2025-03-12 21:05:11,246 - INFO - Using default mode (index 0)
+2025-03-12 21:05:11,246 - INFO - stopping politely
+2025-03-12 21:05:11,486 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:05:11,647 - INFO - starting inventory
+2025-03-12 21:05:12,841 - INFO - stopping politely
+2025-03-12 21:05:13,005 - INFO - stopping politely
+2025-03-12 21:05:13,685 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:05:13,685 - ERROR - 🚨 Latencia alta (520.02 ms). Descartando conexión.
+2025-03-12 21:05:13,701 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:05:13,701 - INFO - ✅ Latencia segura (16.04 ms). Conectando...
+2025-03-12 21:05:13,952 - INFO - Using default mode (index 0)
+2025-03-12 21:05:13,952 - INFO - stopping politely
+2025-03-12 21:05:14,068 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:05:14,130 - INFO - starting inventory
+2025-03-12 21:05:14,466 - INFO - stopping politely
+2025-03-12 21:05:14,541 - INFO - 🏷️ Tag detectado: {'EPC-96': b'313030363232393120202020', 'AntennaID': 2, 'PeakRSSI': -65, 'ChannelIndex': 38, 'FirstSeenTimestampUTC': 1741835169754849, 'LastSeenTimestampUTC': 1741835169754849, 'TagSeenCount': 1, 'OpSpecResult': {'Result': 0, 'OpSpecID': 0, 'ReadDataWordCount': 13, 'ReadData': b'\x00\x99\x89\xd3\x00\x00\x00\x00YV1DZ9853A2098680 '}, 'PhaseAngle': 200.0390625, 'RSSI': -65.0}
+2025-03-12 21:05:14,541 - INFO - 💻 Procesando TAG 
+2025-03-12 21:05:14,541 - INFO - stopping politely
+2025-03-12 21:05:14,577 - INFO - TID: 333133303330333633323332333933313230323032303230
+2025-03-12 21:05:14,577 - INFO - 🏷️ Banco de Usuario - ReadData: 009989d300000000595631445a39383533413230393836383020
+2025-03-12 21:05:14,577 - INFO - 🏷️ Folio: 10062291
+2025-03-12 21:05:14,577 - INFO - 🏷️ VIN: YV1DZ9853A2098680
+2025-03-12 21:05:14,577 - INFO - ⚠️ Device found: {'id': 17, 'nombre': 'SALIDA A BELLAVISTA', 'ip': '172.17.50.111', 'mac_address': '00:16:25:12:5E:9F', 'estatus': '1', 'latitud': 21.543594, 'longitud': -104.864668, 'tiempo_de_espera': 2, 'sin_repetir': None, 'estados_globales': 1, 'entidad': 1, 'antenas': [{'id': 112, 'nombre': 'TEPIC-BELLAVISTA', 'estatus': '1', 'sentidos': 1, 'arcos': 17, 'estados_globales': 1, 'entidad': 1}, {'id': 113, 'nombre': 'BELLAVISTA-TEPIC', 'estatus': '1', 'sentidos': 2, 'arcos': 17, 'estados_globales': 1, 'entidad': 1}]}
+2025-03-12 21:05:14,577 - INFO - ✅ Antenna found: {'id': 113, 'nombre': 'BELLAVISTA-TEPIC', 'estatus': '1', 'sentidos': 2, 'arcos': 17, 'estados_globales': 1, 'entidad': 1}
+2025-03-12 21:05:14,577 - INFO - ⚠️ Sending POST request to URL: https://192.168.0.200/tramites/lecturas-arcos/ with payload: {'vin': 'YV1DZ9853A2098680', 'folio': '10062291', 'arco': 17, 'antena': 113}
+2025-03-12 21:05:17,385 - INFO - HTTP Request: POST https://192.168.0.200/tramites/lecturas-arcos/ "HTTP/1.1 200 OK"
+2025-03-12 21:05:17,385 - INFO - 👓 Respuesta de la API: <Response [200 OK]>
+2025-03-12 21:05:17,385 - INFO - 📑 Datos enviados: {'vin': 'YV1DZ9853A2098680', 'folio': '10062291', 'arco': 17, 'antena': 113}
+2025-03-12 21:05:24,721 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:05:24,769 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:05:24,770 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:05:24,776 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:05:24,776 - INFO - ✅ Latencia segura (5.66 ms). Conectando...
+2025-03-12 21:05:24,984 - INFO - Using default mode (index 0)
+2025-03-12 21:05:24,985 - INFO - stopping politely
+2025-03-12 21:05:25,012 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:05:25,034 - INFO - starting inventory
+2025-03-12 21:05:26,100 - INFO - stopping politely
+2025-03-12 21:05:26,126 - INFO - stopping politely
+2025-03-12 21:05:32,418 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:05:32,418 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 21:05:32,419 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:05:32,419 - INFO - ✅ Latencia segura (1.56 ms). Conectando...
+2025-03-12 21:05:32,630 - INFO - Using default mode (index 0)
+2025-03-12 21:05:32,630 - INFO - stopping politely
+2025-03-12 21:05:32,649 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:05:32,664 - INFO - starting inventory
+2025-03-12 21:05:33,709 - INFO - stopping politely
+2025-03-12 21:05:33,729 - INFO - stopping politely
+2025-03-12 21:05:40,018 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:05:40,018 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:05:40,020 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:05:40,020 - INFO - ✅ Latencia segura (2.53 ms). Conectando...
+2025-03-12 21:05:40,261 - INFO - Using default mode (index 0)
+2025-03-12 21:05:40,262 - INFO - stopping politely
+2025-03-12 21:05:40,285 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:05:40,302 - INFO - starting inventory
+2025-03-12 21:05:41,351 - INFO - stopping politely
+2025-03-12 21:05:41,376 - INFO - stopping politely
+2025-03-12 21:05:42,088 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:05:42,089 - ERROR - 🚨 Latencia alta (695.52 ms). Descartando conexión.
+2025-03-12 21:05:42,163 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:05:42,163 - INFO - ✅ Latencia segura (74.63 ms). Conectando...
+2025-03-12 21:05:42,622 - INFO - Using default mode (index 0)
+2025-03-12 21:05:42,622 - INFO - stopping politely
+2025-03-12 21:05:42,859 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:05:43,019 - INFO - starting inventory
+2025-03-12 21:05:44,203 - INFO - stopping politely
+2025-03-12 21:05:44,375 - INFO - stopping politely
+2025-03-12 21:05:45,264 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:05:45,265 - ERROR - 🚨 Latencia alta (731.74 ms). Descartando conexión.
+2025-03-12 21:05:45,290 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:05:45,290 - INFO - ✅ Latencia segura (25.32 ms). Conectando...
+2025-03-12 21:05:45,524 - INFO - Using default mode (index 0)
+2025-03-12 21:05:45,524 - INFO - stopping politely
+2025-03-12 21:05:45,587 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:05:45,621 - INFO - starting inventory
+2025-03-12 21:05:46,699 - INFO - stopping politely
+2025-03-12 21:05:46,750 - INFO - stopping politely
+2025-03-12 21:05:56,976 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:05:57,024 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:05:57,025 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:05:57,029 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:05:57,029 - INFO - ✅ Latencia segura (4.07 ms). Conectando...
+2025-03-12 21:05:57,250 - INFO - Using default mode (index 0)
+2025-03-12 21:05:57,250 - INFO - stopping politely
+2025-03-12 21:05:57,284 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:05:57,303 - INFO - starting inventory
+2025-03-12 21:05:58,351 - INFO - stopping politely
+2025-03-12 21:05:58,388 - INFO - stopping politely
+2025-03-12 21:06:04,668 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:06:04,668 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 21:06:04,670 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:06:04,670 - INFO - ✅ Latencia segura (1.81 ms). Conectando...
+2025-03-12 21:06:04,870 - INFO - Using default mode (index 0)
+2025-03-12 21:06:04,871 - INFO - stopping politely
+2025-03-12 21:06:04,888 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:06:04,904 - INFO - starting inventory
+2025-03-12 21:06:05,946 - INFO - stopping politely
+2025-03-12 21:06:05,973 - INFO - stopping politely
+2025-03-12 21:06:12,258 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:06:12,258 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:06:12,262 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:06:12,263 - INFO - ✅ Latencia segura (4.71 ms). Conectando...
+2025-03-12 21:06:12,483 - INFO - Using default mode (index 0)
+2025-03-12 21:06:12,483 - INFO - stopping politely
+2025-03-12 21:06:12,508 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:06:12,529 - INFO - starting inventory
+2025-03-12 21:06:13,579 - INFO - stopping politely
+2025-03-12 21:06:13,608 - INFO - stopping politely
+2025-03-12 21:06:14,412 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:06:14,412 - ERROR - 🚨 Latencia alta (778.81 ms). Descartando conexión.
+2025-03-12 21:06:14,489 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:06:14,490 - INFO - ✅ Latencia segura (76.93 ms). Conectando...
+2025-03-12 21:06:14,919 - INFO - Using default mode (index 0)
+2025-03-12 21:06:14,919 - INFO - stopping politely
+2025-03-12 21:06:15,163 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:06:15,323 - INFO - starting inventory
+2025-03-12 21:06:16,513 - INFO - stopping politely
+2025-03-12 21:06:16,683 - INFO - stopping politely
+2025-03-12 21:06:17,448 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:06:17,449 - ERROR - 🚨 Latencia alta (609.49 ms). Descartando conexión.
+2025-03-12 21:06:17,471 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:06:17,471 - INFO - ✅ Latencia segura (22.46 ms). Conectando...
+2025-03-12 21:06:17,730 - INFO - Using default mode (index 0)
+2025-03-12 21:06:17,731 - INFO - stopping politely
+2025-03-12 21:06:17,769 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:06:17,818 - INFO - starting inventory
+2025-03-12 21:06:18,924 - INFO - stopping politely
+2025-03-12 21:06:18,966 - INFO - stopping politely
+2025-03-12 21:06:29,163 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:06:29,215 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:06:29,216 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:06:29,220 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:06:29,220 - INFO - ✅ Latencia segura (4.16 ms). Conectando...
+2025-03-12 21:06:29,433 - INFO - Using default mode (index 0)
+2025-03-12 21:06:29,433 - INFO - stopping politely
+2025-03-12 21:06:29,462 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:06:29,485 - INFO - starting inventory
+2025-03-12 21:06:30,541 - INFO - stopping politely
+2025-03-12 21:06:30,570 - INFO - stopping politely
+2025-03-12 21:06:36,818 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:06:36,818 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 21:06:36,820 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:06:36,820 - INFO - ✅ Latencia segura (2.10 ms). Conectando...
+2025-03-12 21:06:37,023 - INFO - Using default mode (index 0)
+2025-03-12 21:06:37,023 - INFO - stopping politely
+2025-03-12 21:06:37,039 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:06:37,054 - INFO - starting inventory
+2025-03-12 21:06:38,099 - INFO - stopping politely
+2025-03-12 21:06:38,119 - INFO - stopping politely
+2025-03-12 21:06:44,338 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:06:44,338 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:06:44,342 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:06:44,342 - INFO - ✅ Latencia segura (4.18 ms). Conectando...
+2025-03-12 21:06:44,589 - INFO - Using default mode (index 0)
+2025-03-12 21:06:44,589 - INFO - stopping politely
+2025-03-12 21:06:44,612 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:06:44,633 - INFO - starting inventory
+2025-03-12 21:06:45,685 - INFO - stopping politely
+2025-03-12 21:06:45,708 - INFO - stopping politely
+2025-03-12 21:06:46,292 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:06:46,292 - ERROR - 🚨 Latencia alta (564.19 ms). Descartando conexión.
+2025-03-12 21:06:46,372 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:06:46,372 - INFO - ✅ Latencia segura (79.52 ms). Conectando...
+2025-03-12 21:06:46,809 - INFO - Using default mode (index 0)
+2025-03-12 21:06:46,810 - INFO - stopping politely
+2025-03-12 21:06:47,053 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:06:47,222 - INFO - starting inventory
+2025-03-12 21:06:48,407 - INFO - stopping politely
+2025-03-12 21:06:48,581 - INFO - stopping politely
+2025-03-12 21:06:49,480 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:06:49,481 - ERROR - 🚨 Latencia alta (737.32 ms). Descartando conexión.
+2025-03-12 21:06:49,489 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:06:49,489 - INFO - ✅ Latencia segura (8.26 ms). Conectando...
+2025-03-12 21:06:49,711 - INFO - Using default mode (index 0)
+2025-03-12 21:06:49,711 - INFO - stopping politely
+2025-03-12 21:06:49,765 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:06:49,811 - INFO - starting inventory
+2025-03-12 21:06:50,926 - INFO - stopping politely
+2025-03-12 21:06:50,982 - INFO - stopping politely
+2025-03-12 21:07:01,297 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:07:01,359 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:07:01,359 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:07:01,364 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:07:01,364 - INFO - ✅ Latencia segura (4.77 ms). Conectando...
+2025-03-12 21:07:01,576 - INFO - Using default mode (index 0)
+2025-03-12 21:07:01,576 - INFO - stopping politely
+2025-03-12 21:07:01,606 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:07:01,623 - INFO - starting inventory
+2025-03-12 21:07:02,668 - INFO - stopping politely
+2025-03-12 21:07:02,696 - INFO - stopping politely
+2025-03-12 21:07:09,872 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:07:09,872 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 21:07:09,874 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:07:09,874 - INFO - ✅ Latencia segura (1.52 ms). Conectando...
+2025-03-12 21:07:10,095 - INFO - Using default mode (index 0)
+2025-03-12 21:07:10,095 - INFO - stopping politely
+2025-03-12 21:07:10,113 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:07:10,125 - INFO - starting inventory
+2025-03-12 21:07:11,168 - INFO - stopping politely
+2025-03-12 21:07:11,196 - INFO - stopping politely
+2025-03-12 21:07:17,458 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:07:17,458 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:07:17,462 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:07:17,462 - INFO - ✅ Latencia segura (4.37 ms). Conectando...
+2025-03-12 21:07:17,700 - INFO - Using default mode (index 0)
+2025-03-12 21:07:17,700 - INFO - stopping politely
+2025-03-12 21:07:17,724 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:07:17,740 - INFO - starting inventory
+2025-03-12 21:07:18,789 - INFO - stopping politely
+2025-03-12 21:07:18,811 - INFO - stopping politely
+2025-03-12 21:07:19,576 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:07:19,576 - ERROR - 🚨 Latencia alta (749.29 ms). Descartando conexión.
+2025-03-12 21:07:19,660 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:07:19,660 - INFO - ✅ Latencia segura (83.57 ms). Conectando...
+2025-03-12 21:07:20,095 - INFO - Using default mode (index 0)
+2025-03-12 21:07:20,095 - INFO - stopping politely
+2025-03-12 21:07:20,339 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:07:20,499 - INFO - starting inventory
+2025-03-12 21:07:21,697 - INFO - stopping politely
+2025-03-12 21:07:21,867 - INFO - stopping politely
+2025-03-12 21:07:22,692 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:07:22,692 - ERROR - 🚨 Latencia alta (669.46 ms). Descartando conexión.
+2025-03-12 21:07:22,707 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:07:22,707 - INFO - ✅ Latencia segura (14.24 ms). Conectando...
+2025-03-12 21:07:22,957 - INFO - Using default mode (index 0)
+2025-03-12 21:07:22,957 - INFO - stopping politely
+2025-03-12 21:07:23,080 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:07:23,138 - INFO - starting inventory
+2025-03-12 21:07:24,203 - INFO - stopping politely
+2025-03-12 21:07:24,264 - INFO - stopping politely
+2025-03-12 21:07:34,529 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:07:34,592 - INFO - HTTP Request: GET https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/ "HTTP/1.1 200 OK"
+2025-03-12 21:07:34,592 - INFO - 🔄 Dispositivos actualizados: 17 con datos, 0 sin datos.
+2025-03-12 21:07:34,599 - INFO - 📟 IP Dispositivo 172.17.1.102
+2025-03-12 21:07:34,599 - INFO - ✅ Latencia segura (5.98 ms). Conectando...
+2025-03-12 21:07:34,821 - INFO - Using default mode (index 0)
+2025-03-12 21:07:34,821 - INFO - stopping politely
+2025-03-12 21:07:34,853 - INFO - 🔌 Conectando a 172.17.1.102...
+2025-03-12 21:07:34,874 - INFO - starting inventory
+2025-03-12 21:07:35,924 - INFO - stopping politely
+2025-03-12 21:07:35,950 - INFO - stopping politely
+2025-03-12 21:07:43,976 - INFO - 📟 IP Dispositivo 172.17.50.104
+2025-03-12 21:07:43,976 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.104
+2025-03-12 21:07:43,978 - INFO - 📟 IP Dispositivo 172.17.50.105
+2025-03-12 21:07:43,978 - INFO - ✅ Latencia segura (1.84 ms). Conectando...
+2025-03-12 21:07:44,179 - INFO - Using default mode (index 0)
+2025-03-12 21:07:44,179 - INFO - stopping politely
+2025-03-12 21:07:44,197 - INFO - 🔌 Conectando a 172.17.50.105...
+2025-03-12 21:07:44,211 - INFO - starting inventory
+2025-03-12 21:07:45,251 - INFO - stopping politely
+2025-03-12 21:07:45,273 - INFO - stopping politely
+2025-03-12 21:07:51,538 - INFO - 📟 IP Dispositivo 172.17.50.109
+2025-03-12 21:07:51,538 - WARNING - ⚠️ No se pudo medir latencia de 172.17.50.109
+2025-03-12 21:07:51,542 - INFO - 📟 IP Dispositivo 172.17.50.107
+2025-03-12 21:07:51,542 - INFO - ✅ Latencia segura (3.92 ms). Conectando...
+2025-03-12 21:07:51,791 - INFO - Using default mode (index 0)
+2025-03-12 21:07:51,791 - INFO - stopping politely
+2025-03-12 21:07:51,817 - INFO - 🔌 Conectando a 172.17.50.107...
+2025-03-12 21:07:51,834 - INFO - starting inventory
+2025-03-12 21:07:52,883 - INFO - stopping politely
+2025-03-12 21:07:52,903 - INFO - stopping politely
+2025-03-12 21:07:53,688 - INFO - 📟 IP Dispositivo 10.15.41.116
+2025-03-12 21:07:53,689 - ERROR - 🚨 Latencia alta (769.57 ms). Descartando conexión.
+2025-03-12 21:07:53,765 - INFO - 📟 IP Dispositivo 10.15.15.100
+2025-03-12 21:07:53,765 - INFO - ✅ Latencia segura (76.65 ms). Conectando...
+2025-03-12 21:07:54,222 - INFO - Using default mode (index 0)
+2025-03-12 21:07:54,222 - INFO - stopping politely
+2025-03-12 21:07:54,461 - INFO - 🔌 Conectando a 10.15.15.100...
+2025-03-12 21:07:54,619 - INFO - starting inventory
+2025-03-12 21:07:55,811 - INFO - stopping politely
+2025-03-12 21:07:55,977 - INFO - stopping politely
+2025-03-12 21:07:56,920 - INFO - 📟 IP Dispositivo 10.15.41.115
+2025-03-12 21:07:56,920 - ERROR - 🚨 Latencia alta (783.36 ms). Descartando conexión.
+2025-03-12 21:07:56,930 - INFO - 📟 IP Dispositivo 172.17.50.111
+2025-03-12 21:07:56,930 - INFO - ✅ Latencia segura (9.50 ms). Conectando...
+2025-03-12 21:07:57,198 - INFO - Using default mode (index 0)
+2025-03-12 21:07:57,198 - INFO - stopping politely
+2025-03-12 21:07:57,269 - INFO - 🔌 Conectando a 172.17.50.111...
+2025-03-12 21:07:57,306 - INFO - starting inventory
+2025-03-12 21:07:58,384 - INFO - stopping politely
+2025-03-12 21:07:58,421 - INFO - stopping politely
