@@ -88,7 +88,7 @@ class Reader(LLRPClient):
 			# nothing to filter
 			return trp
 	
-	def detectTags(self, powerDBm, freqMHz, mode, duration=1, session=2, population=1, antennas=(0,), rounds=1):
+	def detectTags(self, powerDBm=30, freqMHz=915, mode=3, duration=1, session=2, population=1, antennas=(1,2,3,4), rounds=1):
 		'''starts the readers inventoring process and return the found tags.
 		
 		:param duration: gives the reader that much time in seconds to find tags
