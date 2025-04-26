@@ -200,10 +200,7 @@ async def connect_to_device(device):
     
 
     print('Before start:')
-    #	print(reader)
-
-    tags = reader.detectTags() # remove antennas argument or set to (0,) to use all antenna ports
-#    tags = reader.detectTags(powerDBm=16, antennas=(1,)) # remove antennas argument or set to (0,) to use all antenna ports
+    tags = reader.detectTags(powerDBm=16, antennas=(0,)) # remove antennas argument or set to (0,) to use all antenna ports
 #     tag_report = reader.startLiveReports(
 #     reportCallback=tag_seen_callback2,  # Tu función de callback
 #     powerDBm=31.5,                     # Potencia en dBm
@@ -240,44 +237,12 @@ async def connect_to_device(device):
                 vin = vin.replace('\x00', '').strip()
                
                 url = "https://192.168.0.200/tramites/lecturas-arcos/"
-                
-                # Identificar antena y dispositivo
-                antenna_index = tag.get('AntennaID', 1) - 1  # Ajustamos a índice de arreglo (0-based)
-                associated_device = next((d for d in devices_with_data if d.get("ip").strip() == ip.strip()), None)
-                arco_id = None
-                antenna_id = None
-                
-                if associated_device:
-                    print(f"Device found: {associated_device}")
-                    # Busca la antena por índice en el arreglo de antenas
-                    antenas = associated_device.get("antenas", [])
-                    if 0 <= antenna_index < len(antenas):
-                        antenna = antenas[antenna_index]
-                        antenna_id = antenna.get("id")
-                        arco_id = antenna.get("arcos")
-                        print(f"Antenna found: {antenna}")
-                    else:
-                        print(f"Antenna index {antenna_index} out of range for device {associated_device}")
-                else:
-                    print(f"No device found with IP {ip}")
-            
-                
-                # Preparar la URL y el payload
-                url = "https://192.168.0.200/tramites/lecturas-arcos/"
-                payload = {
-                    "vin": vin,
-                    "folio": folio,
-                    "arco": arco_id,
-                    "antena": antenna_id
-                }
-                    
-                
-                # payload = {"vin": vin,"folio": folio,"arco": 5,"antena": 1}
+                payload = {"vin": vin,"folio": folio,"arco": 2,"antena": 1}
 
                 print(f"Sending POST request to URL: {url} with payload: {payload}")
                 
                 try:
-                    response = requests.post(url, json=payload, verify=False, timeout=6)  # Tiempo máximo de espera de 6 segundos    
+                    response = requests.post(url, json=payload, verify=False)  # Realiza la solicitud POST
                     
                     if response.status_code == 200:
                         print(f"API response for {vin}: {response.json()}")
@@ -285,148 +250,7 @@ async def connect_to_device(device):
                         print(f"Failed to fetch data from API. Status code: {response.status_code}")
                 except Exception as e:
                     print(f"Error querying API: {e}")
-      
-# async def connect_to_device(device, devices_list):
-#     ip = device.get("ip")
-#     reader = R420(ip)
-    
-#     print(f"Connecting to device at IP: {ip}")
-    
-#     # Setup parameters for reading tags
-#     readSpecParam = {
-#         'OpSpecID': 0,
-#         'MB': 3,
-#         'WordPtr': 0,
-#         'AccessPassword': 0,
-#         'WordCount': 13
-#     }
-#     reader.startAccess(readWords=readSpecParam)
-    
-#     tags = reader.detectTags()  # Detect tags on all antenna ports by default
-    
-#     print(f"Tags detected: {tags}")
-#     for tag in tags:
-#         resultado_convertido = {k: v.hex() if isinstance(v, bytes) else v for k, v in tag.items()}
-#         print(f"Tag data: {resultado_convertido}")
-        
-#         # Leer EPC del tag
-#         tid = tag.get('EPC-96', b'').hex()
-#         print(f"TID: {tid}")
-        
-#         # Leer datos del banco de usuario
-#         user_data = tag['OpSpecResult']['ReadData']
-#         print(f"Banco de Usuario - ReadData: {user_data.hex()}")
-        
-#         if len(user_data) >= 13:
-#             folio = str(int(user_data[:4].hex(), 16))
-#             vin = ConvertHex(user_data[4:34].hex()).replace('\x00', '').strip()
             
-#             print(f"Folio: {folio}")
-#             print(f"VIN: {vin}")
-            
-#             # Identificar antena
-#             antenna_id = tag.get('AntennaID', 'Unknown')
-#             print(f"Antenna ID: {antenna_id}")
-            
-#             # Buscar dispositivo en la lista de dispositivos
-#             associated_device = next((d for d in devices_list if d.get("ip") == ip), None)
-#             arco_id = associated_device.get("arco_id") if associated_device else "Unknown"
-            
-#             # Preparar la URL y el payload
-#             url = "https://192.168.0.200/tramites/lecturas-arcos/"
-#             payload = {
-#                 "vin": vin,
-#                 "folio": folio,
-#                 "arco": arco_id,
-#                 "antena": antenna_id
-#             }
-            
-#             print(f"Sending POST request to URL: {url} with payload: {payload}")
-            
-#             # Enviar los datos a la API
-#             try:
-#                 response = requests.post(url, json=payload, verify=False)
-#                 if response.status_code == 200:
-#                     print(f"API response for {vin}: {response.json()}")
-#                 else:
-#                     print(f"Failed to fetch data from API. Status code: {response.status_code}")
-#             except Exception as e:
-#                 print(f"Error querying API: {e}")
-
-
-# async def connect_to_device(device):
-#     ip = device.get("ip")
-#     reader = R420(ip)
-#     print(f"Connecting to device at IP: {ip}")
-
-#     try:
-#         # Configuración de lectura de datos
-#         readSpecParam = {
-#             'OpSpecID': 0,
-#             'MB': 3,
-#             'WordPtr': 0,
-#             'AccessPassword': 0,
-#             'WordCount': 13
-#         }
-#         # Intentar establecer conexión con un límite de tiempo
-#         # await asyncio.wait_for(reader.startAccess(readWords=readSpecParam), timeout=5)  # Suponiendo que connect() es un método asincrónico
-#         print(f"Successfully connected to device at IP: {ip}")
-
-        
-#         reader.startAccess(readWords=readSpecParam)
-
-#         # Detectar tags
-#         print("Before start:")
-#         tags = reader.detectTags()
-#         print(tags)
-
-#         for tag in tags:
-#             resultado_convertido = {k: v.hex() if isinstance(v, bytes) else v for k, v in tag.items()}
-#             print(tag)
-#             tid = tag['EPC-96'].hex()
-#             print(f"TID: {tid}")
-            
-#             # Procesar datos del banco de Usuario
-#             user_data = tag['OpSpecResult']['ReadData']
-#             print(f"Banco de Usuario - ReadData: {user_data.hex()}")
-#             if len(user_data) >= 13:
-#                 folio = str(int(user_data[:4].hex(), 16))
-#                 vin = ConvertHex(user_data[4:34].hex())
-#                 vin = vin.replace('\x00', '').strip()
-#                 # Suprimir la advertencia (solo para pruebas)
-#                 warnings.filterwarnings("ignore", message="Unverified HTTPS request")
-#                 # Preparar la URL y el payload
-#                 url = "https://192.168.0.200/tramites/lecturas-arcos/"
-#                 payload = {
-#                     "vin": vin,
-#                     "folio": folio,
-#                     "arco": None,  # Ajustar con datos reales
-#                     "antena": None  # Ajustar con datos reales
-#                 }
-#                 print(f"Sending POST request to URL: {url} with payload: {payload}")
-
-#                 try:
-#                     response = requests.post(url, json=payload, verify=False, timeout=6)
-#                     if response.status_code == 200:
-#                         print(f"API response for {vin}: {response.json()}")
-#                     else:
-#                         print(f"Failed to fetch data from API. Status code: {response.status_code}")
-#                 except Exception as e:
-#                     print(f"Error querying API: {e}")
-
-#     except asyncio.TimeoutError:
-#         print(f"Connection to device at IP: {ip} timed out after 5 seconds.")
-#     except Exception as e:
-#         print(f"Error while connecting to device at IP: {ip}: {e}")
-#     finally:
-#         # Desconectar del dispositivo si es necesario
-#         try:
-#             # reader.disconnect()  # Suponiendo que hay un método disconnect()
-#             print(f"finally from device at IP: {ip}")
-#         except Exception as e:
-#             print(f"Error during disconnection from IP {ip}: {e}")
-            
-      
 def tag_seen_callback(tags):
     print(tags)
     if len(tags) > 0 :
@@ -470,21 +294,6 @@ def tag_seen_callback2(tags):
                     print("No hay datos en 'ReadData' en este tag.")
             else:
                 print("No se encontró 'OpSpecResult' en este tag.")
-
-# # async def connect_to_devices():
-#     # Conectar a todos los dispositivos con datos
-#     for device in devices_with_data:
-#         try:
-#             # Limitar el tiempo de conexión a 5 segundos
-#             # await asyncio.wait_for(connect_to_device(device), timeout=2)
-#             await asyncio.wait_for(connect_to_device(device), timeout=)
-#         except asyncio.TimeoutError:
-#             print(f"Tiempo de espera agotado para el dispositivo {device['ip']}, intentando con el siguiente.")
-#         except Exception as e:
-#             print(f"Error inesperado con el dispositivo {device['ip']}: {e}")
-#     # # Conectar a todos los dispositivos con datos
-#     # for device in devices_with_data:
-#     #     await connect_to_device(device)
 
 async def connect_to_devices():
     # Conectar a todos los dispositivos con datos
