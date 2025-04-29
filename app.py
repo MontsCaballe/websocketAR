@@ -1,22 +1,35 @@
+import asyncio
+import threading
 import tornado.ioloop
 import tornado.web
 import tornado.websocket
 import tornado.httpserver
-import asyncio
 import httpx
 import logging
 from sllurp.reader import Reader
 
-# Configurar logging
-logging.basicConfig(level=logging.INFO)
+# ============================
+# Configuraciones generales
+# ============================
 
-# URLs
 URL_DEVICES = "https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/"
 URL_ANTENNAS = "https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/"
+API_URL = "https://apirepuve.minayarit.gob.mx/tramites/lecturas-arcos/"
 
+logging.basicConfig(level=logging.INFO)
+
+# ============================
 # Variables globales
+# ============================
+
 devices_with_data = []
+antennas_with_data = []
 readers = []
+reported_tags = set()
+
+# ============================
+# WebSocket y Página Web
+# ============================
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
@@ -28,10 +41,18 @@ class MainHandler(tornado.web.RequestHandler):
 
         html_content = f"""
         <html>
-            <head><title>Bienvenido al WebSocket RFID</title></head>
+            <head>
+                <title>Bienvenido al WebSocket RFID</title>
+                <style>
+                    body {{ background-color: #f5f0e6; font-family: Arial, sans-serif; text-align: center; padding: 50px; }}
+                    h1 {{ color: #800000; }}
+                    h2 {{ color: #555; }}
+                    ul {{ text-align: left; display: inline-block; }}
+                </style>
+            </head>
             <body>
                 <h1>Bienvenido al WebSocket RFID</h1>
-                <p>Conéctate a: <code>ws://[TU-IP-SERVIDOR]:8888/wsArcos</code></p>
+                <p>Conéctate a: <code>ws://localhost:8888/wsArcos</code></p>
                 <h2>Dispositivos conectados:</h2>
                 {devices_html}
             </body>
@@ -58,9 +79,14 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
         for client in cls.clients:
             client.write_message(message)
 
+# ============================
+# Lector RFID
+# ============================
+
 class DeviceReader:
-    def __init__(self, ip, report_callback):
-        self.ip = ip
+    def __init__(self, device, report_callback):
+        self.device = device
+        self.ip = device.get('ip')
         self.report_callback = report_callback
         self.reader = None
 
@@ -68,49 +94,141 @@ class DeviceReader:
         logging.info(f"Conectando a dispositivo {self.ip}")
         try:
             self.reader = Reader(self.ip)
-            self.reader.on_tag_report = self.report_callback
-            self.reader.connect()
-            self.reader.start_inventory()
+
+            readSpecParam = {
+                'OpSpecID': 0,
+                'MB': 3,
+                'WordPtr': 0,
+                'AccessPassword': 0,
+                'WordCount': 13
+            }
+            self.reader.startAccess(readWords=readSpecParam)
+
+            self.reader.startLiveReports(
+                reportCallback=self.report_callback,
+                powerDBm=31.5,
+                freqMHz=866.9,
+                mode=1002
+            )
+            logging.info(f"Inventario continuo iniciado en {self.ip}")
         except Exception as e:
             logging.error(f"Error conectando a {self.ip}: {e}")
-            asyncio.get_event_loop().call_later(10, self.start)  # Reintentar en 10 segundos
+            threading.Timer(10, self.start).start()
 
-def tag_seen_callback(reader, tags):
+    def stop(self):
+        if self.reader:
+            self.reader.stopLiveReports()
+            self.reader.stopPolitely()
+
+# ============================
+# Funciones utilitarias
+# ============================
+
+def buscar_ids_arco_antena(ip_dispositivo, puerto_antena):
+    arco = next((d for d in devices_with_data if d.get('ip') == ip_dispositivo), None)
+    antena = next((a for a in antennas_with_data if a.get('arcos') == arco['id'] and a.get('puerto') == puerto_antena), None) if arco else None
+    id_arco = arco.get('id') if arco else None
+    id_antena = antena.get('id') if antena else None
+    return id_arco, id_antena
+
+def convertir_hex_ascii(hex_string):
+    try:
+        return bytes.fromhex(hex_string).decode('ascii').replace('\x00', '').strip()
+    except:
+        return ""
+
+def construir_payload(vin, folio, id_arco, id_antena):
+    return {
+        "vin": vin,
+        "folio": folio,
+        "arco": id_arco,
+        "antena": id_antena
+    }
+
+async def enviar_a_api(payload):
+    async with httpx.AsyncClient(verify=False) as client:
+        response = await client.post(API_URL, json=payload)
+        logging.info(f"API respondio: {response.status_code} - {response.text}")
+
+# ============================
+# Callback de Lectura
+# ============================
+
+def tag_seen_callback(tags):
+    try:
+        loop = asyncio.get_running_loop()
+    except RuntimeError:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+
     for tag in tags:
-        epc = tag.get('epc')
-        if epc:
-            epc_hex = epc.hex()
-            logging.info(f"Tag leído: {epc_hex}")
-            WebSocketHandler.notify_clients(f"Tag leído: {epc_hex}")
+        try:
+            user_data = tag.get('OpSpecResult', {}).get('ReadData')
+            if user_data and len(user_data) >= 13:
+                folio = str(int(user_data[:4].hex(), 16))
+                vin = convertir_hex_ascii(user_data[4:34].hex())
+
+                logging.info(f"\U0001f4cb Folio leído: {folio}")
+                logging.info(f"\U0001f4cb VIN leído: {vin}")
+
+                tag_uid = f"{folio}-{vin}"
+                if tag_uid not in reported_tags:
+                    reported_tags.add(tag_uid)
+
+                    id_arco, id_antena = buscar_ids_arco_antena('169.254.1.1', tag.get('AntennaID'))
+                    payload = construir_payload(vin, folio, id_arco, id_antena)
+                    asyncio.run_coroutine_threadsafe(enviar_a_api(payload), loop)
+
+                    WebSocketHandler.notify_clients(f"Nuevo VIN leído: {vin}")
+            else:
+                logging.warning("\u26a0\ufe0f Tag no tiene OpSpecResult/ReadData.")
+        except Exception as e:
+            logging.error(f"\u274c Error procesando tag: {e}")
+
+# ============================
+# Conexion de dispositivos
+# ============================
 
 async def fetch_device_data():
     async with httpx.AsyncClient(verify=False) as client:
-        response_devices = await client.get(URL_DEVICES)
-        response_devices.raise_for_status()
-        devices = response_devices.json()
-        if isinstance(devices, list):
-            return devices
-        else:
-            return []
+        response_antennas = await client.get(URL_ANTENNAS)
+        response_antennas.raise_for_status()
+        antennas = response_antennas.json()
 
-async def connect_to_devices():
+        devices = [
+            {"id": 1, "ip": "169.254.1.1", "mac_address": "00:00:00:00:00:00", "nombre": "SpeedwayR420"}
+        ]
+
+        return devices, antennas
+
+def connect_devices_thread():
     for device in devices_with_data:
         ip = device.get('ip')
         if ip:
-            reader = DeviceReader(ip, tag_seen_callback)
+            reader = DeviceReader(device, tag_seen_callback)
             readers.append(reader)
             reader.start()
 
+# ============================
+# Shutdown
+# ============================
+
+async def shutdown():
+    logging.info("\U0001f534 Cerrando todas las conexiones a dispositivos...")
+    for reader in readers:
+        reader.stop()
+
+# ============================
+# Main
+# ============================
+
 async def main():
-    global devices_with_data
+    global devices_with_data, antennas_with_data
 
-    # Obtener dispositivos al iniciar
-    devices_with_data = await fetch_device_data()
+    devices_with_data, antennas_with_data = await fetch_device_data()
 
-    # Conectar a todos los dispositivos
-    await connect_to_devices()
+    threading.Thread(target=connect_devices_thread, daemon=True).start()
 
-    # Iniciar servidor Tornado
     app = tornado.web.Application([
         (r"/", MainHandler),
         (r"/wsArcos", WebSocketHandler),
@@ -119,6 +237,10 @@ async def main():
     server.listen(8888)
     logging.info("Servidor Tornado iniciado en el puerto 8888.")
 
+    try:
+        await asyncio.Event().wait()
+    finally:
+        await shutdown()
+
 if __name__ == "__main__":
     asyncio.run(main())
-    tornado.ioloop.IOLoop.current().start()
