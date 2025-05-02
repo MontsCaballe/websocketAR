@@ -196,7 +196,9 @@ async def fetch_device_data():
         antennas = response_antennas.json()
 
         devices = [
-            {"id": 1, "ip": "169.254.1.1", "mac_address": "00:00:00:00:00:00", "nombre": "SpeedwayR420"}
+            # {"id": 1, "ip": "169.254.1.1", "mac_address": "00:00:00:00:00:00", "nombre": "SpeedwayR420"}
+             {"id": 1, "ip": "172.17.10.101", "mac_address": "00:00:00:00:00:00", "nombre": "Speedway R420 Test 1"},
+             {"id": 2, "ip": "169.254.1.1", "mac_address": "00:00:00:00:00:00", "nombre": "Speedway R420 Test 2"}
         ]
 
         return devices, antennas
