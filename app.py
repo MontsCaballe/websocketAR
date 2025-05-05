@@ -6,6 +6,7 @@ import tornado.websocket
 import tornado.httpserver
 import httpx
 import logging
+import time
 from sllurp.reader import Reader
 
 # ============================
@@ -26,6 +27,7 @@ devices_with_data = []
 antennas_with_data = []
 readers = []
 reported_tags = set()
+tag_timestamps = {}
 main_event_loop = None
 
 # ============================
@@ -111,14 +113,13 @@ class DeviceReader:
                 powerDBm=31.5,
                 freqMHz=866.9,
                 mode=1002,
-                tagInterval=10,
-                timeInterval=1
+                tagInterval=0,
+                timeInterval=0.2
             )
 
             logging.info(f"Inventario continuo iniciado en {self.ip}")
         except Exception as e:
             logging.error(f"Error conectando a {self.ip}: {e}")
-            # Reintento después de 30 segundos
             threading.Timer(30, self.start).start()
 
     def stop(self):
@@ -138,12 +139,17 @@ def buscar_ids_arco_antena(ip_dispositivo, puerto_antena):
     antena = next((a for a in antennas_with_data if a.get('arcos') == arco['id'] and a.get('puerto') == puerto_antena), None) if arco else None
     id_arco = arco.get('id') if arco else None
     id_antena = antena.get('id') if antena else None
+    if not arco:
+        logging.warning(f"⚠️ No se encontró el arco con IP {ip_dispositivo}")
+    if not antena:
+        logging.warning(f"⚠️ No se encontró la antena con arco_id={arco['id'] if arco else 'N/A'} y puerto={puerto_antena}")
     return id_arco, id_antena
 
 def convertir_hex_ascii(hex_string):
     try:
         return bytes.fromhex(hex_string).decode('ascii').replace('\x00', '').strip()
-    except:
+    except Exception as e:
+        logging.error(f"Error al convertir hex a ASCII: {e}")
         return ""
 
 def construir_payload(vin, folio, id_arco, id_antena):
@@ -170,26 +176,50 @@ def tag_seen_callback(tags):
     global main_event_loop
     for tag in tags:
         try:
+            logging.debug(f"🔍 Tag detectado (completo): {tag}")
             user_data = tag.get('OpSpecResult', {}).get('ReadData')
-            if user_data and len(user_data) >= 13:
-                folio = str(int(user_data[:4].hex(), 16))
-                vin = convertir_hex_ascii(user_data[4:34].hex())
+            reader_ip = tag.get('ReaderIP') or tag.get('reader_ip') or 'UNKNOWN'
+            antenna_port = tag.get('AntennaID')
 
-                logging.info(f"\U0001f4cb Folio leído: {folio}")
-                logging.info(f"\U0001f4cb VIN leído: {vin}")
+            if not user_data:
+                logging.warning(f"⚠️ Tag sin datos. IP={reader_ip}, Antena={antenna_port}, Tag={tag}")
+                continue
 
-                tag_uid = f"{folio}-{vin}"
-                if tag_uid not in reported_tags:
-                    reported_tags.add(tag_uid)
-                    id_arco, id_antena = buscar_ids_arco_antena(tag.get('ReaderIP'), tag.get('AntennaID'))
-                    payload = construir_payload(vin, folio, id_arco, id_antena)
-                    if main_event_loop:
-                        asyncio.run_coroutine_threadsafe(enviar_a_api(payload), main_event_loop)
-                    WebSocketHandler.notify_clients(f"Nuevo VIN leído: {vin}")
+            if len(user_data) < 13:
+                logging.warning(f"⚠️ Tag con datos incompletos. Datos leídos: {user_data.hex()} | Longitud: {len(user_data)}")
+                continue
+
+            folio = str(int(user_data[:4].hex(), 16))
+            vin = convertir_hex_ascii(user_data[4:34].hex())
+
+            logging.info(f"📋 Folio leído: {folio}")
+            logging.info(f"📋 VIN leído: {vin}")
+
+            tag_uid = f"{folio}-{vin}"
+            now = time.time()
+            if tag_uid in reported_tags and now - tag_timestamps.get(tag_uid, 0) < 10:
+                logging.debug(f"⏱️ Tag repetido recientemente: {tag_uid}")
+                continue
+
+            reported_tags.add(tag_uid)
+            tag_timestamps[tag_uid] = now
+
+            if reader_ip == 'UNKNOWN':
+                logging.warning(f"⚠️ IP del lector no disponible en el tag: {tag}")
+
+            logging.debug(f"Buscando id_arco e id_antena para IP={reader_ip}, Puerto={antenna_port}")
+            id_arco, id_antena = buscar_ids_arco_antena(reader_ip, antenna_port)
+
+            if id_arco and id_antena:
+                payload = construir_payload(vin, folio, id_arco, id_antena)
+                if main_event_loop:
+                    future = asyncio.run_coroutine_threadsafe(enviar_a_api(payload), main_event_loop)
+                    future.add_done_callback(lambda f: logging.debug("✅ API enviada correctamente."))
+                WebSocketHandler.notify_clients(f"Nuevo VIN leído: {vin}")
             else:
-                logging.warning("\u26a0\ufe0f Tag no tiene OpSpecResult/ReadData.")
+                logging.warning(f"⚠️ No se pudo mapear el tag a un arco o antena. Datos: IP={reader_ip}, Puerto={antenna_port}")
         except Exception as e:
-            logging.error(f"\u274c Error procesando tag: {e}")
+            logging.error(f"❌ Error procesando tag: {e}")
 
 # ============================
 # Conexion de dispositivos
@@ -203,7 +233,7 @@ async def fetch_device_data():
 
         devices = [
             # {"id": 1, "ip": "169.254.1.1", "mac_address": "00:00:00:00:00:00", "nombre": "SpeedwayR420"}
-            #  {"id": 1, "ip": "172.17.10.102", "mac_address": "00:00:00:00:00:00", "nombre": "Speedway R420 Test 1"},
+             {"id": 1, "ip": "172.17.10.102", "mac_address": "00:00:00:00:00:00", "nombre": "Speedway R420 Test 1"},
              {"id": 2, "ip": "172.17.10.101", "mac_address": "00:00:00:00:00:00", "nombre": "Speedway R420 Test 2"}
         ]
 
@@ -222,7 +252,7 @@ def connect_devices_thread():
 # ============================
 
 async def shutdown():
-    logging.info("\U0001f534 Cerrando todas las conexiones a dispositivos...")
+    logging.info("🔴 Cerrando todas las conexiones a dispositivos...")
     for reader in readers:
         reader.stop()
 
