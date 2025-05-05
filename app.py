@@ -26,6 +26,7 @@ devices_with_data = []
 antennas_with_data = []
 readers = []
 reported_tags = set()
+main_event_loop = None
 
 # ============================
 # WebSocket y Página Web
@@ -94,6 +95,7 @@ class DeviceReader:
         logging.info(f"Conectando a dispositivo {self.ip}")
         try:
             self.reader = Reader(self.ip)
+            self.reader.stopPolitely()
 
             readSpecParam = {
                 'OpSpecID': 0,
@@ -102,23 +104,30 @@ class DeviceReader:
                 'AccessPassword': 0,
                 'WordCount': 13
             }
-            self.reader.startAccess(readWords=readSpecParam)
 
+            self.reader.startAccess(readWords=readSpecParam)
             self.reader.startLiveReports(
                 reportCallback=self.report_callback,
                 powerDBm=31.5,
                 freqMHz=866.9,
-                mode=1002
+                mode=1002,
+                tagInterval=10,
+                timeInterval=1
             )
+
             logging.info(f"Inventario continuo iniciado en {self.ip}")
         except Exception as e:
             logging.error(f"Error conectando a {self.ip}: {e}")
-            threading.Timer(10, self.start).start()
+            # Reintento después de 30 segundos
+            threading.Timer(30, self.start).start()
 
     def stop(self):
         if self.reader:
-            self.reader.stopLiveReports()
-            self.reader.stopPolitely()
+            try:
+                self.reader.stopLiveReports()
+                self.reader.stopPolitely()
+            except Exception as e:
+                logging.warning(f"Error al detener lector {self.ip}: {e}")
 
 # ============================
 # Funciones utilitarias
@@ -146,21 +155,19 @@ def construir_payload(vin, folio, id_arco, id_antena):
     }
 
 async def enviar_a_api(payload):
-    async with httpx.AsyncClient(verify=False) as client:
-        response = await client.post(API_URL, json=payload)
-        logging.info(f"API respondio: {response.status_code} - {response.text}")
+    try:
+        async with httpx.AsyncClient(verify=False) as client:
+            response = await client.post(API_URL, json=payload)
+            logging.info(f"API respondio: {response.status_code} - {response.text}")
+    except Exception as e:
+        logging.error(f"Error al enviar datos a la API: {e}")
 
 # ============================
 # Callback de Lectura
 # ============================
 
 def tag_seen_callback(tags):
-    try:
-        loop = asyncio.get_running_loop()
-    except RuntimeError:
-        loop = asyncio.new_event_loop()
-        asyncio.set_event_loop(loop)
-
+    global main_event_loop
     for tag in tags:
         try:
             user_data = tag.get('OpSpecResult', {}).get('ReadData')
@@ -174,11 +181,10 @@ def tag_seen_callback(tags):
                 tag_uid = f"{folio}-{vin}"
                 if tag_uid not in reported_tags:
                     reported_tags.add(tag_uid)
-
-                    id_arco, id_antena = buscar_ids_arco_antena('169.254.1.1', tag.get('AntennaID'))
+                    id_arco, id_antena = buscar_ids_arco_antena(tag.get('ReaderIP'), tag.get('AntennaID'))
                     payload = construir_payload(vin, folio, id_arco, id_antena)
-                    asyncio.run_coroutine_threadsafe(enviar_a_api(payload), loop)
-
+                    if main_event_loop:
+                        asyncio.run_coroutine_threadsafe(enviar_a_api(payload), main_event_loop)
                     WebSocketHandler.notify_clients(f"Nuevo VIN leído: {vin}")
             else:
                 logging.warning("\u26a0\ufe0f Tag no tiene OpSpecResult/ReadData.")
@@ -197,7 +203,7 @@ async def fetch_device_data():
 
         devices = [
             # {"id": 1, "ip": "169.254.1.1", "mac_address": "00:00:00:00:00:00", "nombre": "SpeedwayR420"}
-             {"id": 1, "ip": "172.17.10.102", "mac_address": "00:00:00:00:00:00", "nombre": "Speedway R420 Test 1"},
+            #  {"id": 1, "ip": "172.17.10.102", "mac_address": "00:00:00:00:00:00", "nombre": "Speedway R420 Test 1"},
              {"id": 2, "ip": "172.17.10.101", "mac_address": "00:00:00:00:00:00", "nombre": "Speedway R420 Test 2"}
         ]
 
@@ -225,9 +231,10 @@ async def shutdown():
 # ============================
 
 async def main():
-    global devices_with_data, antennas_with_data
+    global devices_with_data, antennas_with_data, main_event_loop
 
     devices_with_data, antennas_with_data = await fetch_device_data()
+    main_event_loop = asyncio.get_running_loop()
 
     threading.Thread(target=connect_devices_thread, daemon=True).start()
 
