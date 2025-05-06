@@ -1,4 +1,5 @@
 import asyncio
+import os
 import threading
 import tornado.ioloop
 import tornado.web
@@ -8,6 +9,8 @@ import httpx
 import logging
 import time
 from sllurp.reader import Reader
+from dotenv import load_dotenv
+load_dotenv()
 
 # ============================
 # Configuraciones generales
@@ -17,7 +20,15 @@ URL_DEVICES = "https://apirepuve.minayarit.gob.mx/recaudacion/arcos-repuve/"
 URL_ANTENNAS = "https://apirepuve.minayarit.gob.mx/recaudacion/antenas-repuve/"
 API_URL = "https://apirepuve.minayarit.gob.mx/tramites/lecturas-arcos/"
 
-logging.basicConfig(level=logging.INFO)
+LOG_REPETIDOS = os.getenv("LOG_REPETIDOS", "True") == "True"
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler("rfid_logs.txt", encoding='utf-8'),
+        logging.StreamHandler()
+    ]
+)
 
 # ============================
 # Variables globales
@@ -104,12 +115,12 @@ class DeviceReader:
                 'MB': 3,
                 'WordPtr': 0,
                 'AccessPassword': 0,
-                'WordCount': 13
+                'WordCount': 16
             }
 
             self.reader.startAccess(readWords=readSpecParam)
             self.reader.startLiveReports(
-                reportCallback=self.report_callback,
+                reportCallback=lambda tags: [tag_seen_callback(tag, self.ip) for tag in tags],
                 powerDBm=31.5,
                 freqMHz=866.9,
                 mode=1002,
@@ -172,71 +183,65 @@ async def enviar_a_api(payload):
 # Callback de Lectura
 # ============================
 
-def tag_seen_callback(tags):
-    global main_event_loop
-    for tag in tags:
-        try:
-            logging.debug(f"🔍 Tag detectado (completo): {tag}")
-            user_data = tag.get('OpSpecResult', {}).get('ReadData')
-            reader_ip = tag.get('ReaderIP') or tag.get('reader_ip') or 'UNKNOWN'
-            antenna_port = tag.get('AntennaID')
+def tag_seen_callback(tag, reader_ip):
+    try:
+        user_data = tag.get('OpSpecResult', {}).get('ReadData')
+        antenna_port = tag.get('AntennaID')
+        logging.debug(f"🔍 Tag recibido: EPC={tag.get('EPC-96')} ReadData={user_data}")
 
-            if not user_data:
-                logging.warning(f"⚠️ Tag sin datos. IP={reader_ip}, Antena={antenna_port}, Tag={tag}")
-                continue
+        if not user_data or len(user_data) < 13:
+            logging.warning(f"⚠️ Tag sin datos útiles. IP={reader_ip}, Antena={antenna_port}, Tag={tag}")
+            return
 
-            if len(user_data) < 13:
-                logging.warning(f"⚠️ Tag con datos incompletos. Datos leídos: {user_data.hex()} | Longitud: {len(user_data)}")
-                continue
+        hex_data = user_data.hex()
+        folio = str(int(hex_data[:8], 16))
+        vin = bytes.fromhex(hex_data[8:]).decode('ascii', errors='ignore').strip()
 
-            folio = str(int(user_data[:4].hex(), 16))
-            vin = convertir_hex_ascii(user_data[4:34].hex())
+        logging.info(f"📋 Folio leído: {folio}")
+        logging.info(f"📋 VIN leído: {vin}")
 
-            logging.info(f"📋 Folio leído: {folio}")
-            logging.info(f"📋 VIN leído: {vin}")
+        tag_uid = f"{folio}-{vin}"
+        now = time.time()
 
-            tag_uid = f"{folio}-{vin}"
-            now = time.time()
-            if tag_uid in reported_tags and now - tag_timestamps.get(tag_uid, 0) < 10:
-                logging.debug(f"⏱️ Tag repetido recientemente: {tag_uid}")
-                continue
+        if tag_uid in reported_tags and now - tag_timestamps.get(tag_uid, 0) < 1:
+            if LOG_REPETIDOS:
+                WebSocketHandler.notify_clients(f"🔁 VIN repetido leído: {vin}")
+            return
 
-            reported_tags.add(tag_uid)
-            tag_timestamps[tag_uid] = now
+        reported_tags.add(tag_uid)
+        tag_timestamps[tag_uid] = now
 
-            if reader_ip == 'UNKNOWN':
-                logging.warning(f"⚠️ IP del lector no disponible en el tag: {tag}")
+        id_arco, id_antena = buscar_ids_arco_antena(reader_ip, antenna_port)
 
-            logging.debug(f"Buscando id_arco e id_antena para IP={reader_ip}, Puerto={antenna_port}")
-            id_arco, id_antena = buscar_ids_arco_antena(reader_ip, antenna_port)
+        if id_arco and id_antena:
+            payload = construir_payload(vin, folio, id_arco, id_antena)
+            if main_event_loop:
+                future = asyncio.run_coroutine_threadsafe(enviar_a_api(payload), main_event_loop)
+                future.add_done_callback(lambda f: logging.debug("✅ API enviada correctamente."))
+            WebSocketHandler.notify_clients(f"Nuevo VIN leído: {vin}")
+        else:
+            logging.warning(f"⚠️ No se pudo mapear el tag a un arco o antena. IP={reader_ip}, Puerto={antenna_port}")
 
-            if id_arco and id_antena:
-                payload = construir_payload(vin, folio, id_arco, id_antena)
-                if main_event_loop:
-                    future = asyncio.run_coroutine_threadsafe(enviar_a_api(payload), main_event_loop)
-                    future.add_done_callback(lambda f: logging.debug("✅ API enviada correctamente."))
-                WebSocketHandler.notify_clients(f"Nuevo VIN leído: {vin}")
-            else:
-                logging.warning(f"⚠️ No se pudo mapear el tag a un arco o antena. Datos: IP={reader_ip}, Puerto={antenna_port}")
-        except Exception as e:
-            logging.error(f"❌ Error procesando tag: {e}")
+    except Exception as e:
+        logging.error(f"❌ Error procesando tag: {e}")
 
 # ============================
 # Conexion de dispositivos
 # ============================
 
 async def fetch_device_data():
+    global devices_with_data, antennas_with_data
     async with httpx.AsyncClient(verify=False) as client:
         response_antennas = await client.get(URL_ANTENNAS)
         response_antennas.raise_for_status()
         antennas = response_antennas.json()
 
         devices = [
-            # {"id": 1, "ip": "169.254.1.1", "mac_address": "00:00:00:00:00:00", "nombre": "SpeedwayR420"}
-             {"id": 1, "ip": "172.17.10.102", "mac_address": "00:00:00:00:00:00", "nombre": "Speedway R420 Test 1"},
-             {"id": 2, "ip": "172.17.10.101", "mac_address": "00:00:00:00:00:00", "nombre": "Speedway R420 Test 2"}
+            {"id": 1, "ip": "172.17.10.102", "mac_address": "00:00:00:00:00:00", "nombre": "Speedway R420 Test 1"},
+            {"id": 2, "ip": "172.17.10.101", "mac_address": "00:00:00:00:00:00", "nombre": "Speedway R420 Test 2"}
         ]
-
+        devices_with_data = devices
+        antennas_with_data = antennas
         return devices, antennas
 
 def connect_devices_thread():
