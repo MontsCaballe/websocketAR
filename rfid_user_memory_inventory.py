@@ -50,23 +50,37 @@ logging.basicConfig(level=logging.INFO)
 
 def parse_user_memory(raw_bytes):
     """
-    Decodifica VIN y Folio basado en la posición real observada en la memoria.
+    Extrae el VIN desde la memoria de usuario (User Memory Bank).
+    Asume que el VIN está a partir del byte 8 en adelante, con longitud de 17 caracteres.
     """
     try:
         if not raw_bytes or len(raw_bytes) < 25:
             return "❌ Memoria insuficiente para extraer VIN"
 
-        # Extraer a partir del byte 8, tomar 17 caracteres (largo estándar de un VIN)
         vin_start = 8
         vin_end = vin_start + 17
 
         vin_bytes = raw_bytes[vin_start:vin_end]
         vin = vin_bytes.decode('ascii', errors='ignore').strip()
 
-        return f"✅ VIN: {vin}"
+        return f"✅ VIN desde User Memory: {vin}"
 
     except Exception as e:
         return f"❌ Error parseando memoria: {e}"
+
+def parse_epc_folio(epc_bytes):
+    try:
+        # EPC viene en ASCII HEX. Ejemplo: b'323835393838353420202020'
+        # Convertir primero los bytes a string ASCII
+        hex_string = epc_bytes.decode('ascii', errors='ignore')
+        # Ahora convierte ese string hexadecimal a bytes reales
+        ascii_bytes = bytes.fromhex(hex_string)
+        # Finalmente decodifica como ASCII final (tu folio real en texto)
+        folio = ascii_bytes.decode('ascii', errors='ignore').strip()
+        return f"✅ Folio desde EPC: {folio}"
+    except Exception as e:
+        return f"❌ Error al parsear EPC: {e}"
+
 
 
 def tag_report_callback(reader, tag_reports):
@@ -74,13 +88,17 @@ def tag_report_callback(reader, tag_reports):
     for tag in tag_reports:
         print(tag)
 
-        # Revisa si viene User Memory leída
+        # Leer Folio desde el EPC
+        epc = tag.get('EPC-96') or tag.get('EPC')
+        if epc:
+            print(parse_epc_folio(epc))
+
+        # Leer VIN desde User Memory
         result = tag.get('C1G2ReadOpSpecResult')
         if result and result.get('Result') == 0 and result.get('ReadData'):
             user_memory = result['ReadData']
             print(f"📝 Datos crudos User Memory: {user_memory}")
-            parsed = parse_user_memory(user_memory)
-            print(parsed)
+            print(parse_user_memory(user_memory))
         else:
             print("⚠️ No se obtuvo User Memory o hubo error en lectura")
 
@@ -97,7 +115,7 @@ def main():
 
     reader.connect()
 
-    # 👇 Espera pequeña antes de mandar el AccessSpec
+    # Espera pequeña antes de mandar el AccessSpec
     time.sleep(2)
 
     try:
@@ -106,9 +124,9 @@ def main():
             AccessPassword=0,
             MB=3,          # User Memory Bank
             WordPtr=0,     # Desde la posición 0
-            WordCount=16    # Leer 8 Words = 16 bytes
+            WordCount=16   # Leer 16 palabras (32 bytes por si acaso)
         )
-        reader.start_access_spec(op_spec=read_op, stop_after_count=1)
+        reader.start_access_spec(op_spec=read_op, stop_after_count=0)
 
         reader.join()
     except KeyboardInterrupt:
