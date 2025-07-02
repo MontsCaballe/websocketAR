@@ -3597,7 +3597,8 @@ def llrp_data2xml(msg):
 	
 		res = tabs + '<%s>\n' % name
 	
-		fields = Message_struct[name]['fields']
+		# fields = Message_struct[name]['fields']
+		fields = Message_struct.get(name, {}).get('fields', [])
 		for p in fields:
 			try:
 				sub = msg[p]
