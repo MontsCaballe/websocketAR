@@ -80,31 +80,36 @@ class RFIDReaderThread(threading.Thread):
                 arco_id = None
                 antenna_id = None
 
-                # 🔥 Aquí defines manualmente (o reconstruyes) el mapping IP -> arco y antenas
-                # Por ejemplo:
-                arco_mapping = {
-                    "192.168.1.20": {
-                        "arco": 6,  # ID del arco
-                        "antenas": [
-                            {"id": 1, "posicion": 1},
-                            {"id": 2, "posicion": 2}
-                        ]
-                    },
-                    # Agrega otros arcos si es necesario
-                }
+                for device in self.devices_with_data:
+                    if device.get("ip").strip() == self.ip.strip():
+                        logging.info(f"✅ Dispositivo encontrado en devices_with_data: {device}")
+                        antennas = device.get("antenas", [])
+                        if 0 <= antenna_index < len(antennas):
+                            antenna = antennas[antenna_index]
+                            if isinstance(antenna, dict):
+                                antenna_id = antenna.get("id")
+                                arco_id = device.get("id")  # Usa el id del device como arco
+                                logging.info(f"✅ Antena dict encontrada: {antenna}")
+                            else:
+                                # Si es solo un número, asumimos id=posicion
+                                antenna_id = antenna
+                                arco_id = device.get("id")  # Usa el id del device como arco
+                                logging.info(f"✅ Antena simple encontrada (id={antenna_id})")
+                        else:
+                            logging.warning(f"⚠️ Antenna index {antenna_index} fuera de rango para {self.ip}")
 
-                arco_info = arco_mapping.get(self.ip)
-                if arco_info:
-                    arco_id = arco_info["arco"]
-                    antenas = arco_info.get("antenas", [])
-                    if 0 <= antenna_index < len(antenas):
-                        antenna = antenas[antenna_index]
-                        antenna_id = antenna.get("id")
-                        logging.info(f"✅ Antena reconstruida: {antenna}")
-                    else:
-                        logging.warning(f"⚠️ Antenna index {antenna_index} fuera de rango para {self.ip}")
-                else:
-                    logging.warning(f"⚠️ No se encontró configuración para IP {self.ip}")
+                        # antenas = device.get("antennas", [])
+                        # if 0 <= antenna_index < len(antenas):
+                        #     antenna = antenas[antenna_index]
+                        #     antenna_id = antenna.get("id")
+                        #     arco_id = antenna.get("arcos")  # o "arco" según tu JSON
+                        #     logging.info(f"✅ Antena encontrada en lista: {antenna}")
+                        # else:
+                        #     logging.warning(f"⚠️ Antenna index {antenna_index} fuera de rango para {self.ip}")
+                        # break  # Ya encontramos el dispositivo, salimos del loop
+
+                if arco_id is None or antenna_id is None:
+                    logging.warning(f"⚠️ No se pudo determinar arco/antena para IP {self.ip}")
 
                 payload = {
                     "vin": vin,

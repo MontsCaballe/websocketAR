@@ -29,6 +29,7 @@ def fetch_arcos_and_antenas():
             # Agregar arquito de pruebas (si no está ya)
             if not any(a['ip'] == '192.168.1.20' for a in arcos):
                 arcos.append({
+                    "id":6,
                     "nombre": "ARCO PRUEBAS LOCAL",
                     "ip": "192.168.1.20",
                     "estado": "conectado",
