@@ -58,6 +58,8 @@ class RFIDReaderThread(threading.Thread):
                 "vin": vin,
                 "folio": folio
             }
+
+            logging.info(f"📡 Tag listo para enviar a la api {data}")
             self.broadcast_callback(data)
 
     def run(self):
