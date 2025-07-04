@@ -2,15 +2,20 @@ import threading
 import logging
 import time
 from sllurp.llrp import LLRPReaderClient, LLRPReaderConfig, C1G2Read
+import requests
 
+# devices_with_data = []
 class RFIDReaderThread(threading.Thread):
-    def __init__(self, ip, antennas, broadcast_callback):
+    def __init__(self, ip, antennas, broadcast_callback, devices_with_data):
         super().__init__()
         self.ip = ip
         self.antennas = antennas or [1]
         self.broadcast_callback = broadcast_callback
         self.running = False
         self.reader = None
+        self.devices_with_data = devices_with_data  # 👈 Guardamos la lista
+        self.stop_event = threading.Event()
+        
 
     def parse_user_memory(self, raw_bytes):
         try:
@@ -60,31 +65,46 @@ class RFIDReaderThread(threading.Thread):
             }
 
             logging.info(f"📡 Tag listo para enviar a la api {data}")
-            self.broadcast_callback(data)
+            
+
             # ======================
             # 🔥 Paso final: Consumo API
             # ======================
             try:
-                import requests
+                
 
                 url = "https://192.168.0.200/tramites/lecturas-arcos/"
                 antenna_index = tag.get('AntennaID', 1) - 1  # Ajusta a índice 0-based
-                associated_device = next(
-                    (d for d in devices_with_data if d.get("ip").strip() == self.ip.strip()), None)
-                arco_id, antenna_id = None, None
 
-                if associated_device:
-                    logging.info(f"✅ Dispositivo encontrado: {associated_device}")
-                    antenas = associated_device.get("antenas", [])
+                # Reconstruir arcos y antenas en caliente
+                arco_id = None
+                antenna_id = None
+
+                # 🔥 Aquí defines manualmente (o reconstruyes) el mapping IP -> arco y antenas
+                # Por ejemplo:
+                arco_mapping = {
+                    "192.168.1.20": {
+                        "arco": 6,  # ID del arco
+                        "antenas": [
+                            {"id": 1, "posicion": 1},
+                            {"id": 2, "posicion": 2}
+                        ]
+                    },
+                    # Agrega otros arcos si es necesario
+                }
+
+                arco_info = arco_mapping.get(self.ip)
+                if arco_info:
+                    arco_id = arco_info["arco"]
+                    antenas = arco_info.get("antenas", [])
                     if 0 <= antenna_index < len(antenas):
                         antenna = antenas[antenna_index]
                         antenna_id = antenna.get("id")
-                        arco_id = antenna.get("arcos")
-                        logging.info(f"✅ Antena encontrada: {antenna}")
+                        logging.info(f"✅ Antena reconstruida: {antenna}")
                     else:
                         logging.warning(f"⚠️ Antenna index {antenna_index} fuera de rango para {self.ip}")
                 else:
-                    logging.warning(f"⚠️ No se encontró dispositivo con IP {self.ip}")
+                    logging.warning(f"⚠️ No se encontró configuración para IP {self.ip}")
 
                 payload = {
                     "vin": vin,
@@ -103,6 +123,8 @@ class RFIDReaderThread(threading.Thread):
 
             except Exception as e:
                 logging.error(f"❌ Error al consumir API: {e}")
+            self.broadcast_callback(data)
+
 
     def run(self):
         try:

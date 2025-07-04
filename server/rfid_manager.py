@@ -89,7 +89,7 @@ class RFIDManager:
         if ip in self.readers:
             return
         logging.info(f"✅ Conectando nuevo arco {ip}")
-        reader_thread = RFIDReaderThread(ip, antennas, self.broadcast_func)
+        reader_thread = RFIDReaderThread(ip, antennas, self.broadcast_func, self.arcos)
         with self.lock:
             self.readers[ip] = reader_thread
         reader_thread.start()
