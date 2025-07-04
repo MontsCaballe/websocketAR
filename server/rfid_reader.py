@@ -61,6 +61,48 @@ class RFIDReaderThread(threading.Thread):
 
             logging.info(f"📡 Tag listo para enviar a la api {data}")
             self.broadcast_callback(data)
+            # ======================
+            # 🔥 Paso final: Consumo API
+            # ======================
+            try:
+                import requests
+
+                url = "https://192.168.0.200/tramites/lecturas-arcos/"
+                antenna_index = tag.get('AntennaID', 1) - 1  # Ajusta a índice 0-based
+                associated_device = next(
+                    (d for d in devices_with_data if d.get("ip").strip() == self.ip.strip()), None)
+                arco_id, antenna_id = None, None
+
+                if associated_device:
+                    logging.info(f"✅ Dispositivo encontrado: {associated_device}")
+                    antenas = associated_device.get("antenas", [])
+                    if 0 <= antenna_index < len(antenas):
+                        antenna = antenas[antenna_index]
+                        antenna_id = antenna.get("id")
+                        arco_id = antenna.get("arcos")
+                        logging.info(f"✅ Antena encontrada: {antenna}")
+                    else:
+                        logging.warning(f"⚠️ Antenna index {antenna_index} fuera de rango para {self.ip}")
+                else:
+                    logging.warning(f"⚠️ No se encontró dispositivo con IP {self.ip}")
+
+                payload = {
+                    "vin": vin,
+                    "folio": folio,
+                    "arco": arco_id,
+                    "antena": antenna_id
+                }
+
+                logging.info(f"🌐 Enviando POST a {url} con payload: {payload}")
+                response = requests.post(url, json=payload, verify=False, timeout=6)
+
+                if response.status_code == 200:
+                    logging.info(f"✅ API respuesta para {vin}: {response.json()}")
+                else:
+                    logging.warning(f"⚠️ API respondió código {response.status_code}")
+
+            except Exception as e:
+                logging.error(f"❌ Error al consumir API: {e}")
 
     def run(self):
         try:
