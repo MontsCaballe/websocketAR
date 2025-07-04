@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RFID Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9fafb;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .arco-card {
+            background: white;
+            border-radius: 8px;
+            border: 3px solid #ccc;
+            /* Default gray */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 10px;
+            width: 180px;
+            /* Más pequeña */
+            transition: border-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .arco-card:hover {
+            transform: scale(1.03);
+        }
+
+        .arco-card.conectado {
+            border-color: #16a34a;
+            /* Verde */
+        }
+
+        .arco-card.desconectado {
+            border-color: #dc2626;
+            /* Rojo */
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .arco-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 15px;
+            max-width: 400px;
+        }
+
+        .arco-card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .lecturas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tag {
+            background: #e8f5e9;
+            border-left: 5px solid #4CAF50;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .tag strong {
+            color: #2e7d32;
+        }
+
+        .arco-card p,
+        .arco-card h3 {
+            font-size: 0.8rem;
+            /* Ajusta a 0.7rem o 0.75rem si quieres más pequeño */
+        }
+    </style>
+</head>
+
+<body class="p-6">
+    <center>
+        <h1 class="text-3xl font-bold mb-6">🛰️ Arcos en Tiempo Real 🛰️</h1>
+        <h1 class="text-1xl font-bold mb-6"> REPUVE LIVE 📡 </h1>
+    </center>
+    <div id="arcos" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-12 gap-4">
+        <!-- Cards de arcos aparecerán aquí -->
+    </div>
+    <div class="mt-8">
+        <div class="flex justify-between items-center mb-2">
+            <h2 id="tabla-title" class="text-2xl font-bold"></h2>
+            <h2 id="tabla-title" class="text-2xl font-bold">
+                📋 Lecturas en Tiempo Real (<span id="contador-global" class="text-green-600">0</span>)
+            </h2>
+            <button id="ver-todos-btn" class="hidden px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                🔙 Ver todos
+            </button>
+        </div>
+        <div class="overflow-y-auto max-h-96 border rounded shadow">
+            <table class="min-w-full text-left text-sm">
+                <thead class="bg-green-600 text-white sticky top-0">
+                    <tr>
+                        <th class="px-4 py-2">Arco</th>
+                        <th class="px-4 py-2">EPC</th>
+                        <th class="px-4 py-2">VIN</th>
+                        <th class="px-4 py-2">Folio</th>
+                        <th class="px-4 py-2">Hora</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-lecturas" class="bg-white divide-y divide-gray-200">
+                    <!-- Filas dinámicas -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script>
+        const arcos = [
+            { nombre: "Arco 1 - Plaza Laguna", ip: "192.168.1.20", antenas: [1], estado: "conectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 2 – Plaza Alameda", ip: "192.168.1.21", antenas: [1, 2], estado: "desconectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 3 – Plaza Norte", ip: "192.168.1.22", antenas: [1, 2, 3], estado: "conectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 2 – Plaza Alameda", ip: "192.168.1.21", antenas: [1, 2], estado: "desconectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 3 – Plaza Norte", ip: "192.168.1.22", antenas: [1, 2, 3], estado: "conectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 2 – Plaza Alameda", ip: "192.168.1.21", antenas: [1, 2], estado: "desconectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 3 – Plaza Norte", ip: "192.168.1.22", antenas: [1, 2, 3], estado: "conectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 2 – Plaza Alameda", ip: "192.168.1.21", antenas: [1, 2], estado: "desconectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 3 – Plaza Norte", ip: "192.168.1.22", antenas: [1, 2, 3], estado: "conectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 2 – Plaza Alameda", ip: "192.168.1.21", antenas: [1, 2], estado: "desconectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 3 – Plaza Norte", ip: "192.168.1.22", antenas: [1, 2, 3], estado: "conectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 2 – Plaza Alameda", ip: "192.168.1.21", antenas: [1, 2], estado: "desconectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 3 – Plaza Norte", ip: "192.168.1.22", antenas: [1, 2, 3], estado: "conectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 2 – Plaza Alameda", ip: "192.168.1.21", antenas: [1, 2], estado: "desconectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 3 – Plaza Norte", ip: "192.168.1.22", antenas: [1, 2, 3], estado: "conectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 2 – Plaza Alameda", ip: "192.168.1.21", antenas: [1, 2], estado: "desconectado", imagen: "/static/arcos/arco.png" },
+            { nombre: "Arco 3 – Plaza Norte", ip: "192.168.1.22", antenas: [1, 2, 3], estado: "conectado", imagen: "/static/arcos/arco.png" }
+        ];
+
+
+        const ws = new WebSocket(`ws://${window.location.host}/ws`);
+        let lecturasGlobal = [];
+        let filtroArco = null;
+        const arcoTimers = {};    // 🔥 Para el heartbeat
+        const arcoMiniLogs = {};  // 📝 Mini logs por arco
+
+        ws.onopen = () => {
+            console.log("🔗 Conectado al WebSocket");
+        };
+
+        ws.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            data.timestamp = new Date().toLocaleTimeString();
+
+            if (!data.ip) data.ip = "192.168.1.20"; // ⚠️ Ajustar según tu backend
+
+            lecturasGlobal.unshift(data);
+            if (lecturasGlobal.length > 100) lecturasGlobal.pop();
+
+            actualizarTabla();
+            actualizarContadores(data.ip);
+            actualizarMiniLog(data.ip, data);
+
+            // 🧮 Incrementa contador global
+            const globalCounter = document.getElementById('contador-global');
+            let globalCount = parseInt(globalCounter.textContent) || 0;
+            globalCounter.textContent = globalCount + 1;
+
+            // 🧮 Incrementa contador por arco
+            const safeIp = data.ip.replace(/\./g, '-');
+            const arcoCounter = document.getElementById(`contador-${safeIp}`);
+            if (arcoCounter) {
+                let arcoCount = parseInt(arcoCounter.textContent) || 0;
+                arcoCounter.textContent = arcoCount + 1;
+            }
+        };
+
+        function actualizarTabla() {
+            const tabla = document.getElementById("tabla-lecturas");
+            tabla.innerHTML = "";
+
+            const lecturas = filtroArco
+                ? lecturasGlobal.filter(l => l.ip.trim() === filtroArco.trim())
+                : lecturasGlobal;
+
+            lecturas.forEach(data => {
+                const fila = document.createElement("tr");
+                fila.classList.add("hover:bg-gray-100");
+                fila.innerHTML = `
+            <td class="px-4 py-2">${data.ip}</td>
+            <td class="px-4 py-2">${data.epc}</td>
+            <td class="px-4 py-2">${data.vin}</td>
+            <td class="px-4 py-2">${data.folio}</td>
+            <td class="px-4 py-2">${data.timestamp}</td>
+        `;
+                tabla.appendChild(fila);
+            });
+
+            document.getElementById("tabla-title").textContent = filtroArco
+                ? `📋 Lecturas de ${filtroArco}`
+                : "";
+
+            document.getElementById("ver-todos-btn").classList.toggle("hidden", !filtroArco);
+        }
+
+        document.getElementById("ver-todos-btn").addEventListener("click", () => {
+            filtroArco = null;
+            actualizarTabla();
+        });
+
+        function actualizarContadores(ip) {
+            const safeIp = ip.replace(/\./g, '-');
+            const status = document.getElementById(`status-${safeIp}`);
+
+            if (status) {
+                // 🟢 Encender
+                status.classList.remove('bg-red-500');
+                status.classList.add('bg-green-500', 'animate-pulse');
+
+                // 🔴 Apagar después de 5 seg si no hay más lecturas
+                clearTimeout(arcoTimers[ip]);
+                arcoTimers[ip] = setTimeout(() => {
+                    status.classList.remove('bg-green-500', 'animate-pulse');
+                    status.classList.add('bg-red-500');
+                }, 5000);
+            }
+        }
+
+        function actualizarMiniLog(ip, data) {
+            if (!arcoMiniLogs[ip]) arcoMiniLogs[ip] = [];
+            arcoMiniLogs[ip].unshift(data);
+            if (arcoMiniLogs[ip].length > 1) arcoMiniLogs[ip].pop();
+
+            const miniLogDiv = document.getElementById(`miniLog-${ip.replace(/\./g, '-')}`);
+            if (miniLogDiv) {
+                miniLogDiv.innerHTML = arcoMiniLogs[ip].map(log => `
+            <div class="text-xs bg-gray-50 border-l-4 border-gray-400 pl-2 my-1">
+                <p><strong>VIN:</strong> ${log.vin}</p>
+                <p class="text-gray-500">${log.timestamp}</p>
+            </div>
+        `).join('');
+            }
+        }
+
+        function renderArcos() {
+            const container = document.getElementById('arcos');
+            arcos.forEach(arco => {
+                const safeIp = arco.ip.replace(/\./g, '-');
+                const statusId = `status-${safeIp}`;
+                const miniLogId = `miniLog-${safeIp}`;
+
+                const card = document.createElement('div');
+                // card.className = 'bg-white rounded-lg shadow p-4 hover:shadow-lg transition cursor-pointer';
+                card.className = `arco-card ${arco.estado}`;
+
+                card.innerHTML = `
+            <img src="${arco.imagen}" alt="${arco.nombre}" class="h-16 w-16 object-contain rounded mx-auto mb-3">
+            <center><h3 class="text-xl font-bold mb-1">${arco.nombre}</h3></center>
+            <p><strong>IP:</strong> ${arco.ip}</p>
+            <p><strong>Antenas:</strong> ${arco.antenas.join(', ')}</p> 
+            <p class="mt-2 text-black-400 font-semibold"> <span id="${statusId}" class="h-2 w-2 rounded-full bg-red-500 inline-block"></span> Última lectura</p>
+            <div id="${miniLogId}" class="text-xs mt-1 space-y-1"></div>
+            <p class="mt-1 text-sm text-gray-600">📊 Lecturas: 
+                <span id="contador-${safeIp}" class="font-bold text-green-700">0</span>
+            </p>
+        `;
+                card.addEventListener("click", () => {
+                    filtroArco = arco.ip;
+                    actualizarTabla();
+                });
+                container.appendChild(card);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', renderArcos);
+    </script>
+
+
+</body>
+
+</html>

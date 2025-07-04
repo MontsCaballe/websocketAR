@@ -3308,3 +3308,1064 @@ KeyboardInterrupt
 
 
 
+2025-07-03 16:10:46,625 [INFO] ✅ Servidor Tornado iniciado en el puerto 8888.
+2025-07-03 16:10:46,627 [INFO] will reset reader state on connect
+2025-07-03 16:10:46,628 [INFO] will start inventory on connect
+2025-07-03 16:10:46,628 [INFO] Enabling Impinj extensions
+2025-07-03 16:10:46,628 [INFO] using antennas: [1]
+2025-07-03 16:10:46,629 [INFO] transmit power: {1: 31}
+2025-07-03 16:10:46,641 [INFO] connected to 192.168.1.20 (:5084)
+2025-07-03 16:10:46,646 [INFO] using reader mode: None
+2025-07-03 16:10:46,989 [INFO] stopping politely
+2025-07-03 16:10:46,993 [INFO] Impinj search mode? 2
+2025-07-03 16:10:46,993 [INFO] starting inventory
+2025-07-03 16:10:49,025 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:49,026 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 36, 'LastSeenTimestampUTC': 1751585939113671, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:49,027 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:49,027 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:49,028 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:49,525 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:49,525 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 38, 'LastSeenTimestampUTC': 1751585939518696, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:49,526 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:49,526 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:49,526 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:49,775 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:49,775 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 40, 'LastSeenTimestampUTC': 1751585939926286, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:49,775 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:49,775 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:49,775 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:51,265 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:51,265 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 47, 'LastSeenTimestampUTC': 1751585941351251, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:51,266 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:51,267 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:51,267 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:52,025 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:52,026 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 1, 'LastSeenTimestampUTC': 1751585942217049, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 3, 'OpSpecID': 1, 'ReadDataWordCount': 0, 'ReadData': b''}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:52,026 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:52,027 [INFO] ⚠️ No se obtuvo User Memory o hubo error en lectura
+2025-07-03 16:10:52,765 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:52,765 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 4, 'LastSeenTimestampUTC': 1751585942777256, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:52,766 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:52,767 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:52,767 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:53,264 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:53,265 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 7, 'LastSeenTimestampUTC': 1751585943389523, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:53,265 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:53,266 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:53,266 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:53,764 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:53,764 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 9, 'LastSeenTimestampUTC': 1751585943795504, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:53,765 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:53,765 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:53,765 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:54,764 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:54,764 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 14, 'LastSeenTimestampUTC': 1751585944808027, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:54,764 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:54,765 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:54,765 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:56,264 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:56,265 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 22, 'LastSeenTimestampUTC': 1751585946443546, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:56,265 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:56,266 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:56,267 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:56,764 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:56,764 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 24, 'LastSeenTimestampUTC': 1751585946846681, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:56,765 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:56,765 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:56,765 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:57,024 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:57,025 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 26, 'LastSeenTimestampUTC': 1751585947252071, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:57,025 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:57,026 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:57,026 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:58,024 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:58,024 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 31, 'LastSeenTimestampUTC': 1751585948268566, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:58,025 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:58,026 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:58,026 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:58,524 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:58,524 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 33, 'LastSeenTimestampUTC': 1751585948736151, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 3, 'OpSpecID': 1, 'ReadDataWordCount': 0, 'ReadData': b''}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:58,525 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:58,526 [INFO] ⚠️ No se obtuvo User Memory o hubo error en lectura
+2025-07-03 16:10:59,024 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:59,024 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 35, 'LastSeenTimestampUTC': 1751585949076531, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:59,025 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:59,026 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:59,026 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:10:59,524 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:10:59,524 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 38, 'LastSeenTimestampUTC': 1751585949690810, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:10:59,525 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:10:59,525 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:10:59,526 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:00,024 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:00,024 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 40, 'LastSeenTimestampUTC': 1751585950095421, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:00,025 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:00,025 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:00,025 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:00,264 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:00,264 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 42, 'LastSeenTimestampUTC': 1751585950500703, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:00,265 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:00,265 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:00,266 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:01,264 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:01,264 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 46, 'LastSeenTimestampUTC': 1751585951336461, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 3, 'OpSpecID': 1, 'ReadDataWordCount': 0, 'ReadData': b''}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:01,265 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:01,265 [INFO] ⚠️ No se obtuvo User Memory o hubo error en lectura
+2025-07-03 16:11:01,764 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:01,764 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 49, 'LastSeenTimestampUTC': 1751585951917588, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:01,765 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:01,765 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:01,766 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:02,263 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:02,264 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 1, 'LastSeenTimestampUTC': 1751585952323026, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:02,265 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:02,265 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:02,266 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:02,763 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:02,764 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 4, 'LastSeenTimestampUTC': 1751585952931629, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:02,765 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:02,765 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:02,766 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:03,273 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:03,274 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 6, 'LastSeenTimestampUTC': 1751585953336730, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:03,274 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:03,275 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:03,275 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:04,023 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:04,024 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 10, 'LastSeenTimestampUTC': 1751585954148277, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:04,024 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:04,025 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:04,026 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:05,263 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:05,264 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 16, 'LastSeenTimestampUTC': 1751585955370788, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:05,264 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:05,265 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:05,265 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:05,763 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:05,764 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 18, 'LastSeenTimestampUTC': 1751585955774851, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:05,764 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:05,765 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:05,765 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:06,023 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:06,024 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 20, 'LastSeenTimestampUTC': 1751585956179168, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:06,024 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:06,025 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:06,025 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:06,763 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:06,763 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 24, 'LastSeenTimestampUTC': 1751585956988217, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:06,764 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:06,764 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:06,765 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:07,263 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:07,263 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 26, 'LastSeenTimestampUTC': 1751585957406298, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 3, 'OpSpecID': 1, 'ReadDataWordCount': 0, 'ReadData': b''}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:07,264 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:07,265 [INFO] ⚠️ No se obtuvo User Memory o hubo error en lectura
+2025-07-03 16:11:07,523 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:07,523 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 27, 'LastSeenTimestampUTC': 1751585957599986, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:07,524 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:07,525 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:07,525 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:08,032 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:08,033 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 29, 'LastSeenTimestampUTC': 1751585958024816, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 3, 'OpSpecID': 1, 'ReadDataWordCount': 0, 'ReadData': b''}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:08,034 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:08,034 [INFO] ⚠️ No se obtuvo User Memory o hubo error en lectura
+2025-07-03 16:11:08,035 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:08,035 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 30, 'LastSeenTimestampUTC': 1751585958207691, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:08,036 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:08,036 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:08,037 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:08,523 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:08,523 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 32, 'LastSeenTimestampUTC': 1751585958614475, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:08,524 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:08,524 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:08,525 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:09,022 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:09,022 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 34, 'LastSeenTimestampUTC': 1751585959018569, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:09,022 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:09,023 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:09,023 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:09,262 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:09,263 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 36, 'LastSeenTimestampUTC': 1751585959423384, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:09,263 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:09,264 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:09,264 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:11,022 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:11,023 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 44, 'LastSeenTimestampUTC': 1751585961052299, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:11,023 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:11,024 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:11,025 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:12,762 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:12,762 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 3, 'LastSeenTimestampUTC': 1751585962877899, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:12,762 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:12,762 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:12,763 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:13,271 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:13,272 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 6, 'LastSeenTimestampUTC': 1751585963488816, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:13,272 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:13,272 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:13,273 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:14,521 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:14,522 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 12, 'LastSeenTimestampUTC': 1751585964704108, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:14,522 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:14,522 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:14,522 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:15,522 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:15,522 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 16, 'LastSeenTimestampUTC': 1751585965515237, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:15,523 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:15,523 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:15,524 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:15,771 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:15,772 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 18, 'LastSeenTimestampUTC': 1751585965922248, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:15,772 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:15,772 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:15,773 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:16,271 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:16,272 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 20, 'LastSeenTimestampUTC': 1751585966328869, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:16,272 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:16,272 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:16,272 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:36,896 [INFO] ✅ Servidor Tornado iniciado en el puerto 8888.
+2025-07-03 16:11:36,897 [INFO] will reset reader state on connect
+2025-07-03 16:11:36,897 [INFO] will start inventory on connect
+2025-07-03 16:11:36,898 [INFO] Enabling Impinj extensions
+2025-07-03 16:11:36,898 [INFO] using antennas: [1]
+2025-07-03 16:11:36,899 [INFO] transmit power: {1: 31}
+2025-07-03 16:11:36,911 [INFO] connected to 192.168.1.20 (:5084)
+2025-07-03 16:11:36,917 [INFO] using reader mode: None
+2025-07-03 16:11:36,923 [INFO] stopping politely
+2025-07-03 16:11:36,931 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:36,932 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 30, 'LastSeenTimestampUTC': 1751585938503122, 'TagSeenCount': 4, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:36,932 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:36,932 [INFO] ⚠️ No se obtuvo User Memory o hubo error en lectura
+2025-07-03 16:11:36,932 [INFO] Impinj search mode? 2
+2025-07-03 16:11:36,933 [INFO] starting inventory
+2025-07-03 16:11:39,458 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:39,459 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 34, 'LastSeenTimestampUTC': 1751585989488795, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:39,460 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:39,460 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:39,461 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:39,958 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:39,959 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 37, 'LastSeenTimestampUTC': 1751585990097843, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:39,959 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:39,960 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:39,960 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:40,458 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:40,458 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 40, 'LastSeenTimestampUTC': 1751585990708168, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:40,459 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:40,459 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:40,459 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:40,958 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:40,959 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 42, 'LastSeenTimestampUTC': 1751585991114316, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:40,959 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:40,960 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:40,960 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:41,458 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:41,459 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 44, 'LastSeenTimestampUTC': 1751585991514899, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:41,460 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:41,460 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:41,461 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:41,708 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:41,709 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 46, 'LastSeenTimestampUTC': 1751585991922157, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:41,709 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:41,709 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:41,710 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:42,207 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:42,208 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 48, 'LastSeenTimestampUTC': 1751585992327266, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:42,208 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:42,208 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:42,208 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:42,717 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:42,718 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 50, 'LastSeenTimestampUTC': 1751585992731526, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:42,718 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:42,718 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:42,719 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:42,958 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:42,958 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 2, 'LastSeenTimestampUTC': 1751585993136911, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:42,958 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:42,959 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:42,959 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:44,217 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:44,218 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 8, 'LastSeenTimestampUTC': 1751585994354966, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:44,218 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:44,218 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:44,219 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:45,457 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:45,458 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 14, 'LastSeenTimestampUTC': 1751585995564023, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:45,459 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:45,459 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:45,460 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:46,457 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:46,457 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 19, 'LastSeenTimestampUTC': 1751585996579495, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:46,458 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:46,458 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:46,458 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:48,457 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:48,457 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 29, 'LastSeenTimestampUTC': 1751585998604993, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:48,458 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:48,458 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:48,459 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:49,457 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:49,457 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 34, 'LastSeenTimestampUTC': 1751585999624205, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:49,457 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:49,458 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:49,458 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:49,966 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:49,967 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 36, 'LastSeenTimestampUTC': 1751586000028825, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:49,967 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:49,967 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:49,967 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:50,956 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:50,957 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 41, 'LastSeenTimestampUTC': 1751586001046187, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:50,957 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:50,957 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:50,957 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:51,207 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:51,207 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 43, 'LastSeenTimestampUTC': 1751586001452628, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:51,208 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:51,208 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:51,208 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:52,456 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:52,457 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 48, 'LastSeenTimestampUTC': 1751586002468414, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:52,457 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:52,457 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:52,457 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:52,706 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:52,706 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 50, 'LastSeenTimestampUTC': 1751586002914748, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 3, 'OpSpecID': 1, 'ReadDataWordCount': 0, 'ReadData': b''}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:52,706 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:52,707 [INFO] ⚠️ No se obtuvo User Memory o hubo error en lectura
+2025-07-03 16:11:52,956 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:52,957 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 1, 'LastSeenTimestampUTC': 1751586003077591, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:52,958 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:52,958 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:52,959 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:53,456 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:53,457 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 3, 'LastSeenTimestampUTC': 1751586003482976, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:53,457 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:53,457 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:53,458 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:53,956 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:53,957 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 6, 'LastSeenTimestampUTC': 1751586004092700, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:53,957 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:53,957 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:53,958 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:54,706 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:54,707 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 9, 'LastSeenTimestampUTC': 1751586004722227, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 3, 'OpSpecID': 1, 'ReadDataWordCount': 0, 'ReadData': b''}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:54,707 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:54,707 [INFO] ⚠️ No se obtuvo User Memory o hubo error en lectura
+2025-07-03 16:11:55,456 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:55,456 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 13, 'LastSeenTimestampUTC': 1751586005517180, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:55,457 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:55,457 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:55,458 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:56,456 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:56,456 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 18, 'LastSeenTimestampUTC': 1751586006527419, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:56,457 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:56,457 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:56,458 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:58,206 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:58,206 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 27, 'LastSeenTimestampUTC': 1751586008358730, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:58,207 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:58,207 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:58,208 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:58,705 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:58,706 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 29, 'LastSeenTimestampUTC': 1751586008764132, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:58,706 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:58,706 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:58,707 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:11:58,965 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:11:58,966 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 31, 'LastSeenTimestampUTC': 1751586009170107, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:11:58,966 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:11:58,966 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:11:58,967 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:00,206 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:00,206 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 37, 'LastSeenTimestampUTC': 1751586010390651, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:00,206 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:00,206 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:00,207 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:00,715 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:00,716 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 39, 'LastSeenTimestampUTC': 1751586010795265, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:00,716 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:00,716 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:00,716 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:00,955 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:00,956 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 41, 'LastSeenTimestampUTC': 1751586011201279, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:00,956 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:00,957 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:00,957 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:02,455 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:02,456 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 47, 'LastSeenTimestampUTC': 1751586012450243, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:02,456 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:02,457 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:02,457 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:02,705 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:02,706 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 49, 'LastSeenTimestampUTC': 1751586012826759, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:02,706 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:02,707 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:02,707 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:03,955 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:03,956 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 5, 'LastSeenTimestampUTC': 1751586014046163, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:03,956 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:03,957 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:03,957 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:04,704 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:04,705 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 9, 'LastSeenTimestampUTC': 1751586014856059, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:04,705 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:04,705 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:04,705 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:05,455 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:05,455 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 12, 'LastSeenTimestampUTC': 1751586015465199, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:05,455 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:05,456 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:05,456 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:05,704 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:05,705 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 14, 'LastSeenTimestampUTC': 1751586015871636, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:05,705 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:05,705 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:05,705 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:06,204 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:06,204 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 16, 'LastSeenTimestampUTC': 1751586016278811, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:06,205 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:06,205 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:06,205 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:06,704 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:06,704 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 18, 'LastSeenTimestampUTC': 1751586016713376, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 3, 'OpSpecID': 1, 'ReadDataWordCount': 0, 'ReadData': b''}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:06,705 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:06,705 [INFO] ⚠️ No se obtuvo User Memory o hubo error en lectura
+2025-07-03 16:12:06,955 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:06,955 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 20, 'LastSeenTimestampUTC': 1751586017091690, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:06,955 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:06,956 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:06,956 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:07,454 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:07,455 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 22, 'LastSeenTimestampUTC': 1751586017495697, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:07,455 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:07,455 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:07,455 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:08,964 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:08,964 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 30, 'LastSeenTimestampUTC': 1751586019116220, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:08,965 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:08,965 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:08,965 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:09,454 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:09,455 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 32, 'LastSeenTimestampUTC': 1751586019587658, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 3, 'OpSpecID': 1, 'ReadDataWordCount': 0, 'ReadData': b''}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:09,455 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:09,456 [INFO] ⚠️ No se obtuvo User Memory o hubo error en lectura
+2025-07-03 16:12:10,704 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:10,704 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 39, 'LastSeenTimestampUTC': 1751586020941003, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:10,705 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:10,705 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:10,706 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:11,454 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:11,455 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 42, 'LastSeenTimestampUTC': 1751586021550990, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:11,455 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:11,455 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:11,456 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:12,703 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:12,704 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 48, 'LastSeenTimestampUTC': 1751586022769620, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:12,705 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:12,705 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:12,705 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:12,953 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:12,954 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 50, 'LastSeenTimestampUTC': 1751586023177800, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:12,954 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:12,954 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:12,954 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:13,954 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:13,954 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 4, 'LastSeenTimestampUTC': 1751586023984913, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:13,954 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:13,955 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:13,955 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:14,203 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:14,203 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 6, 'LastSeenTimestampUTC': 1751586024391037, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:14,204 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:14,204 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:14,204 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:14,953 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:14,954 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 10, 'LastSeenTimestampUTC': 1751586025202102, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:14,954 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:14,954 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:14,954 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:16,703 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:16,703 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 18, 'LastSeenTimestampUTC': 1751586026828651, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:16,703 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:16,703 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:16,704 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:18,953 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:18,953 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 29, 'LastSeenTimestampUTC': 1751586029064534, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:18,953 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:18,953 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:18,954 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:20,703 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:20,703 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 38, 'LastSeenTimestampUTC': 1751586030892183, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:20,704 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:20,704 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:20,705 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:21,203 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:21,203 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 40, 'LastSeenTimestampUTC': 1751586031297712, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:21,204 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:21,204 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:21,205 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:21,703 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:21,703 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 43, 'LastSeenTimestampUTC': 1751586031907686, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:21,704 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:21,704 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:21,705 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:22,702 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:22,703 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 48, 'LastSeenTimestampUTC': 1751586032923064, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:22,704 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:22,704 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:22,704 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:23,702 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:23,703 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 3, 'LastSeenTimestampUTC': 1751586033941017, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:23,703 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:23,703 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:23,704 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:24,452 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:24,452 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 6, 'LastSeenTimestampUTC': 1751586034552996, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:24,453 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:24,453 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:24,453 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:24,702 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:24,702 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 8, 'LastSeenTimestampUTC': 1751586034955657, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:24,703 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:24,703 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:24,703 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:25,702 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:25,702 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 12, 'LastSeenTimestampUTC': 1751586035769998, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:25,702 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:25,703 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:25,703 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:25,952 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:25,952 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 14, 'LastSeenTimestampUTC': 1751586036172763, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:25,952 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:25,952 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:25,953 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:26,951 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:26,952 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 18, 'LastSeenTimestampUTC': 1751586036985789, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:26,952 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:26,952 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:26,952 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:27,202 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:27,202 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 20, 'LastSeenTimestampUTC': 1751586037385768, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:27,202 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:27,202 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:27,202 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:27,951 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:27,952 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 23, 'LastSeenTimestampUTC': 1751586037996171, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:27,952 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:27,952 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:27,952 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:28,452 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:28,452 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 26, 'LastSeenTimestampUTC': 1751586038607167, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:28,452 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:28,453 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:28,453 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:28,951 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:28,952 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 28, 'LastSeenTimestampUTC': 1751586039015609, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:28,952 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:28,952 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:28,953 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:29,201 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:29,201 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 30, 'LastSeenTimestampUTC': 1751586039421465, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:29,202 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:29,202 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:29,202 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:30,701 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:30,702 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 37, 'LastSeenTimestampUTC': 1751586040841341, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:30,702 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:30,702 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:30,703 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:31,701 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:31,701 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 42, 'LastSeenTimestampUTC': 1751586041850811, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:31,701 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:31,702 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:31,702 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:32,451 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:32,451 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 45, 'LastSeenTimestampUTC': 1751586042465234, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:32,451 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:32,452 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:32,452 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:33,701 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:33,701 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 2, 'LastSeenTimestampUTC': 1751586043887723, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:33,702 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:33,702 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:33,702 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:34,200 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:34,201 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 4, 'LastSeenTimestampUTC': 1751586044288821, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:34,201 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:34,201 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:34,201 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:34,700 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:34,701 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 7, 'LastSeenTimestampUTC': 1751586044897972, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:34,701 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:34,701 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:34,702 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:35,451 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:35,452 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 11, 'LastSeenTimestampUTC': 1751586045711853, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:35,452 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:35,453 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:35,453 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:35,951 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:35,951 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 13, 'LastSeenTimestampUTC': 1751586046120533, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:35,952 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:35,952 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:35,953 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:37,201 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:37,201 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 19, 'LastSeenTimestampUTC': 1751586047338877, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:37,202 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:37,202 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:37,203 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:37,711 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:37,711 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 21, 'LastSeenTimestampUTC': 1751586047744977, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:37,712 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:37,712 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:37,713 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:38,950 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:38,951 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 27, 'LastSeenTimestampUTC': 1751586048963072, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:38,952 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:38,952 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:38,953 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:39,710 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:39,711 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 31, 'LastSeenTimestampUTC': 1751586049770522, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:39,711 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:39,712 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:39,712 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:41,700 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:41,701 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 40, 'LastSeenTimestampUTC': 1751586051748419, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 3, 'OpSpecID': 1, 'ReadDataWordCount': 0, 'ReadData': b''}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:41,701 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:41,702 [INFO] ⚠️ No se obtuvo User Memory o hubo error en lectura
+2025-07-03 16:12:41,702 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:41,703 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 41, 'LastSeenTimestampUTC': 1751586051839900, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 3, 'OpSpecID': 1, 'ReadDataWordCount': 0, 'ReadData': b''}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:41,703 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:41,704 [INFO] ⚠️ No se obtuvo User Memory o hubo error en lectura
+2025-07-03 16:12:45,200 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:45,200 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 8, 'LastSeenTimestampUTC': 1751586055263426, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:45,201 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:45,201 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:45,202 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:46,699 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:46,700 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 16, 'LastSeenTimestampUTC': 1751586056883929, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:46,700 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:46,701 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:46,701 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:47,449 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:47,450 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 19, 'LastSeenTimestampUTC': 1751586057536022, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:47,450 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:47,451 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:47,451 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:47,699 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:47,700 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 21, 'LastSeenTimestampUTC': 1751586057902249, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:47,700 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:47,701 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:47,701 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:48,209 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:48,210 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 23, 'LastSeenTimestampUTC': 1751586058306089, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:48,210 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:48,211 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:48,211 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:48,959 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:48,959 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 27, 'LastSeenTimestampUTC': 1751586059118845, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:48,960 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:48,960 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:48,961 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:49,459 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:49,460 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 29, 'LastSeenTimestampUTC': 1751586059525645, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:49,460 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:49,461 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:49,461 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:50,699 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:50,699 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 36, 'LastSeenTimestampUTC': 1751586060944897, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:50,700 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:50,700 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:50,701 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:52,958 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:52,959 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 47, 'LastSeenTimestampUTC': 1751586063171600, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:52,959 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:52,960 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:52,960 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:12:53,949 [INFO] 
+📡 Nuevo lote de tags leídos:
+2025-07-03 16:12:53,949 [INFO] {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 1, 'LastSeenTimestampUTC': 1751586063988338, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+2025-07-03 16:12:53,949 [INFO] ✅ Folio desde EPC: 323835393838353420202020
+2025-07-03 16:12:53,950 [INFO] 📝 Datos crudos User Memory: b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'
+2025-07-03 16:12:53,950 [INFO] ✅ VIN desde User Memory: 3N6AD33A2RK864713
+2025-07-03 16:26:01,926 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 16:26:16,051 [INFO] 200 GET / (::1) 32.10ms
+2025-07-03 16:26:16,130 [INFO] 200 GET /static/app.js (::1) 44.43ms
+2025-07-03 16:26:16,141 [INFO] 101 GET /ws (::1) 0.61ms
+2025-07-03 16:26:16,141 [INFO] 🔗 Cliente WebSocket conectado
+2025-07-03 16:26:16,173 [WARNING] 404 GET /favicon.ico (::1) 3.23ms
+2025-07-03 16:26:25,225 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 1.39ms
+2025-07-03 16:26:47,637 [INFO] 101 GET /ws (192.168.1.19) 0.52ms
+2025-07-03 16:26:47,637 [INFO] 🔗 Cliente WebSocket conectado
+2025-07-03 16:34:44,433 [INFO] C:\Users\Lady_\Documents\GitHub\websocketAR\app.py modified; restarting server
+2025-07-03 16:34:44,792 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 16:41:24,980 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 16:41:32,611 [INFO] 304 GET / (::1) 1.76ms
+2025-07-03 16:41:32,639 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.61ms
+2025-07-03 16:41:32,677 [INFO] 304 GET /static/app.js (::1) 36.86ms
+2025-07-03 16:41:32,683 [INFO] 101 GET /ws (::1) 1.19ms
+2025-07-03 16:41:32,683 [INFO] 🔗 Cliente WebSocket conectado
+2025-07-03 16:42:00,148 [INFO] 101 GET /ws (192.168.1.19) 0.45ms
+2025-07-03 16:42:00,149 [INFO] 🔗 Cliente WebSocket conectado
+2025-07-03 16:55:47,135 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 16:55:51,126 [INFO] 200 GET / (::1) 43.17ms
+2025-07-03 16:55:51,161 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.71ms
+2025-07-03 16:55:51,652 [INFO] 200 GET /static/arcos/arco.png (::1) 52.28ms
+2025-07-03 16:57:03,366 [INFO] 200 GET /static/arcos/arco.png (::1) 7.94ms
+2025-07-03 16:58:12,626 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 16:58:16,190 [INFO] 200 GET / (::1) 36.34ms
+2025-07-03 16:58:16,218 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.13ms
+2025-07-03 16:58:16,402 [INFO] 304 GET /static/arcos/arco.png (::1) 33.54ms
+2025-07-03 16:58:48,665 [INFO] 304 GET /static/arcos/arco.png (::1) 4.03ms
+2025-07-03 16:59:37,865 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 16:59:40,237 [INFO] 200 GET / (::1) 33.38ms
+2025-07-03 16:59:40,291 [INFO] 304 GET /static/arcos/arco.png (::1) 35.59ms
+2025-07-03 17:00:24,892 [INFO] 200 GET / (::1) 23.90ms
+2025-07-03 17:00:24,939 [INFO] 304 GET /static/arcos/arco.png (::1) 2.70ms
+2025-07-03 17:00:29,601 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.03ms
+2025-07-03 17:02:18,661 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 17:02:20,742 [INFO] 200 GET / (::1) 31.29ms
+2025-07-03 17:02:20,854 [INFO] 304 GET /static/arcos/arco.png (::1) 25.86ms
+2025-07-03 17:08:44,164 [INFO] C:\Users\Lady_\Documents\GitHub\websocketAR\server\rfid_service.py modified; restarting server
+2025-07-03 17:08:44,489 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 17:08:44,490 [ERROR] Exception in callback functools.partial(<bound method IOLoop._discard_future_result of <tornado.platform.asyncio.AsyncIOMainLoop object at 0x0000024A00C001A0>>, <Task finished name='Task-2' coro=<fake_rfid_reader() done, defined at C:\Users\Lady_\Documents\GitHub\websocketAR\server\rfid_service.py:15> exception=NameError("name 'WebSocketHandler' is not defined")>)
+Traceback (most recent call last):
+  File "C:\Users\Lady_\Documents\GitHub\websocketAR\venv\Lib\site-packages\tornado\ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "C:\Users\Lady_\Documents\GitHub\websocketAR\venv\Lib\site-packages\tornado\ioloop.py", line 774, in _discard_future_result
+    future.result()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\Lady_\Documents\GitHub\websocketAR\server\rfid_service.py", line 31, in fake_rfid_reader
+    for cliente in WebSocketHandler.clientes:
+                   ^^^^^^^^^^^^^^^^
+NameError: name 'WebSocketHandler' is not defined
+2025-07-03 17:09:41,002 [INFO] C:\Users\Lady_\Documents\GitHub\websocketAR\server\rfid_service.py modified; restarting server
+2025-07-03 17:09:41,370 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 17:15:05,645 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 17:15:10,065 [INFO] 304 GET / (::1) 2.08ms
+2025-07-03 17:15:10,215 [INFO] 304 GET /static/arcos/arco.png (::1) 38.83ms
+2025-07-03 17:15:19,013 [INFO] 101 GET /ws (192.168.1.19) 0.39ms
+2025-07-03 17:17:41,436 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 17:17:45,422 [INFO] 200 GET / (::1) 49.19ms
+2025-07-03 17:17:45,461 [INFO] 101 GET /ws (::1) 0.49ms
+2025-07-03 17:17:45,493 [INFO] 304 GET /static/arcos/arco.png (::1) 31.34ms
+2025-07-03 17:19:23,954 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 17:19:27,296 [INFO] 200 GET / (::1) 34.66ms
+2025-07-03 17:19:27,352 [INFO] 101 GET /ws (::1) 0.42ms
+2025-07-03 17:20:54,957 [INFO] 200 GET / (::1) 37.88ms
+2025-07-03 17:20:54,974 [INFO] 101 GET /ws (::1) 0.45ms
+2025-07-03 17:20:55,011 [INFO] 304 GET /static/arcos/arco.png (::1) 36.31ms
+2025-07-03 17:21:17,047 [INFO] 200 GET / (::1) 1.20ms
+2025-07-03 17:21:24,535 [INFO] 101 GET /ws (::1) 0.40ms
+2025-07-03 17:21:24,562 [INFO] 200 GET /static/arcos/arco.png (::1) 16.84ms
+2025-07-03 17:21:24,571 [WARNING] 404 GET /favicon.ico (::1) 1.98ms
+2025-07-03 17:21:51,929 [INFO] 200 GET / (::1) 40.26ms
+2025-07-03 17:21:52,055 [INFO] 101 GET /ws (::1) 0.31ms
+2025-07-03 17:21:52,080 [INFO] 200 GET /static/arcos/arco.png (::1) 7.91ms
+2025-07-03 17:21:52,091 [WARNING] 404 GET /favicon.ico (::1) 1.78ms
+2025-07-03 17:24:55,440 [INFO] 200 GET / (::1) 49.95ms
+2025-07-03 17:24:55,517 [INFO] 101 GET /ws (::1) 0.49ms
+2025-07-03 17:24:55,522 [INFO] 304 GET /static/arcos/arco.png (::1) 3.87ms
+2025-07-03 17:29:10,487 [INFO] ✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+2025-07-03 17:29:14,279 [INFO] 200 GET / (::1) 37.30ms
+2025-07-03 17:29:14,419 [INFO] 101 GET /ws (::1) 0.52ms
+2025-07-03 17:29:14,453 [INFO] 200 GET /static/arcos/arco.png (::1) 32.72ms
+2025-07-03 17:29:14,470 [WARNING] 404 GET /favicon.ico (::1) 1.86ms
+2025-07-03 17:30:08,322 [INFO] 200 GET / (::1) 34.51ms
+2025-07-03 17:30:08,390 [INFO] 101 GET /ws (::1) 0.50ms
+2025-07-03 17:30:43,092 [INFO] 304 GET / (::1) 1.76ms
+2025-07-03 17:30:43,119 [INFO] 101 GET /ws (::1) 0.37ms
+2025-07-03 17:31:22,072 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.18ms
+2025-07-03 17:31:42,267 [INFO] 304 GET / (::1) 2.30ms
+2025-07-03 17:31:42,305 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.01ms
+2025-07-03 17:31:42,430 [INFO] 101 GET /ws (::1) 0.59ms
+2025-07-03 17:31:42,494 [INFO] 304 GET /static/arcos/arco.png (::1) 6.50ms
+2025-07-03 17:32:54,234 [INFO] 200 GET / (::1) 45.80ms
+2025-07-03 17:32:54,259 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.31ms
+2025-07-03 17:32:54,261 [INFO] 101 GET /ws (::1) 0.79ms
+2025-07-03 17:32:54,359 [INFO] 304 GET /static/arcos/arco.png (::1) 3.59ms
+2025-07-03 17:33:15,630 [INFO] 200 GET / (::1) 39.46ms
+2025-07-03 17:33:15,651 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 3.07ms
+2025-07-03 17:33:15,803 [INFO] 101 GET /ws (::1) 0.55ms
+2025-07-03 17:34:19,498 [INFO] 200 GET / (::1) 39.15ms
+2025-07-03 17:34:19,523 [INFO] 101 GET /ws (::1) 0.52ms
+2025-07-03 17:34:19,527 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.54ms
+2025-07-03 17:36:23,114 [INFO] 200 GET / (::1) 33.24ms
+2025-07-03 17:36:23,145 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.15ms
+2025-07-03 17:36:23,278 [INFO] 101 GET /ws (::1) 0.95ms
+2025-07-03 17:36:23,334 [INFO] 304 GET /static/arcos/arco.png (::1) 3.35ms
+2025-07-03 17:39:06,907 [INFO] 200 GET / (::1) 3.59ms
+2025-07-03 17:39:06,946 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.33ms
+2025-07-03 17:39:07,099 [INFO] 101 GET /ws (::1) 0.83ms
+2025-07-03 17:39:07,106 [INFO] 304 GET /static/arcos/arco.png (::1) 4.79ms
+2025-07-03 17:40:01,652 [INFO] 200 GET / (::1) 37.73ms
+2025-07-03 17:40:01,733 [INFO] 101 GET /ws (::1) 0.50ms
+2025-07-03 17:40:37,291 [INFO] 200 GET / (::1) 32.23ms
+2025-07-03 17:40:37,436 [INFO] 101 GET /ws (::1) 0.53ms
+2025-07-03 17:41:09,229 [INFO] 200 GET / (::1) 40.55ms
+2025-07-03 17:41:09,307 [INFO] 101 GET /ws (::1) 0.47ms
+2025-07-03 17:41:35,885 [INFO] 200 GET / (::1) 27.48ms
+2025-07-03 17:41:35,949 [INFO] 101 GET /ws (::1) 0.66ms
+2025-07-03 17:45:58,689 [INFO] 200 GET / (::1) 34.07ms
+2025-07-03 17:45:58,763 [INFO] 101 GET /ws (::1) 0.29ms
+2025-07-03 17:45:58,769 [INFO] 304 GET /static/arcos/arco.png (::1) 4.08ms
+2025-07-03 17:47:14,265 [INFO] 200 GET / (::1) 33.43ms
+2025-07-03 17:47:14,288 [INFO] 101 GET /ws (::1) 0.56ms
+2025-07-03 17:47:52,684 [INFO] 200 GET / (::1) 33.23ms
+2025-07-03 17:47:52,797 [INFO] 101 GET /ws (::1) 0.39ms
+2025-07-03 17:48:09,911 [INFO] 200 GET / (::1) 29.01ms
+2025-07-03 17:48:09,993 [INFO] 101 GET /ws (::1) 3.46ms
+2025-07-03 17:49:07,117 [INFO] 200 GET / (::1) 35.69ms
+2025-07-03 17:49:07,133 [INFO] 101 GET /ws (::1) 0.49ms
+2025-07-03 17:50:27,482 [INFO] 200 GET / (::1) 32.81ms
+2025-07-03 17:50:27,597 [INFO] 101 GET /ws (::1) 0.53ms
+2025-07-03 17:52:18,051 [INFO] 200 GET / (::1) 37.87ms
+2025-07-03 17:52:18,144 [INFO] 101 GET /ws (::1) 0.56ms
+2025-07-03 17:52:18,148 [INFO] 304 GET /static/arcos/arco.png (::1) 3.44ms
+2025-07-03 17:52:32,000 [INFO] 200 GET / (::1) 26.26ms
+2025-07-03 17:52:32,076 [INFO] 101 GET /ws (::1) 0.65ms
+2025-07-03 17:57:09,712 [INFO] 200 GET / (::1) 31.64ms
+2025-07-03 17:57:09,828 [INFO] 101 GET /ws (::1) 0.51ms
+2025-07-03 17:57:20,613 [INFO] 200 GET / (::1) 1.84ms
+2025-07-03 17:57:20,861 [INFO] 101 GET /ws (::1) 0.33ms
+2025-07-03 17:57:20,883 [INFO] 200 GET /static/arcos/arco.png (::1) 7.03ms
+2025-07-03 17:57:20,896 [WARNING] 404 GET /favicon.ico (::1) 1.83ms
+2025-07-03 17:57:51,465 [INFO] 200 GET / (::1) 36.17ms
+2025-07-03 17:57:51,483 [INFO] 101 GET /ws (::1) 0.49ms
+2025-07-03 17:58:09,809 [INFO] 200 GET / (::1) 28.03ms
+2025-07-03 17:58:09,909 [INFO] 101 GET /ws (::1) 0.48ms
+2025-07-03 17:59:44,801 [INFO] 200 GET / (::1) 28.75ms
+2025-07-03 17:59:44,907 [INFO] 101 GET /ws (::1) 0.41ms
+2025-07-03 18:00:10,768 [INFO] 200 GET / (::1) 37.30ms
+2025-07-03 18:00:10,972 [INFO] 101 GET /ws (::1) 0.35ms
+2025-07-03 18:01:03,247 [INFO] 200 GET / (::1) 34.57ms
+2025-07-03 18:01:03,269 [INFO] 101 GET /ws (::1) 0.66ms
+2025-07-03 18:09:59,389 [INFO] 200 GET / (::1) 24.95ms
+2025-07-03 18:09:59,449 [INFO] 101 GET /ws (::1) 0.50ms
+2025-07-03 18:09:59,454 [INFO] 304 GET /static/arcos/arco.png (::1) 3.54ms
+2025-07-03 18:10:21,979 [INFO] 200 GET / (::1) 25.90ms
+2025-07-03 18:10:22,002 [INFO] 101 GET /ws (::1) 3.31ms
+2025-07-03 18:12:35,982 [INFO] 200 GET / (::1) 36.76ms
+2025-07-03 18:12:36,005 [INFO] 101 GET /ws (::1) 0.68ms
+2025-07-03 18:14:24,425 [INFO] 200 GET / (::1) 36.57ms
+2025-07-03 18:14:24,483 [INFO] 101 GET /ws (::1) 0.50ms
+2025-07-03 18:15:42,957 [INFO] 200 GET / (::1) 29.24ms
+2025-07-03 18:15:43,035 [INFO] 101 GET /ws (::1) 0.63ms
+2025-07-03 18:16:23,004 [INFO] 200 GET / (::1) 36.42ms
+2025-07-03 18:16:23,033 [INFO] 101 GET /ws (::1) 6.06ms
+2025-07-03 18:17:04,651 [INFO] 200 GET / (::1) 34.84ms
+2025-07-03 18:17:04,729 [INFO] 101 GET /ws (::1) 0.63ms
+2025-07-03 18:20:02,983 [INFO] 200 GET / (::1) 38.30ms
+2025-07-03 18:20:03,040 [INFO] 101 GET /ws (::1) 0.36ms
+2025-07-03 18:20:03,044 [INFO] 304 GET /static/arcos/arco.png (::1) 3.51ms
+2025-07-03 18:22:42,034 [INFO] 200 GET / (::1) 32.42ms
+2025-07-03 18:22:42,151 [INFO] 101 GET /ws (::1) 0.52ms
+2025-07-03 18:28:01,863 [INFO] 200 GET / (::1) 38.39ms
+2025-07-03 18:28:01,933 [INFO] 101 GET /ws (::1) 0.43ms
+2025-07-03 18:28:18,825 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.81ms
+2025-07-03 18:28:53,511 [INFO] 200 GET / (::1) 38.65ms
+2025-07-03 18:28:53,530 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.38ms
+2025-07-03 18:28:53,674 [INFO] 101 GET /ws (::1) 0.56ms
+2025-07-03 18:28:53,679 [INFO] 304 GET /static/arcos/arco.png (::1) 4.07ms
+2025-07-03 18:28:57,445 [INFO] 200 GET / (::1) 1.66ms
+2025-07-03 18:28:57,462 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 1.72ms
+2025-07-03 18:28:58,715 [INFO] 101 GET /ws (::1) 0.49ms
+2025-07-03 18:28:58,724 [INFO] 200 GET /static/arcos/arco.png (::1) 8.99ms
+2025-07-03 18:28:58,825 [WARNING] 404 GET /favicon.ico (::1) 0.98ms
+2025-07-03 18:29:15,652 [INFO] 200 GET / (::1) 26.73ms
+2025-07-03 18:29:15,671 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 1.94ms
+2025-07-03 18:29:15,680 [INFO] 101 GET /ws (::1) 0.36ms
+2025-07-03 18:33:36,081 [INFO] 200 GET / (::1) 26.69ms
+2025-07-03 18:33:36,101 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.48ms
+2025-07-03 18:33:36,149 [INFO] 101 GET /ws (::1) 0.44ms
+2025-07-03 18:34:53,007 [INFO] 200 GET / (::1) 35.10ms
+2025-07-03 18:34:53,110 [INFO] 101 GET /ws (::1) 0.37ms
+2025-07-03 18:36:28,024 [INFO] 200 GET / (::1) 25.40ms
+2025-07-03 18:36:28,132 [INFO] 101 GET /ws (::1) 0.46ms
+2025-07-03 18:36:38,944 [INFO] 200 GET / (::1) 2.54ms
+2025-07-03 18:36:39,178 [INFO] 101 GET /ws (::1) 0.51ms
+2025-07-03 18:36:39,186 [INFO] 200 GET /static/arcos/arco.png (::1) 7.32ms
+2025-07-03 18:36:39,212 [WARNING] 404 GET /favicon.ico (::1) 2.93ms
+2025-07-03 18:37:14,390 [INFO] 200 GET / (::1) 36.61ms
+2025-07-03 18:37:14,411 [INFO] 101 GET /ws (::1) 0.31ms
+2025-07-03 18:37:40,891 [INFO] 200 GET / (::1) 25.45ms
+2025-07-03 18:37:40,949 [INFO] 101 GET /ws (::1) 0.46ms
+2025-07-03 18:39:10,558 [INFO] 200 GET / (::1) 35.09ms
+2025-07-03 18:39:10,647 [INFO] 101 GET /ws (::1) 0.48ms
+2025-07-03 18:39:10,655 [INFO] 200 GET /static/arcos/arco.png (::1) 7.15ms
+2025-07-03 18:39:10,673 [WARNING] 404 GET /favicon.ico (::1) 2.14ms
+2025-07-03 18:39:53,566 [INFO] 200 GET / (::1) 35.56ms
+2025-07-03 18:39:53,619 [INFO] 101 GET /ws (::1) 0.51ms
+2025-07-03 18:42:56,299 [INFO] 200 GET / (::1) 32.08ms
+2025-07-03 18:42:56,420 [INFO] 101 GET /ws (::1) 0.31ms
+2025-07-03 18:43:56,947 [INFO] 200 GET / (::1) 36.31ms
+2025-07-03 18:43:57,122 [INFO] 101 GET /ws (::1) 0.57ms
+2025-07-03 18:43:57,131 [INFO] 200 GET /static/arcos/arco.png (::1) 8.10ms
+2025-07-03 18:43:57,154 [WARNING] 404 GET /favicon.ico (::1) 2.00ms
+2025-07-03 18:44:07,360 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 1.24ms
+2025-07-03 18:44:33,453 [INFO] 200 GET / (::1) 33.70ms
+2025-07-03 18:44:33,483 [WARNING] 404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 1.96ms
+2025-07-03 18:44:33,571 [INFO] 101 GET /ws (::1) 0.56ms
+2025-07-03 18:44:39,801 [INFO] 200 GET / (::1) 1.92ms
+2025-07-03 18:44:39,907 [INFO] 101 GET /ws (::1) 0.42ms
+2025-07-03 18:44:39,916 [INFO] 200 GET /static/arcos/arco.png (::1) 7.78ms
+2025-07-03 18:44:39,933 [WARNING] 404 GET /favicon.ico (::1) 1.70ms
+2025-07-03 18:48:01,629 [INFO] 200 GET / (::1) 35.13ms
+2025-07-03 18:48:01,712 [INFO] 101 GET /ws (::1) 0.63ms
+2025-07-03 18:49:39,784 [INFO] 200 GET / (::1) 38.47ms
+2025-07-03 18:49:39,904 [INFO] 101 GET /ws (::1) 0.59ms
+2025-07-03 18:49:42,132 [INFO] 200 GET / (::1) 2.31ms
+2025-07-03 18:49:42,207 [INFO] 101 GET /ws (::1) 0.44ms
+2025-07-03 18:49:42,214 [INFO] 200 GET /static/arcos/arco.png (::1) 6.85ms
+2025-07-03 18:49:42,233 [WARNING] 404 GET /favicon.ico (::1) 1.82ms
+2025-07-03 18:51:24,900 [INFO] 200 GET / (::1) 26.44ms
+2025-07-03 18:51:25,013 [INFO] 101 GET /ws (::1) 0.34ms
+2025-07-03 18:51:25,021 [INFO] 200 GET /static/arcos/arco.png (::1) 6.58ms
+2025-07-03 18:51:25,050 [WARNING] 404 GET /favicon.ico (::1) 2.94ms
+2025-07-03 18:53:15,884 [INFO] 200 GET / (::1) 38.66ms
+2025-07-03 18:53:16,059 [INFO] 101 GET /ws (::1) 0.47ms
+2025-07-03 18:53:16,068 [INFO] 200 GET /static/arcos/arco.png (::1) 7.88ms
+2025-07-03 18:53:16,089 [WARNING] 404 GET /favicon.ico (::1) 2.34ms
+2025-07-03 18:53:32,849 [INFO] 200 GET / (::1) 26.14ms
+2025-07-03 18:53:32,926 [INFO] 101 GET /ws (::1) 0.59ms
+2025-07-03 18:54:09,520 [INFO] 200 GET / (::1) 38.12ms
+2025-07-03 18:54:09,538 [INFO] 101 GET /ws (::1) 0.62ms
+2025-07-03 18:55:53,275 [INFO] 200 GET / (::1) 34.85ms
+2025-07-03 18:55:53,345 [INFO] 101 GET /ws (::1) 0.50ms
+2025-07-03 18:56:13,553 [INFO] 200 GET / (::1) 26.51ms
+2025-07-03 18:56:13,630 [INFO] 101 GET /ws (::1) 0.63ms
+2025-07-03 18:57:26,023 [INFO] 101 GET /ws (192.168.1.19) 0.52ms
