@@ -110,7 +110,16 @@ class RFIDManager:
         for arco in arcos:
             if arco['estado'] == 'conectado':
                 self.start_reader(arco)
-        enviar_a_clientes(json.dumps({"type": "update_arcos", "arcos": arcos}))
+        # enviar_a_clientes(json.dumps({"type": "update_arcos", "arcos": arcos}))
+        # 🔥 Manda arcos actualizados a todos los clientes
+        from server.websocket import RFIDWebSocket
+        RFIDWebSocket.broadcast_message(json.dumps({
+            "type": "update_arcos",
+            "arcos": arcos
+        }))
+    def get_arcos_data(self):
+        """Retorna la lista actual de arcos con sus estados"""
+        return self._arcos_data or []
 
 def enviar_a_clientes(mensaje):
     from server.websocket import RFIDWebSocket

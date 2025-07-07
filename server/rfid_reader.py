@@ -3,6 +3,7 @@ import logging
 import time
 from sllurp.llrp import LLRPReaderClient, LLRPReaderConfig, C1G2Read
 import requests
+# from server.websocket import RFIDWebSocket
 
 # devices_with_data = []
 class RFIDReaderThread(threading.Thread):
@@ -125,10 +126,29 @@ class RFIDReaderThread(threading.Thread):
                     logging.info(f"✅ API respuesta para {vin}: {response.json()}")
                 else:
                     logging.warning(f"⚠️ API respondió código {response.status_code}")
+                
+                # # Emitir la lectura en tiempo real por WebSocket
+                # from tornado.ioloop import IOLoop
+                # from server.websocket import RFIDWebSocket
+
+                # IOLoop.instance().add_callback(RFIDWebSocket.send_tag_to_all, data)
+                # 🔥 Enviar en tiempo real a los clientes WebSocket
+                # from server.websocket import RFIDWebSocket
+                # # Envía la lectura a todos los clientes WebSocket
+                # RFIDWebSocket.send_tag_to_clients(data)
+                from server.websocket import tag_queue
+                tag_queue.put(data)
+
+
 
             except Exception as e:
                 logging.error(f"❌ Error al consumir API: {e}")
-            self.broadcast_callback(data)
+
+            # from server.websocket import RFIDWebSocket
+            # RFIDWebSocket.send_tag_to_clients({
+            #     "type": "tag_read",
+            #     "tag": data
+            # })
 
 
     def run(self):

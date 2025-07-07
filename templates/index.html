@@ -142,6 +142,8 @@
 
         ws.onmessage = function (event) {
             const data = JSON.parse(event.data);
+            console.log("🔗 Recibiending");
+            console.log(data);
 
             if (data.type === "update_arcos") {
                 console.log("📦 Lista de arcos actualizada:", data.arcos);

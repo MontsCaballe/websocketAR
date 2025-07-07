@@ -97,7 +97,7 @@ import tornado.ioloop
 import tornado.web
 import tornado.httpserver
 from dotenv import load_dotenv
-
+from server.websocket import process_tag_queue
 from server.rfid_manager import rfid_manager
 from server.websocket import RFIDWebSocket
 from server.dashboard_handler import DashboardHandler
@@ -140,6 +140,8 @@ if __name__ == "__main__":
     port = int(os.getenv("PORT", 8888))
     server.listen(port)
     logging.info(f"✅ Servidor Tornado y WebSocket iniciado en http://localhost:{port}")
+    
 
+    tornado.ioloop.IOLoop.current().spawn_callback(process_tag_queue)
     tornado.ioloop.IOLoop.current().start()
 
