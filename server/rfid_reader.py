@@ -9,6 +9,10 @@ from server.websocket import tag_queue  # 👈 Importamos la cola para SSE
 from sllurp import llrp
 from server import rfid_manager
 
+# 🔥 Buffer global para EPCs
+buffer_tags = {}
+TTL_SEGUNDOS = 3600
+
 class RFIDReaderThread(threading.Thread):
     def __init__(self, ip, antennas, broadcast_callback, devices_with_data):
         super().__init__()
@@ -43,6 +47,13 @@ class RFIDReaderThread(threading.Thread):
             return None, f"❌ Error al parsear EPC: {e}"
 
     def tag_report_callback(self, reader, tag_reports):
+        # 🧹 Limpiar tags viejos antes de procesar nuevos
+        now = time.time()
+        for tag_epc in list(buffer_tags.keys()):
+            last_sent = buffer_tags[tag_epc]['last_sent']
+            if last_sent and (now - last_sent) > (TTL_SEGUNDOS * 2):
+                logging.info(f"🧹 Eliminando tag expirado {tag_epc.hex()}")
+                del buffer_tags[tag_epc]
         for tag in tag_reports:
             logging.info(f"📡 Tag detectado en {self.ip}: {tag}")
 
@@ -52,12 +63,22 @@ class RFIDReaderThread(threading.Thread):
             if epc:
                 folio, msg = self.parse_epc_folio(epc)
                 logging.info(msg)
+                # 📝 Si el EPC no existe en buffer, agregarlo
+                if epc not in buffer_tags:
+                    buffer_tags[epc] = {'vin': None, 'folio': None, 'enviado': False,'last_sent': None}
+
+                # Actualiza folio si lo obtuviste
+                if folio:
+                    buffer_tags[epc]['folio'] = folio
 
             result = tag.get('C1G2ReadOpSpecResult')
             if result and result.get('Result') == 0 and result.get('ReadData'):
                 user_memory = result['ReadData']
                 vin, msg = self.parse_user_memory(user_memory)
                 logging.info(msg)
+                 # Actualiza vin si lo obtuviste
+                if vin:
+                    buffer_tags[epc]['vin'] = vin
             else:
                 logging.warning("⚠️ No se obtuvo User Memory o hubo error en lectura")
 
@@ -69,9 +90,100 @@ class RFIDReaderThread(threading.Thread):
             }
 
             logging.info(f"📡 Tag listo para enviar a la api {data}")
+
+            # 🔥 Si ya tenemos VIN y Folio y no se ha enviado
+            if (buffer_tags[epc]['vin'] and buffer_tags[epc]['folio'] 
+                    and not buffer_tags[epc]['enviado']):
+                
+                should_send = False
+                # 📌 Si nunca se ha enviado, envía
+                if not buffer_tags[epc]['enviado']:
+                    should_send = True
+                else:
+                    # 📌 Si ya se envió, verifica si ha pasado el TTL
+                    last_sent = buffer_tags[epc]['last_sent']
+                    if last_sent and (now - last_sent) > TTL_SEGUNDOS:
+                        logging.info(f"⏳ Tag {epc.hex()} expiró TTL, reenviando...")
+                        should_send = True
+
+                if should_send:
+                    data = {
+                    "ip": self.ip,
+                    "epc": epc.hex() if epc else None,
+                    "vin": buffer_tags[epc]['vin'],
+                    "folio": buffer_tags[epc]['folio']
+                    }
+
+                    logging.info(f"📡 Enviando tag completo: {data}")
+
+                    # ✅ Enviar a SSE
+                    from server.websocket import tag_queue
+                    tag_queue.put_nowait(data)
+                    logging.info(f"📡 Enviado a SSE: {data}")
+
+                    # ✅ Enviar a WebSocket
+                    from server.websocket import RFIDWebSocket
+                    RFIDWebSocket.send_tag_to_clients({"type": "tag_read", "tag": data})
+
+                    # ✅ Enviar a API
+                    self.enviar_a_api(data, tag, vin , folio)
+
+                    # 🔥 Marcar como enviado
+                    buffer_tags[epc]['enviado'] = True
             
 
-            # ======================
+            
+
+           
+
+    def run(self):
+        try:
+            self.running = True
+            logging.info(f"📡 Iniciando lector en {self.ip}")
+
+            config = LLRPReaderConfig()
+            config.antennas = self.antennas
+            config.tx_power = {ant: 31 for ant in self.antennas}
+            config.impinj_search_mode = 2
+            config.start_inventory = True
+            config.reset_on_connect = True
+
+            self.reader = LLRPReaderClient(self.ip, config=config)
+            self.reader.add_tag_report_callback(self.tag_report_callback)
+            
+            # logging.info(f"📡 Desconectando lector {self.ip}")
+            
+            # self.reader.disconnect()
+            logging.info(f"📡 Conectando lector {self.ip}")
+            self.reader.connect()
+            # self.limpiar_reader(self.reader)
+            # self.borrar_specs(self.reader)
+
+
+
+            time.sleep(2)  # pequeña pausa para AccessSpec
+
+            read_op = C1G2Read(
+                OpSpecID=1,
+                AccessPassword=0,
+                MB=3,          # User Memory Bank
+                WordPtr=0,     # Desde la posición 0
+                WordCount=16   # Leer 16 palabras (32 bytes por si acaso)
+            )
+            
+
+            self.reader.start_access_spec(op_spec=read_op, stop_after_count=0)
+
+            self.reader.join()
+        except Exception as e:
+            logging.error(f"❌ Error en lector {self.ip}: {e}")
+        finally:
+            self.running = False
+            if self.reader:
+                self.reader.disconnect()
+                logging.info(f"🔌 Lector desconectado {self.ip}")
+    def enviar_a_api(self, data, tag, vin, folio):
+        # ======================
             # 🔥 Paso final: Consumo API
             # ======================
             try:               
@@ -134,54 +246,6 @@ class RFIDReaderThread(threading.Thread):
             except Exception as e:
                 logging.error(f"❌ Error al consumir API: {e}")
 
-           
-
-    def run(self):
-        try:
-            self.running = True
-            logging.info(f"📡 Iniciando lector en {self.ip}")
-
-            config = LLRPReaderConfig()
-            config.antennas = self.antennas
-            config.tx_power = {ant: 31 for ant in self.antennas}
-            config.impinj_search_mode = 2
-            config.start_inventory = True
-            config.reset_on_connect = True
-
-            self.reader = LLRPReaderClient(self.ip, config=config)
-            self.reader.add_tag_report_callback(self.tag_report_callback)
-            
-            # logging.info(f"📡 Desconectando lector {self.ip}")
-            
-            # self.reader.disconnect()
-            logging.info(f"📡 Conectando lector {self.ip}")
-            self.reader.connect()
-            # self.limpiar_reader(self.reader)
-            # self.borrar_specs(self.reader)
-
-
-
-            time.sleep(2)  # pequeña pausa para AccessSpec
-
-            read_op = C1G2Read(
-                OpSpecID=1,
-                AccessPassword=0,
-                MB=3,          # User Memory Bank
-                WordPtr=0,     # Desde la posición 0
-                WordCount=16   # Leer 16 palabras (32 bytes por si acaso)
-            )
-            
-
-            self.reader.start_access_spec(op_spec=read_op, stop_after_count=0)
-
-            self.reader.join()
-        except Exception as e:
-            logging.error(f"❌ Error en lector {self.ip}: {e}")
-        finally:
-            self.running = False
-            if self.reader:
-                self.reader.disconnect()
-                logging.info(f"🔌 Lector desconectado {self.ip}")
     # def run(self):
     #     while not self.stop_event.is_set():
     #         try:
