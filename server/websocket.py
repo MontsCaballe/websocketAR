@@ -1,41 +1,3 @@
-# import tornado.websocket
-# import logging
-# from server.rfid_manager import rfid_manager
-
-# class RFIDWebSocket(tornado.websocket.WebSocketHandler):
-#     clients = set()
-
-#     def open(self):
-#         logging.info("🌐 Cliente WebSocket conectado")
-#         self.clients.add(self)
-#         try:
-#             arcos_data = rfid_manager.arcos
-#             self.write_message({
-#                 "type": "update_arcos",
-#                 "arcos": arcos_data
-#             })
-#             logging.info(f"✅ Enviando {len(arcos_data)} arcos al cliente")
-#         except Exception as e:
-#             logging.error(f"❌ Error enviando arcos iniciales: {e}")
-
-#     def on_message(self, message):
-#         logging.info(f"📨 Mensaje recibido del cliente: {message}")
-
-#     def on_close(self):
-#         logging.info("❌ Cliente WebSocket desconectado")
-#         self.clients.discard(self)  # Evita KeyError si ya no está
-
-#     def check_origin(self, origin):
-#         return True
-
-#     @staticmethod
-#     def broadcast_message(mensaje):
-#         logging.info("📢 Enviando mensaje a todos los clientes WebSocket")
-#         for client in RFIDWebSocket.clients.copy():
-#             try:
-#                 client.write_message(mensaje)
-#             except Exception as e:
-#                 logging.error(f"❌ Error enviando mensaje a cliente: {e}")
 import tornado.websocket
 import logging
 import json
@@ -55,19 +17,6 @@ class RFIDWebSocket(tornado.websocket.WebSocketHandler):
         from server.rfid_manager import rfid_manager
         arcos_data = rfid_manager.get_arcos_data()
         self.write_message({"type": "update_arcos", "arcos": arcos_data})
-
-    # def open(self):
-    #     """Se llama cuando un cliente WebSocket se conecta"""
-    #     RFIDWebSocket.clients.add(self)
-    #     logging.info(f"🌐 Cliente WebSocket conectado: {self.request.remote_ip}")
-        
-    #     # Manda los arcos actuales al cliente al conectarse
-    #     from server.rfid_manager import rfid_manager
-    #     arcos_data = rfid_manager.get_arcos_data()
-    #     self.write_message({
-    #         "type": "update_arcos",
-    #         "arcos": arcos_data
-    #     })
 
     def on_message(self, message):
         """Se llama cuando un cliente WebSocket envía un mensaje"""
@@ -114,18 +63,7 @@ class RFIDWebSocket(tornado.websocket.WebSocketHandler):
         # Limpiar los clientes desconectados
         for client in dead_clients:
             cls.clients.discard(client)
-    # def broadcast_message(cls, message):
-    #     """Envía un mensaje a todos los clientes WebSocket conectados"""
-    #     dead_clients = []
-    #     for client in cls.clients:
-    #         try:
-    #             client.write_message(message)
-    #         except Exception as e:
-    #             logging.error(f"❌ Error enviando mensaje a cliente WebSocket: {e}")
-    #             dead_clients.append(client)
-    #     # Limpiar clientes desconectados
-    #     for client in dead_clients:
-    #         cls.clients.discard(client)
+
 
     @classmethod
     def send_tag_to_clients(cls, tag_data):
@@ -139,14 +77,7 @@ class RFIDWebSocket(tornado.websocket.WebSocketHandler):
                 client.write_message, message
             )
         logging.info(f"📡 Enviado new_tag a los clientes: {message}")
-    # @classmethod
-    # def send_tag_to_clients(cls, tag_data):
-    #     """Envía datos de tag en tiempo real a todos los clientes WebSocket"""
-    #     message = json.dumps({
-    #         "type": "tag_read",
-    #         "tag": tag_data
-    #     })
-    #     cls.broadcast_message(message)
+
     @classmethod
     def send_tag_to_all(cls, tag_data):
         for client in cls.clients:
@@ -201,6 +132,7 @@ class RFIDWebSocket(tornado.websocket.WebSocketHandler):
 async def process_tag_queue():
         while True:
             tag_data = await tag_queue.get()
+            yield f"data: {json.dumps(tag_data)}\n\n"
             message = {
                 "type": "tag_read",
                 "tag": tag_data

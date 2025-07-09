@@ -1,11 +1,14 @@
 import threading
 import logging
 import time
+import sllurp
 from sllurp.llrp import LLRPReaderClient, LLRPReaderConfig, C1G2Read
 import requests
-# from server.websocket import RFIDWebSocket
+import tornado
+from server.websocket import tag_queue  # 👈 Importamos la cola para SSE
+from sllurp import llrp
+from server import rfid_manager
 
-# devices_with_data = []
 class RFIDReaderThread(threading.Thread):
     def __init__(self, ip, antennas, broadcast_callback, devices_with_data):
         super().__init__()
@@ -71,8 +74,7 @@ class RFIDReaderThread(threading.Thread):
             # ======================
             # 🔥 Paso final: Consumo API
             # ======================
-            try:
-                
+            try:               
 
                 url = "https://192.168.0.200/tramites/lecturas-arcos/"
                 antenna_index = tag.get('AntennaID', 1) - 1  # Ajusta a índice 0-based
@@ -99,15 +101,6 @@ class RFIDReaderThread(threading.Thread):
                         else:
                             logging.warning(f"⚠️ Antenna index {antenna_index} fuera de rango para {self.ip}")
 
-                        # antenas = device.get("antennas", [])
-                        # if 0 <= antenna_index < len(antenas):
-                        #     antenna = antenas[antenna_index]
-                        #     antenna_id = antenna.get("id")
-                        #     arco_id = antenna.get("arcos")  # o "arco" según tu JSON
-                        #     logging.info(f"✅ Antena encontrada en lista: {antenna}")
-                        # else:
-                        #     logging.warning(f"⚠️ Antenna index {antenna_index} fuera de rango para {self.ip}")
-                        # break  # Ya encontramos el dispositivo, salimos del loop
 
                 if arco_id is None or antenna_id is None:
                     logging.warning(f"⚠️ No se pudo determinar arco/antena para IP {self.ip}")
@@ -118,7 +111,18 @@ class RFIDReaderThread(threading.Thread):
                     "arco": arco_id,
                     "antena": antenna_id
                 }
+               
+                # ✅ Enviar a SSE (sin bloquear hilo)
+                from server.websocket import tag_queue
+               
+                tag_queue.put_nowait(data)
+                logging.info(f"📡 Enviado a SSE (tag_queue): {data}")
 
+                # ✅ Enviar a WebSocket también
+                from server.websocket import RFIDWebSocket
+                RFIDWebSocket.send_tag_to_clients({"type": "tag_read", "tag": data})
+                
+                time.sleep(0.1)
                 logging.info(f"🌐 Enviando POST a {url} con payload: {payload}")
                 response = requests.post(url, json=payload, verify=False, timeout=6)
 
@@ -126,30 +130,11 @@ class RFIDReaderThread(threading.Thread):
                     logging.info(f"✅ API respuesta para {vin}: {response.json()}")
                 else:
                     logging.warning(f"⚠️ API respondió código {response.status_code}")
-                
-                # # Emitir la lectura en tiempo real por WebSocket
-                # from tornado.ioloop import IOLoop
-                # from server.websocket import RFIDWebSocket
-
-                # IOLoop.instance().add_callback(RFIDWebSocket.send_tag_to_all, data)
-                # 🔥 Enviar en tiempo real a los clientes WebSocket
-                # from server.websocket import RFIDWebSocket
-                # # Envía la lectura a todos los clientes WebSocket
-                # RFIDWebSocket.send_tag_to_clients(data)
-                from server.websocket import tag_queue
-                tag_queue.put(data)
-
-
-
+                 
             except Exception as e:
                 logging.error(f"❌ Error al consumir API: {e}")
 
-            # from server.websocket import RFIDWebSocket
-            # RFIDWebSocket.send_tag_to_clients({
-            #     "type": "tag_read",
-            #     "tag": data
-            # })
-
+           
 
     def run(self):
         try:
@@ -165,7 +150,16 @@ class RFIDReaderThread(threading.Thread):
 
             self.reader = LLRPReaderClient(self.ip, config=config)
             self.reader.add_tag_report_callback(self.tag_report_callback)
+            
+            # logging.info(f"📡 Desconectando lector {self.ip}")
+            
+            # self.reader.disconnect()
+            logging.info(f"📡 Conectando lector {self.ip}")
             self.reader.connect()
+            # self.limpiar_reader(self.reader)
+            # self.borrar_specs(self.reader)
+
+
 
             time.sleep(2)  # pequeña pausa para AccessSpec
 
@@ -176,6 +170,8 @@ class RFIDReaderThread(threading.Thread):
                 WordPtr=0,     # Desde la posición 0
                 WordCount=16   # Leer 16 palabras (32 bytes por si acaso)
             )
+            
+
             self.reader.start_access_spec(op_spec=read_op, stop_after_count=0)
 
             self.reader.join()
@@ -186,8 +182,100 @@ class RFIDReaderThread(threading.Thread):
             if self.reader:
                 self.reader.disconnect()
                 logging.info(f"🔌 Lector desconectado {self.ip}")
+    # def run(self):
+    #     while not self.stop_event.is_set():
+    #         try:
+    #             self.running = True
+    #             logging.info(f"📡 Iniciando lector en {self.ip}")
+
+    #             config = LLRPReaderConfig()
+    #             config.antennas = self.antennas
+    #             config.tx_power = {ant: 31 for ant in self.antennas}
+    #             config.impinj_search_mode = 2
+    #             config.start_inventory = True
+    #             config.reset_on_connect = True
+
+    #             self.reader = LLRPReaderClient(self.ip, config=config)
+    #             self.reader.add_tag_report_callback(self.tag_report_callback)
+
+    #             logging.info(f"📡 Conectando lector {self.ip}")
+    #             self.reader.connect()
+
+    #             # 💥 Limpiar specs después de conexión exitosa
+    #             # self.borrar_specs(self.reader)
+
+    #             time.sleep(2)  # Pequeña pausa para estabilidad
+
+    #             read_op = C1G2Read(
+    #                 OpSpecID=1,
+    #                 AccessPassword=0,
+    #                 MB=3,          # User Memory Bank
+    #                 WordPtr=0,     # Desde la posición 0
+    #                 WordCount=16   # Leer 16 palabras (32 bytes)
+    #             )
+
+    #             # Inicia lectura con AccessSpec
+    #             self.reader.start_access_spec(op_spec=read_op, stop_after_count=0)
+
+    #             self.reader.join()  # Esperar mientras esté corriendo
+    #         except Exception as e:
+    #             logging.error(f"❌ Error en lector {self.ip}: {e}")
+    #             logging.info(f"🔁 Reintentando conexión en 5 segundos...")
+    #             time.sleep(5)  # Espera antes de intentar de nuevo
+    #         finally:
+    #             if self.reader:
+    #                 self.reader.disconnect()
+    #                 logging.info(f"🔌 Lector desconectado {self.ip}")
+    #             self.running = False
 
     def stop(self):
         self.running = False
         if self.reader:
             self.reader.disconnect()
+
+    # def limpiar_reader(self, reader):
+    #     """Elimina todos los ROSpecs y AccessSpecs activos en el lector."""
+    #     try:
+    #         delete_rospec = sllurp.llrp.messages.DELETE_ROSPEC(rospecID=0) # type: ignore
+    #         delete_accessspec = sllurp.llrp.messages.DELETE_ACCESSSPEC(accessSpecID=0) # type: ignore
+
+    #         response_rospec = reader._conn.transact(delete_rospec, timeout=2)
+    #         logging.info(f"♻️ ROSpecs eliminados en {self.ip}: {response_rospec}")
+
+    #         response_accessspec = reader._conn.transact(delete_accessspec, timeout=2)
+    #         logging.info(f"♻️ AccessSpecs eliminados en {self.ip}: {response_accessspec}")
+
+    #     except Exception as e:
+    #         logging.warning(f"⚠️ No se pudieron eliminar specs en {self.ip}: {e}")
+
+    # def borrar_specs(self, client):
+    #     """Elimina todos los ROSpecs y AccessSpecs activos en el lector."""
+    #     try:
+    #         # 🗑 Borrar todos los ROSpecs
+    #         delete_rospec = llrp.LLRPMessage(0x0C, {'ROSpecID': 0})
+    #         response_rospec = client.transact_message(delete_rospec, timeout=2)
+
+    #         if response_rospec == 0:
+    #             logging.info(f"✅ ROSpecs eliminados en {self.ip}")
+    #         else:
+    #             logging.warning(f"⚠️ Fallo al eliminar ROSpecs en {self.ip} (código {response_rospec})")
+
+    #         # 🗑 Borrar todos los AccessSpecs
+    #         delete_accessspec = llrp.LLRPMessage(0x1D, {'AccessSpecID': 0})
+    #         response_accessspec = client.transact_message(delete_accessspec, timeout=2)
+
+    #         if response_accessspec == 0:
+    #             logging.info(f"✅ AccessSpecs eliminados en {self.ip}")
+    #         else:
+    #             logging.warning(f"⚠️ Fallo al eliminar AccessSpecs en {self.ip} (código {response_accessspec})")
+
+    #     except Exception as e:
+    #         logging.warning(f"⚠️ No se pudieron eliminar specs en {self.ip}: {e}")
+
+
+
+
+    
+
+
+
