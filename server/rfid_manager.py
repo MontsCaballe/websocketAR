@@ -52,12 +52,20 @@ class RFIDManager:
         logging.info(f"📝 update_arcos llamado con {len(arcos)} arcos")
         self._arcos_data = arcos
         active_ips = set(arco['ip'] for arco in arcos)
+        # Detener lectores que ya no están activos
         for ip in list(self.readers):
             if ip not in active_ips:
                 self.stop_reader(ip)
-        for arco in arcos:
+        # 🔥 CONECTAR DE FORMA ESCALONADA
+        import time
+        for i, arco in enumerate(arcos):
             if arco['estado'] == 'conectado':
+                if i > 0:
+                    time.sleep(2)  # 2 segundos entre cada conexión
                 self.start_reader(arco)
+        # for arco in arcos:
+        #     if arco['estado'] == 'conectado':
+        #         self.start_reader(arco)
         # enviar_a_clientes(json.dumps({"type": "update_arcos", "arcos": arcos}))
         # 🔥 Manda arcos actualizados a todos los clientes
         from server.websocket import RFIDWebSocket

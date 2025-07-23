@@ -148,6 +148,13 @@ class RFIDReaderThread(threading.Thread):
             config.start_inventory = True
             config.reset_on_connect = True
 
+           # 🔥 CONFIGURACIÓN OPTIMIZADA PARA ENLACES UBIQUITI
+            config.connect_timeout = 30      # 30 segundos (Ubiquiti es más rápido que Mikrotik)
+            config.socket_timeout = 60       # 60 segundos para operaciones
+            config.response_timeout = 15     # 15 segundos para respuestas
+            config.keepalive = True
+            config.keepalive_interval = 20   # Keep-alive cada 20 segundos
+
             self.reader = LLRPReaderClient(self.ip, config=config)
             self.reader.add_tag_report_callback(self.tag_report_callback)
             
@@ -161,7 +168,7 @@ class RFIDReaderThread(threading.Thread):
 
 
 
-            time.sleep(2)  # pequeña pausa para AccessSpec
+            time.sleep(5)  # pequeña pausa para AccessSpec
 
             read_op = C1G2Read(
                 OpSpecID=1,
