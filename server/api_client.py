@@ -27,16 +27,16 @@ def fetch_arcos_and_antenas():
                 arco['estado'] = 'conectado' if arco['estatus'] == "1" else 'desconectado'
 
             # Agregar arquito de pruebas (si no está ya)
-            if not any(a['ip'] == '192.168.1.20' for a in arcos):
-                arcos.append({
-                    "id":6,
-                    "nombre": "ARCO PRUEBAS LOCAL",
-                    "ip": "192.168.1.20",
-                    "estado": "conectado",
-                    "antenas": [1],
-                    "imagen": "../static/arcos/arco.png"
-                })
-                logging.info("🧪 Agregado arco de pruebas 192.168.1.20")
+            # if not any(a['ip'] == '192.168.1.20' for a in arcos):
+            #     arcos.append({
+            #         "id":6,
+            #         "nombre": "ARCO PRUEBAS LOCAL",
+            #         "ip": "192.168.1.20",
+            #         "estado": "conectado",
+            #         "antenas": [1],
+            #         "imagen": "../static/arcos/arco.png"
+            #     })
+            #     logging.info("🧪 Agregado arco de pruebas 192.168.1.20")
 
             return arcos
 

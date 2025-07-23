@@ -54,9 +54,9 @@ if __name__ == "__main__":
 
     # 🚀 Iniciar servidor HTTP
     server = tornado.httpserver.HTTPServer(app)
-    port = int(os.getenv("PORT", 8888))
-    server.listen(port)
-    logging.info(f"✅ Servidor iniciado en http://localhost:{port}")
+    port = int(os.getenv("PORT", 8889))
+    server.listen(port, address="172.17.1.245")
+    logging.info(f"✅ Servidor iniciado en http://172.17.1.245:{port}")
 
     # 🚀 Ejecutar loop principal y procesar la cola de tags (SSE y WebSocket)
     ioloop = tornado.ioloop.IOLoop.current()
