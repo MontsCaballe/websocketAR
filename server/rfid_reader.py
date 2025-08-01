@@ -143,17 +143,32 @@ class RFIDReaderThread(threading.Thread):
 
             config = LLRPReaderConfig()
             config.antennas = self.antennas
-            config.tx_power = {ant: 31 for ant in self.antennas}
+            config.tx_power = {ant: 28 for ant in self.antennas}
             config.impinj_search_mode = 2
             config.start_inventory = True
             config.reset_on_connect = True
 
-           # 🔥 CONFIGURACIÓN OPTIMIZADA PARA ENLACES UBIQUITI
-            config.connect_timeout = 30      # 30 segundos (Ubiquiti es más rápido que Mikrotik)
-            config.socket_timeout = 60       # 60 segundos para operaciones
-            config.response_timeout = 15     # 15 segundos para respuestas
-            config.keepalive = True
-            config.keepalive_interval = 20   # Keep-alive cada 20 segundos
+        #    # 🔥 CONFIGURACIÓN OPTIMIZADA PARA ENLACES UBIQUITI
+        #     config.connect_timeout = 30      # 30 segundos (Ubiquiti es más rápido que Mikrotik)
+        #     config.socket_timeout = 60       # 60 segundos para operaciones
+        #     config.response_timeout = 15     # 15 segundos para respuestas
+        #     config.keepalive = True
+        #     config.keepalive_interval = 20   # Keep-alive cada 20 segundos
+            # # 🔥 CONFIGURACIÓN ESPECÍFICA PARA ENLACES MIKROTIK
+            # config.connect_timeout = 45      # 45 segundos (Mikrotik puede ser lento)
+            # config.socket_timeout = 90       # 90 segundos para operaciones
+            # config.response_timeout = 20     # 20 segundos para respuestas
+            # config.keepalive = True
+            # config.keepalive_interval = 25   # Keep-alive cada 25 segundos
+            # 🔥 TIMEOUTS ESPECÍFICOS PARA ENLACES INALÁMBRICOS
+            # config.connect_timeout = 60      # 1 minuto para conectar
+            # config.socket_timeout = 120      # 2 minutos para operaciones
+            # config.response_timeout = 30     # 30 segundos para respuestas
+            # config.keepalive = True
+            # config.keepalive_interval = 30   # Keep-alive cada 30 segundos
+            # 🔥 Timeouts para WAN
+            config.connect_timeout = 30
+            config.socket_timeout = 60
 
             self.reader = LLRPReaderClient(self.ip, config=config)
             self.reader.add_tag_report_callback(self.tag_report_callback)

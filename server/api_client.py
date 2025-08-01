@@ -27,26 +27,37 @@ def fetch_arcos_and_antenas():
                 arco['estado'] = 'conectado' if arco['estatus'] == "1" else 'desconectado'
 
             # Agregar arquito de pruebas (si no está ya)
-            if not any(a['ip'] == '192.168.1.20' for a in arcos):
-                arcos.append({
-                    "id":6,
-                    "nombre": "ARCO PRUEBAS LOCAL",
-                    "ip": "192.168.1.20",
-                    "estado": "conectado",
-                    "antenas": [1],
-                    "imagen": "../static/arcos/arco.png"
-                })
-                logging.info("🧪 Agregado arco de pruebas 192.168.1.20")
-            # if not any(a['ip'] == '172.17.50.107' for a in arcos):
+            arcos = []
+            # if not any(a['ip'] == '192.168.1.20' for a in arcos):
             #     arcos.append({
-            #         "id":7,
+            #         "id":6,
             #         "nombre": "ARCO PRUEBAS LOCAL",
-            #         "ip": "172.17.50.107",
+            #         "ip": "192.168.1.20",
             #         "estado": "conectado",
-            #         "antenas": [1,2,3,4],
+            #         "antenas": [1],
             #         "imagen": "../static/arcos/arco.png"
             #     })
-            #     logging.info("🧪 Agregado arco de pruebas 172.17.50.107")
+            #     logging.info("🧪 Agregado arco de pruebas 192.168.1.20")
+            if not any(a['ip'] == '172.17.50.107' for a in arcos):
+                arcos.append({
+                    "id":7,
+                    "nombre": "ARCO PRUEBAS LOCAL",
+                    "ip": "172.17.50.107",
+                    "estado": "conectado",
+                    "antenas": [1,2],
+                    "imagen": "../static/arcos/arco.png"
+                })
+                logging.info("🧪 Agregado arco de pruebas 172.17.50.107")
+            if not any(a['ip'] == '172.17.1.110' for a in arcos):
+                arcos.append({
+                    "id":7,
+                    "nombre": "ARCO PRUEBAS LOCAL",
+                    "ip": "172.17.1.110",
+                    "estado": "conectado",
+                    "antenas": [1,2],
+                    "imagen": "../static/arcos/arco.png"
+                })
+                logging.info("🧪 Agregado arco de pruebas 172.17.1.110")
 
             return arcos
 
