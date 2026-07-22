@@ -164,11 +164,32 @@ def convertir_hex_ascii(hex_string):
         return ""
 
 def construir_payload(vin, folio, id_arco, id_antena):
+    
+    # Validar si el folio está dentro del rango
+    rango_inicio = 0
+    rango_fin = 1
+
+    if rango_inicio is not None and rango_fin is not None:
+        # Asumiendo que el folio es numérico
+        try:
+            folio_num = int(folio)
+            if rango_inicio <= folio_num <= rango_fin:
+                tipo_tag = "morado"
+            else:
+                tipo_tag = "azul"
+        except (ValueError, TypeError):
+            # Si el folio no es numérico, asignar azul por defecto
+            tipo_tag = "azul"
+    else:
+        # Si no hay rango definido, asignar azul por defecto
+        tipo_tag = "azul"
+
     return {
         "vin": vin,
         "folio": folio,
         "arco": id_arco,
-        "antena": id_antena
+        "antena": id_antena,
+        "tipo_tag": tipo_tag
     }
 
 async def enviar_a_api(payload):

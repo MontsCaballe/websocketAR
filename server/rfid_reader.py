@@ -8,6 +8,9 @@ import tornado
 from server.websocket import tag_queue  # 👈 Importamos la cola para SSE
 from sllurp import llrp
 from server import rfid_manager
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # 🔥 Buffer global para EPCs
 buffer_tags = {}
@@ -143,17 +146,19 @@ class RFIDReaderThread(threading.Thread):
 
             config = LLRPReaderConfig()
             config.antennas = self.antennas
-            config.tx_power = {ant: 28 for ant in self.antennas}
+            config.tx_power = {ant: 91 for ant in self.antennas}
             config.impinj_search_mode = 2
             config.start_inventory = True
             config.reset_on_connect = True
+            config.rx_sensitivity = -80
+            config.mode_identifier = 4
 
         #    # 🔥 CONFIGURACIÓN OPTIMIZADA PARA ENLACES UBIQUITI
-        #     config.connect_timeout = 30      # 30 segundos (Ubiquiti es más rápido que Mikrotik)
-        #     config.socket_timeout = 60       # 60 segundos para operaciones
-        #     config.response_timeout = 15     # 15 segundos para respuestas
-        #     config.keepalive = True
-        #     config.keepalive_interval = 20   # Keep-alive cada 20 segundos
+            config.connect_timeout = 30      # 30 segundos (Ubiquiti es más rápido que Mikrotik)
+            config.socket_timeout = 60       # 60 segundos para operaciones
+            config.response_timeout = 15     # 15 segundos para respuestas
+            config.keepalive = True
+            config.keepalive_interval = 20   # Keep-alive cada 20 segundos
             # # 🔥 CONFIGURACIÓN ESPECÍFICA PARA ENLACES MIKROTIK
             # config.connect_timeout = 45      # 45 segundos (Mikrotik puede ser lento)
             # config.socket_timeout = 90       # 90 segundos para operaciones
@@ -167,8 +172,8 @@ class RFIDReaderThread(threading.Thread):
             # config.keepalive = True
             # config.keepalive_interval = 30   # Keep-alive cada 30 segundos
             # 🔥 Timeouts para WAN
-            config.connect_timeout = 30
-            config.socket_timeout = 60
+            # config.connect_timeout = 30
+            # config.socket_timeout = 60
 
             self.reader = LLRPReaderClient(self.ip, config=config)
             self.reader.add_tag_report_callback(self.tag_report_callback)
@@ -190,7 +195,7 @@ class RFIDReaderThread(threading.Thread):
                 AccessPassword=0,
                 MB=3,          # User Memory Bank
                 WordPtr=0,     # Desde la posición 0
-                WordCount=16   # Leer 16 palabras (32 bytes por si acaso)
+                WordCount=13   # Leer 16 palabras (32 bytes por si acaso)
             )
             
 
@@ -238,12 +243,31 @@ class RFIDReaderThread(threading.Thread):
 
                 if arco_id is None or antenna_id is None:
                     logging.warning(f"⚠️ No se pudo determinar arco/antena para IP {self.ip}")
+                
+                rango_inicio = int(os.getenv("RANGOINI", 0))
+                rango_fin = int(os.getenv("RANGOFIN", 1))
+                # Validar si el folio está dentro del rango
+                if rango_inicio is not None and rango_fin is not None:
+                    # Asumiendo que el folio es numérico
+                    try:
+                        folio_num = int(folio)
+                        if rango_inicio <= folio_num <= rango_fin:
+                            tipo_tag = "morado"
+                        else:
+                            tipo_tag = "azul"
+                    except (ValueError, TypeError):
+                        # Si el folio no es numérico, asignar azul por defecto
+                        tipo_tag = "azul"
+                else:
+                    # Si no hay rango definido, asignar azul por defecto
+                    tipo_tag = "azul"
 
                 payload = {
                     "vin": vin,
                     "folio": folio,
                     "arco": arco_id,
-                    "antena": antenna_id
+                    "antena": antenna_id,
+                    "tipo_tag": tipo_tag
                 }
                
                 # ✅ Enviar a SSE (sin bloquear hilo)
