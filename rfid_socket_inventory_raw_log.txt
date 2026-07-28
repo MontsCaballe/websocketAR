@@ -1,0 +1,6 @@
+2025-07-02 04:05:01,888 [INFO] ✅ Conectado a 192.168.1.20:5084
+2025-07-02 04:05:01,889 [INFO] ✅ ADD_ROSPEC enviado.
+2025-07-02 04:05:02,390 [ERROR] ❌ Error de conexión o comunicación: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+2025-07-02 04:05:11,615 [INFO] ✅ Conectado a 192.168.1.20:5084
+2025-07-02 04:05:11,615 [INFO] ✅ ADD_ROSPEC enviado.
+2025-07-02 04:05:12,116 [ERROR] ❌ Error de conexión o comunicación: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto

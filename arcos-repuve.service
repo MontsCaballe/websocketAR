@@ -1,0 +1,31 @@
+[Unit]
+Description=Servicio de WebSocket Arcos REPUVE 2
+After=network.target
+
+[Service]
+# Especifica el usuario que ejecuta el servicio (modifícalo según corresponda)
+User=root
+
+# Directorio de trabajo donde se encuentra tu aplicación
+WorkingDirectory=/home/websocketArcos_
+
+# Si usas un entorno virtual, indica la ruta completa al intérprete de python del venv,
+# de lo contrario, si python está en el PATH, usa simplemente "python"
+ExecStart=/home/websocketArcos_/venv/bin/python app.py
+
+# Si tienes un archivo .env o variables de entorno, puedes cargarlas de dos maneras:
+# 1. Definirlas directamente con Environment=VAR=valor
+# 2. Usar un archivo con EnvironmentFile=/ruta/al/archivo.env
+# Descomenta y ajusta la línea que necesites:
+EnvironmentFile=/home/websocketArcos_/.env
+
+# Reinicia el servicio automáticamente en caso de fallo
+Restart=always
+RestartSec=10
+
+# Redirige la salida estándar y de error al journal (para luego consultarla con journalctl)
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

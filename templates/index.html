@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RFID Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9fafb;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .arco-card {
+            background: white;
+            border-radius: 8px;
+            border: 3px solid #ccc;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin: 15x;
+            padding: 8px;
+            width: 140px;
+            height: 160px;
+            /* 🔥 Fijar altura más baja */
+            overflow: hidden;
+            /* Oculta cualquier contenido que sobresalga */
+            transition: border-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .arco-card:hover {
+            transform: scale(1.03);
+        }
+
+        .arco-card.conectado {
+            border-color: #16a34a;
+        }
+
+        .arco-card.desconectado {
+            border-color: #dc2626;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .arco-card h4 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .lecturas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tag {
+            background: #e8f5e9;
+            border-left: 5px solid #4CAF50;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .tag strong {
+            color: #2e7d32;
+        }
+
+        .arco-card p {
+            font-size: 0.65rem;
+            margin: 1px 0;
+            /* Menos separación */
+            line-height: 1.1;
+            /* Reducir separación entre líneas */
+        }
+
+        .arco-card h4 {
+            font-size: 0.6rem;
+            margin: 2px 0;
+            line-height: 1.2;
+            /* Permite salto de línea */
+            word-break: break-word;
+            /* Rompe palabras largas */
+        }
+    </style>
+</head>
+
+<body class="p-6">
+    <center>
+        <h1 class="text-3xl font-bold mb-6">🛰️ Arcos en Tiempo Real 🛰️</h1>
+        <h1 class="text-1xl font-bold mb-6">REPUVE LIVE 📡</h1>
+    </center>
+
+    <!-- Inyectamos los arcos dinámicos como atributo -->
+    <div id="data-arcos" data-arcos='{{ arcos_json }}'></div>
+
+    <div id="arcos" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4">
+        <!-- Cards de arcos aparecerán aquí -->
+    </div>
+    <div class="mt-8">
+        <div class="flex justify-between items-center mb-2">
+            <h2 id="tabla-title" class="text-2xl font-bold">📋 Lecturas en Tiempo Real </h2>
+            <h2>Total Lecturas (<span id="contador-global"
+                    class="text-green-600">0</span>)</h2>
+            <button id="ver-todos-btn" class="hidden px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                🔙 Ver todos
+            </button>
+        </div>
+        <div class="overflow-y-auto max-h-96 border rounded shadow">
+            <table class="min-w-full text-left text-sm">
+                <thead class="bg-green-600 text-white sticky top-0">
+                    <tr>
+                        <th class="px-4 py-2">Arco</th>
+                        <th class="px-4 py-2">EPC</th>
+                        <th class="px-4 py-2">VIN</th>
+                        <th class="px-4 py-2">Folio</th>
+                        <th class="px-4 py-2">Hora</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-lecturas" class="bg-white divide-y divide-gray-200">
+                    <!-- Filas dinámicas -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        let arcos = JSON.parse(document.getElementById('data-arcos').dataset.arcos);
+        console.log("🔗 Arcos obtenidos:", arcos);
+        const ws = new WebSocket(`ws://${window.location.host}/ws`);
+        let lecturasGlobal = [];
+        let filtroArco = null;
+        const arcoTimers = {};
+        const arcoMiniLogs = {};
+
+        ws.onopen = () => {
+            console.log("🔗 Conectado al WebSocket");
+        };
+
+        ws.onmessage = function (event) {
+            const data = JSON.parse(event.data);
+            console.log("🔗 Recibiendo datos desde WS");
+            console.log(data);
+
+            if (data.type === "update_arcos") {
+                console.log("📦 Lista de arcos actualizada:", data.arcos);
+                actualizarArcos(data.arcos);
+            }
+        };
+
+        // 📡 Cambiamos las lecturas en tiempo real a SSE
+        const eventSource = new EventSource("/live");
+        eventSource.onmessage = function (event) {
+            const data = JSON.parse(event.data);
+            console.log("📡 Nueva lectura (SSE):", data);
+
+            data.timestamp = new Date().toLocaleTimeString();
+
+            if (!data.ip) data.ip = "172.17.1.245";
+
+            const dataTag = data.tag;
+
+            lecturasGlobal.unshift(dataTag);
+            if (lecturasGlobal.length > 100) lecturasGlobal.pop();
+
+            actualizarTabla();
+            actualizarContadores(data.ip);
+            actualizarMiniLog(data.ip, dataTag);
+
+            // const globalCounter = document.getElementById('contador-global');
+            // let globalCount = parseInt(globalCounter.textContent) || 0;
+            // globalCounter.textContent = globalCount + 1;
+            const globalCounter = document.getElementById('contador-global');
+            if (globalCounter && data.tag) {
+                let globalCount = parseInt(globalCounter.textContent) || 0;
+                globalCounter.textContent = globalCount + 1;
+            } else {
+                console.warn("⚠️ contador-global no encontrado o data.tag no tiene datos válidos", data);
+            }
+
+            const safeIp = data.ip.replace(/\./g, '-');
+            const arcoCounter = document.getElementById(`contador-${safeIp}`);
+            if (arcoCounter) {
+                let arcoCount = parseInt(arcoCounter.textContent) || 0;
+                arcoCounter.textContent = arcoCount + 1;
+            }
+        };
+
+        eventSource.onerror = function (error) {
+            console.error("❌ Error en SSE:", error);
+        };
+
+        window.onbeforeunload = function () {
+            eventSource.close();
+            console.log("🔌 SSE cerrado");
+        };
+
+        function clearArcos() {
+            const container = document.getElementById('arcos');
+            container.innerHTML = '';
+        }
+
+        function actualizarTabla() {
+            const tabla = document.getElementById("tabla-lecturas");
+            tabla.innerHTML = "";
+
+            const lecturas = filtroArco
+                ? lecturasGlobal.filter(l => l.ip.trim() === filtroArco.trim())
+                : lecturasGlobal;
+
+            lecturas.forEach(data => {
+                const fila = document.createElement("tr");
+                fila.classList.add("hover:bg-gray-100");
+                fila.innerHTML = `
+            <td class="px-4 py-2">${data.ip}</td>
+            <td class="px-4 py-2">${data.epc}</td>
+            <td class="px-4 py-2">${data.vin}</td>
+            <td class="px-4 py-2">${data.folio}</td>
+            <td class="px-4 py-2">${new Date().toLocaleTimeString()}</td>
+        `;
+                tabla.appendChild(fila);
+            });
+
+            document.getElementById("tabla-title").textContent = filtroArco
+                ? `📋 Lecturas de ${filtroArco}`
+                : "📋 Lecturas en Tiempo Real";
+
+            document.getElementById("ver-todos-btn").classList.toggle("hidden", !filtroArco);
+        }
+
+        document.getElementById("ver-todos-btn").addEventListener("click", () => {
+            filtroArco = null;
+            actualizarTabla();
+        });
+
+        function actualizarContadores(ip) {
+            const safeIp = ip.replace(/\./g, '-');
+            const status = document.getElementById(`status-${safeIp}`);
+
+            if (status) {
+                status.classList.remove('bg-red-500');
+                status.classList.add('bg-green-500', 'animate-pulse');
+
+                clearTimeout(arcoTimers[ip]);
+                arcoTimers[ip] = setTimeout(() => {
+                    status.classList.remove('bg-green-500', 'animate-pulse');
+                    status.classList.add('bg-red-500');
+                }, 5000);
+            }
+        }
+
+        function actualizarMiniLog(ip, data) {
+            if (!arcoMiniLogs[ip]) arcoMiniLogs[ip] = [];
+            arcoMiniLogs[ip].unshift(data);
+            if (arcoMiniLogs[ip].length > 1) arcoMiniLogs[ip].pop();
+
+            const miniLogDiv = document.getElementById(`miniLog-${ip.replace(/\./g, '-')}`);
+            if (miniLogDiv) {
+                miniLogDiv.innerHTML = arcoMiniLogs[ip].map(log => `
+            <div class="text-xs bg-gray-50 border-l-4 border-gray-400 pl-2 my-1">
+                <p><strong>VIN:</strong> ${log.vin}</p>
+                <p class="text-gray-500">${new Date().toLocaleTimeString()}</p>
+            </div>
+        `).join('');
+            }
+        }
+
+        function renderArcos() {
+            const container = document.getElementById('arcos');
+            arcos.forEach(arco => {
+                console.log(arco);
+                const safeIp = arco.ip.replace(/\./g, '-');
+                const statusId = `status-${safeIp}`;
+                const miniLogId = `miniLog-${safeIp}`;
+
+                const card = document.createElement('div');
+                card.className = `arco-card ${arco.estado}`;
+                card.innerHTML = `
+            <div class="flex items-center mb-2">
+                <img src="${arco.imagen}" alt="${arco.nombre}" class="h-10 w-10 object-contain rounded mr-2">
+                <h4 class="text-sm font-semibold break-words">${arco.nombre}</h4>
+            </div>
+            <p class="text-xs"><strong>IP:</strong> ${arco.ip}</p>
+            <p class="text-xs"><strong>Antenas:</strong> ${arco.antenas.join(', ')}</p>
+            <p class="mt-1 text-xs text-gray-600 font-semibold">
+                <span id="${statusId}" class="h-2 w-2 rounded-full bg-red-500 inline-block"></span> Última lectura
+            </p>
+            <div id="${miniLogId}" class="text-xs mt-1 space-y-1"></div>
+            <p class="mt-1 text-xs text-gray-500">📊 Lecturas: 
+                <span id="contador-${safeIp}" class="font-bold text-green-700">0</span>
+            </p>
+        `;
+
+                card.addEventListener("click", () => {
+                    filtroArco = arco.ip;
+                    actualizarTabla();
+                });
+                container.appendChild(card);
+            });
+        }
+
+        function actualizarArcos(arcosActualizados) {
+            const container = document.getElementById('arcos');
+            container.innerHTML = '';
+            arcosActualizados.forEach(arco => {
+                const safeIp = arco.ip.replace(/\./g, '-');
+                const statusId = `status-${safeIp}`;
+                const miniLogId = `miniLog-${safeIp}`;
+
+                const card = document.createElement('div');
+                card.className = `arco-card ${arco.estado}`;
+                card.innerHTML = `
+                <div class="flex items-center mb-2">
+                    <img src="${arco.imagen}" alt="${arco.nombre}" class="h-10 w-10 object-contain rounded mr-2">
+                    <h4 class="text-sm font-semibold break-words">${arco.nombre}</h4>
+                </div>
+                <p class="text-xs"><strong>IP:</strong> ${arco.ip}</p>
+                <p class="text-xs"><strong>Antenas:</strong> ${arco.antenas.join(', ')}</p>
+                <p class="mt-1 text-xs text-gray-600 font-semibold">
+                    <span id="${statusId}" class="h-2 w-2 rounded-full bg-red-500 inline-block"></span> Última lectura
+                </p>
+                <div id="${miniLogId}" class="text-xs mt-1 space-y-1"></div>
+                <p class="mt-1 text-xs text-gray-500">📊 Lecturas: 
+                    <span id="contador-${safeIp}" class="font-bold text-green-700">0</span>
+                </p>
+            `;
+                card.addEventListener("click", () => {
+                    filtroArco = arco.ip;
+                    actualizarTabla();
+                });
+                container.appendChild(card);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', renderArcos);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+2025-07-02 04:03:34,840 [ERROR] ❌ Error: cannot import name 'encode_message' from 'sllurp.llrp_proto' (C:\Users\Lady_\Documents\GitHub\websocketAR\venv\Lib\site-packages\sllurp\llrp_proto.py)

@@ -11,8 +11,10 @@ from .util import BITMASK
 import socket # for connecting to the reader via TCP/IP
 
 LLRP_PORT = 5084
+# logging.basicConfig(level=logging.DEBUG)
 
 logger = logging.getLogger(__name__)
+
 
 class LLRPMessage(object):
 	hdr_fmt = '!HI'
@@ -195,6 +197,7 @@ class LLRPClient(object):
 		return max(5., (self.report_interval or 1.)+1.)
 	
 	def startConnection(self):
+		
 		# connect
 		self.transport.connect(self.ip, LLRP_PORT)
 		# await connection message from reader
@@ -592,6 +595,13 @@ class LLRPClient(object):
 		'''Receives binary data from the reader. In normal cases, we can parse 
 		the message according to the protocoll and return it as a dictionary.'''
 		logger.debug('got %d bytes from reader: %s', len(data), hexlify(data))
+
+
+
+
+		logging.debug(f"🔴 LLRP raw data recibido ({len(data)} bytes): {data.hex()}")
+
+
 		if not data:
 			return
 		
@@ -606,6 +616,8 @@ class LLRPClient(object):
 					# parse the message
 					lmsg = LLRPMessage(msgbytes=self.partialData[:msg_len])
 					self.handleMessage(lmsg)
+					logging.debug(f"🔵 LLRP mensaje deserializado: {lmsg}")
+
 					self.partialData = self.partialData[msg_len:]
 				else:
 					break

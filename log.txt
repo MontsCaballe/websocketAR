@@ -1,0 +1,274 @@
+(venv) PS C:\Users\Lady_\Documents\GitHub\websocketAR> python app.py
+INFO:root:🌐 Consultando API de arcos y antenas...
+INFO:root:✅ Servidor Tornado y WebSocket iniciado en http://localhost:8888
+INFO:root:🧪 Agregado arco de pruebas 192.168.1.20
+INFO:root:✅ 18 arcos obtenidos de API
+INFO:root:📝 update_arcos llamado con 18 arcos
+INFO:root:✅ Conectando nuevo arco 172.17.1.101
+INFO:root:📡 Iniciando lector en 172.17.1.101
+INFO:root:✅ Conectando nuevo arco 172.17.1.102
+INFO:sllurp.llrp:will reset reader state on connect
+INFO:sllurp.llrp:will start inventory on connect
+INFO:root:📡 Iniciando lector en 172.17.1.102
+INFO:sllurp.llrp:Enabling Impinj extensions
+INFO:sllurp.llrp:using antennas: [1, 2, 3, 4]
+INFO:sllurp.llrp:will reset reader state on connect
+INFO:sllurp.llrp:will start inventory on connect
+INFO:sllurp.llrp:Enabling Impinj extensions
+INFO:sllurp.llrp:using antennas: [1, 2]
+INFO:sllurp.llrp:transmit power: {1: 31, 2: 31, 3: 31, 4: 31}
+INFO:root:✅ Conectando nuevo arco 172.17.50.104
+INFO:sllurp.llrp:transmit power: {1: 31, 2: 31}
+INFO:root:📡 Iniciando lector en 172.17.50.104
+INFO:root:✅ Conectando nuevo arco 172.17.50.105
+INFO:sllurp.llrp:will reset reader state on connect
+INFO:sllurp.llrp:will start inventory on connect
+INFO:sllurp.llrp:Enabling Impinj extensions
+INFO:sllurp.llrp:using antennas: [1, 2]
+INFO:sllurp.llrp:transmit power: {1: 31, 2: 31}
+INFO:root:✅ Conectando nuevo arco 172.17.50.109
+INFO:root:📡 Iniciando lector en 172.17.50.105
+INFO:root:📡 Iniciando lector en 172.17.50.109
+INFO:sllurp.llrp:will reset reader state on connect
+INFO:sllurp.llrp:will start inventory on connect
+INFO:root:✅ Conectando nuevo arco 172.17.50.107
+INFO:sllurp.llrp:will reset reader state on connect
+INFO:sllurp.llrp:Enabling Impinj extensions
+INFO:sllurp.llrp:will start inventory on connect
+INFO:root:📡 Iniciando lector en 172.17.50.107
+INFO:root:✅ Conectando nuevo arco 10.15.41.116
+INFO:sllurp.llrp:using antennas: [1, 2, 3]
+INFO:sllurp.llrp:Enabling Impinj extensions
+INFO:sllurp.llrp:using antennas: [1, 2, 3, 4]
+INFO:sllurp.llrp:transmit power: {1: 31, 2: 31, 3: 31}
+INFO:root:📡 Iniciando lector en 10.15.41.116
+INFO:root:✅ Conectando nuevo arco 10.15.15.100
+INFO:sllurp.llrp:will reset reader state on connect
+INFO:sllurp.llrp:transmit power: {1: 31, 2: 31, 3: 31, 4: 31}
+INFO:sllurp.llrp:will reset reader state on connect
+INFO:sllurp.llrp:will start inventory on connect
+INFO:root:📡 Iniciando lector en 10.15.15.100
+INFO:root:✅ Conectando nuevo arco 10.15.41.115
+INFO:sllurp.llrp:will start inventory on connect
+INFO:sllurp.llrp:Enabling Impinj extensions
+INFO:sllurp.llrp:will reset reader state on connect
+INFO:sllurp.llrp:Enabling Impinj extensions
+INFO:root:📡 Iniciando lector en 10.15.41.115
+INFO:root:✅ Conectando nuevo arco 172.17.1.110
+INFO:sllurp.llrp:using antennas: [1, 2]
+INFO:sllurp.llrp:will start inventory on connect
+INFO:sllurp.llrp:using antennas: [1, 2, 3, 4]
+INFO:sllurp.llrp:will reset reader state on connect
+INFO:sllurp.llrp:transmit power: {1: 31, 2: 31}
+INFO:root:📡 Iniciando lector en 172.17.1.110
+INFO:root:✅ Conectando nuevo arco 172.17.50.111
+INFO:sllurp.llrp:Enabling Impinj extensions
+INFO:sllurp.llrp:transmit power: {1: 31, 2: 31, 3: 31, 4: 31}
+INFO:sllurp.llrp:will start inventory on connect
+INFO:sllurp.llrp:will reset reader state on connect
+INFO:sllurp.llrp:using antennas: [1, 2]
+INFO:root:📡 Iniciando lector en 172.17.50.111
+INFO:root:✅ Conectando nuevo arco 192.168.1.20
+INFO:sllurp.llrp:Enabling Impinj extensions
+INFO:sllurp.llrp:will start inventory on connect
+INFO:sllurp.llrp:transmit power: {1: 31, 2: 31}
+INFO:sllurp.llrp:will reset reader state on connect
+INFO:root:📡 Iniciando lector en 192.168.1.20
+INFO:sllurp.llrp:using antennas: [1, 2]
+INFO:root:📡 Enviado update_arcos a los clientes
+INFO:sllurp.llrp:Enabling Impinj extensions
+INFO:sllurp.llrp:will start inventory on connect
+INFO:sllurp.llrp:will reset reader state on connect
+INFO:sllurp.llrp:transmit power: {1: 31, 2: 31}
+INFO:sllurp.llrp:using antennas: [1, 2]
+INFO:sllurp.llrp:Enabling Impinj extensions
+INFO:sllurp.llrp:will start inventory on connect
+INFO:sllurp.llrp:transmit power: {1: 31, 2: 31}
+INFO:sllurp.llrp:using antennas: [1, 2]
+INFO:sllurp.llrp:Enabling Impinj extensions
+INFO:sllurp.llrp:transmit power: {1: 31, 2: 31}
+INFO:sllurp.llrp:using antennas: [1]
+INFO:sllurp.llrp:transmit power: {1: 31}
+INFO:sllurp.llrp:connected to 192.168.1.20 (:5084)
+INFO:sllurp.llrp:using reader mode: None
+INFO:sllurp.llrp:stopping politely
+INFO:sllurp.llrp:Impinj search mode? 2
+INFO:sllurp.llrp:starting inventory
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 46, 'LastSeenTimestampUTC': 1751663837339403, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+ERROR:root:❌ Error en lector 172.17.1.102: timed out
+WARNING:sllurp.llrp:Reader not connected. Disconnect is not needed.
+ERROR:root:❌ Error en lector 172.17.50.109: timed out
+ERROR:root:❌ Error en lector 172.17.50.105: timed out
+ERROR:root:❌ Error en lector 172.17.50.104: timed out
+ERROR:root:❌ Error en lector 172.17.1.101: timed out
+ERROR:root:❌ Error en lector 172.17.50.107: timed out
+ERROR:root:❌ Error en lector 10.15.15.100: timed out
+ERROR:root:❌ Error en lector 10.15.41.116: timed out
+WARNING:sllurp.llrp:Reader not connected. Disconnect is not needed.
+WARNING:sllurp.llrp:Reader not connected. Disconnect is not needed.
+WARNING:sllurp.llrp:Reader not connected. Disconnect is not needed.
+WARNING:sllurp.llrp:Reader not connected. Disconnect is not needed.
+WARNING:sllurp.llrp:Reader not connected. Disconnect is not needed.
+WARNING:sllurp.llrp:Reader not connected. Disconnect is not needed.
+WARNING:sllurp.llrp:Reader not connected. Disconnect is not needed.
+INFO:root:🔌 Lector desconectado 172.17.1.102
+INFO:root:🔌 Lector desconectado 10.15.41.116
+INFO:root:🔌 Lector desconectado 172.17.50.109
+INFO:root:🔌 Lector desconectado 172.17.50.105
+INFO:root:🔌 Lector desconectado 172.17.50.104
+INFO:root:🔌 Lector desconectado 172.17.1.101
+INFO:root:🔌 Lector desconectado 172.17.50.107
+INFO:root:🔌 Lector desconectado 10.15.15.100
+ERROR:root:❌ Error en lector 172.17.50.111: timed out
+ERROR:root:❌ Error en lector 172.17.1.110: timed out
+WARNING:sllurp.llrp:Reader not connected. Disconnect is not needed.
+ERROR:root:❌ Error en lector 10.15.41.115: timed out
+WARNING:sllurp.llrp:Reader not connected. Disconnect is not needed.
+INFO:root:🔌 Lector desconectado 172.17.50.111
+WARNING:sllurp.llrp:Reader not connected. Disconnect is not needed.
+INFO:root:🔌 Lector desconectado 172.17.1.110
+INFO:root:🔌 Lector desconectado 10.15.41.115
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3CA50>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 50, 'LastSeenTimestampUTC': 1751663838147348, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+INFO:root:✅ Enviando 18 arcos al cliente
+INFO:tornado.access:304 GET / (::1) 3.02ms
+WARNING:tornado.access:404 GET /.well-known/appspecific/com.chrome.devtools.json (::1) 2.52ms
+INFO:tornado.access:101 GET /ws (::1) 0.51ms
+INFO:root:🌐 Cliente WebSocket conectado: ::1
+WARNING:tornado.access:404 GET /static/arco.png (::1) 1.67ms
+INFO:tornado.access:304 GET /static/arcos/arco.png (::1) 36.12ms
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3C050>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 6, 'LastSeenTimestampUTC': 1751663839370092, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+INFO:tornado.access:101 GET /ws (192.168.1.19) 0.33ms
+INFO:root:🌐 Cliente WebSocket conectado: 192.168.1.19
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3C550>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 10, 'LastSeenTimestampUTC': 1751663840183187, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3DA90>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 12, 'LastSeenTimestampUTC': 1751663840587119, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+INFO:root:🌐 Consultando API de arcos y antenas...
+INFO:root:🧪 Agregado arco de pruebas 192.168.1.20
+INFO:root:✅ 18 arcos obtenidos de API
+INFO:root:📝 update_arcos llamado con 18 arcos
+ERROR:root:❌ Error enviando mensaje a cliente WebSocket: There is no current event loop in thread 'Thread-1 (arcos_updater)'.
+ERROR:root:❌ Error enviando mensaje a cliente WebSocket: There is no current event loop in thread 'Thread-1 (arcos_updater)'.
+INFO:root:📡 Enviado update_arcos a los clientes
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3DD10>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 16, 'LastSeenTimestampUTC': 1751663841397816, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3E5D0>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 25, 'LastSeenTimestampUTC': 1751663843224395, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3E210>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 27, 'LastSeenTimestampUTC': 1751663843633655, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3E490>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 29, 'LastSeenTimestampUTC': 1751663844038290, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3E710>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 31, 'LastSeenTimestampUTC': 1751663844441927, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+INFO:root:🌐 Consultando API de arcos y antenas...
+INFO:root:🧪 Agregado arco de pruebas 192.168.1.20
+INFO:root:✅ 18 arcos obtenidos de API
+INFO:root:📝 update_arcos llamado con 18 arcos
+INFO:root:📡 Enviado update_arcos a los clientes
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3E990>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 35, 'LastSeenTimestampUTC': 1751663845255264, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23B13B10>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 37, 'LastSeenTimestampUTC': 1751663845660803, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3EC10>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 39, 'LastSeenTimestampUTC': 1751663846066892, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3E710>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 41, 'LastSeenTimestampUTC': 1751663846472497, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+ERROR:root:❌ Error al consumir API: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /tramites/lecturas-arcos/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AB23C3E490>, 'Connection to 192.168.0.200 timed out. (connect timeout=6)'))
+INFO:root:📡 Tag detectado en 192.168.1.20: {'EPC-96': b'323835393838353420202020', 'ChannelIndex': 43, 'LastSeenTimestampUTC': 1751663846876846, 'TagSeenCount': 1, 'C1G2ReadOpSpecResult': {'Result': 0, 'OpSpecID': 1, 'ReadDataWordCount': 16, 'ReadData': b'\x01\xb4bF\x00\x00\x00\x003N6AD33A2RK8647130\x00\x00\x00\x00\x00\x00'}, 'EPC': b'323835393838353420202020'}
+INFO:root:✅ Folio desde EPC: 28598854
+INFO:root:✅ VIN desde User Memory: 3N6AD33A2RK864713
+INFO:root:📡 Tag listo para enviar a la api {'ip': '192.168.1.20', 'epc': '333233383335333933383338333533343230323032303230', 'vin': '3N6AD33A2RK864713', 'folio': '28598854'}
+INFO:root:✅ Dispositivo encontrado en devices_with_data: {'id': 6, 'nombre': 'ARCO PRUEBAS LOCAL', 'ip': '192.168.1.20', 'estado': 'conectado', 'antenas': [1], 'imagen': '../static/arcos/arco.png'}
+INFO:root:✅ Antena simple encontrada (id=1)
+INFO:root:🌐 Enviando POST a https://192.168.0.200/tramites/lecturas-arcos/ con payload: {'vin': '3N6AD33A2RK864713', 'folio': '28598854', 'arco': 6, 'antena': 1}
+INFO:root:🌐 Consultando API de arcos y antenas...
+INFO:root:🧪 Agregado arco de pruebas 192.168.1.20
+INFO:root:✅ 18 arcos obtenidos de API
+INFO:root:📝 update_arcos llamado con 18 arcos
+INFO:root:📡 Enviado update_arcos a los clientes
